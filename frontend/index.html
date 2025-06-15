@@ -1,0 +1,1359 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مصنع معدات الحماية الشخصية - سدير للصناعة والأعمال</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <style>
+        :root {
+            --primary: #2563eb;
+            --primary-dark: #1e40af;
+            --secondary: #f59e0b;
+            --dark: #1e293b;
+            --light: #f8fafc;
+            --gray: #94a3b8;
+        }
+        
+        body {
+            font-family: 'Tajawal', sans-serif;
+            background-color: var(--light);
+            overflow-x: hidden;
+        }
+        /* Add this to your CSS */
+.img-cover {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.img-contain {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+
+/* For product cards */
+.product-image-container {
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+}
+
+/* For client logos */
+.client-logo {
+    max-height: 50px;
+    width: auto;
+    object-fit: contain;
+}
+        /* Glassmorphism Effect */
+        .glass-card {
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border-radius: 16px;
+            border: 1px solid rgba(255, 255, 255, 0.18);
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
+        }
+        
+        /* Neumorphism Effect */
+        .neumorphic-card {
+            border-radius: 16px;
+            background: #f8fafc;
+            box-shadow:  8px 8px 16px #d9d9d9,
+                        -8px -8px 16px #ffffff;
+            transition: all 0.3s ease;
+        }
+        
+        .neumorphic-card:hover {
+            box-shadow:  4px 4px 8px #d9d9d9,
+                        -4px -4px 8px #ffffff;
+            transform: translateY(-5px);
+        }
+        
+        /* Hero Section with Gradient Mesh Background */
+        .hero-section {
+            position: relative;
+            overflow: hidden;
+            padding: 180px 0;
+            color: white;
+            text-align: center;
+        }
+        
+        .hero-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: 
+                radial-gradient(circle at 20% 30%, rgba(37, 99, 235, 0.3) 0%, transparent 40%),
+                radial-gradient(circle at 80% 70%, rgba(245, 158, 11, 0.3) 0%, transparent 40%),
+                linear-gradient(to bottom, #1e293b, #0f172a);
+            z-index: -2;
+        }
+        
+        .hero-section::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 100px;
+            background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 120' preserveAspectRatio='none'%3E%3Cpath d='M1200 120L0 16.48 0 0 1200 0 1200 120z' fill='%23f8fafc'%3E%3C/path%3E%3C/svg%3E");
+            background-size: cover;
+            background-repeat: no-repeat;
+            z-index: -1;
+        }
+        
+        /* Modern Section Titles */
+        .section-title {
+            position: relative;
+            display: inline-block;
+            margin-bottom: 60px;
+            font-weight: 700;
+            color: var(--dark);
+        }
+        
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 4px;
+            background: linear-gradient(90deg, var(--primary), var(--secondary));
+            border-radius: 2px;
+        }
+        .client-card {
+        background: #fff;
+        border-radius: 12px;
+        padding: 30px;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        transition: all 0.3s ease;
+        border: 1px solid rgba(0,0,0,0.05);
+        text-align: center;
+    }
+    
+    .client-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    }
+    
+    .client-icon {
+        width: 70px;
+        height: 70px;
+        margin: 0 auto 20px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-size: 28px;
+    }
+    
+    .client-card h4 {
+        margin-bottom: 15px;
+        color: #2c3e50;
+    }
+    
+    .client-card p {
+        margin-bottom: 20px;
+        font-size: 15px;
+    }
+    
+    .badge {
+        padding: 5px 12px;
+        border-radius: 20px;
+        font-weight: 500;
+        font-size: 13px;
+    }
+    
+    .bg-primary-light {
+        background-color: rgba(13,110,253,0.1);
+        color: #0d6efd;
+    }
+    
+    .bg-danger-light {
+        background-color: rgba(220,53,69,0.1);
+        color: #dc3545;
+    }
+    
+    .bg-success-light {
+        background-color: rgba(25,135,84,0.1);
+        color: #198754;
+    }
+    
+    .bg-warning-light {
+        background-color: rgba(255,193,7,0.1);
+        color: #ffc107;
+    }
+    
+    .bg-info-light {
+        background-color: rgba(13,202,240,0.1);
+        color: #0dcaf0;
+    }
+    
+    .bg-secondary-light {
+        background-color: rgba(108,117,125,0.1);
+        color: #6c757d;
+    }
+    
+        /* Modern Feature Cards */
+        .feature-card {
+            border: none;
+            border-radius: 16px;
+            overflow: hidden;
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            height: 100%;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-10px) scale(1.02);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        
+        .feature-icon {
+            width: 80px;
+            height: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            color: white;
+            font-size: 32px;
+            border-radius: 16px;
+            margin: 0 auto 20px;
+            box-shadow: 0 10px 15px -3px rgba(37, 99, 235, 0.3);
+        }
+        
+        /* Modern Stats Counter */
+        .stats-item {
+            position: relative;
+            padding: 30px;
+            text-align: center;
+            z-index: 1;
+        }
+        
+        .stats-item::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, rgba(37, 99, 235, 0.1), rgba(245, 158, 11, 0.1));
+            border-radius: 16px;
+            z-index: -1;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        
+        .stats-item:hover::before {
+            opacity: 1;
+        }
+        
+        .stats-number {
+            font-size: 48px;
+            font-weight: 700;
+            background: linear-gradient(90deg, var(--primary), var(--secondary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 10px;
+        }
+        
+        /* Modern Button Styles */
+        .btn-modern {
+            position: relative;
+            overflow: hidden;
+            border: none;
+            border-radius: 12px;
+            padding: 12px 24px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        }
+        
+        .btn-modern::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, rgba(255,255,255,0.1), rgba(255,255,255,0.3));
+            transform: translateX(-100%);
+            transition: transform 0.3s ease;
+        }
+        
+        .btn-modern:hover::after {
+            transform: translateX(0);
+        }
+        
+        .btn-primary {
+            background: linear-gradient(90deg, var(--primary), var(--primary-dark));
+        }
+        
+        .btn-outline-primary {
+            background: transparent;
+            border: 2px solid var(--primary);
+            color: var(--primary);
+        }
+        
+        .btn-outline-primary:hover {
+            background: linear-gradient(90deg, var(--primary), var(--primary-dark));
+            color: white;
+        }
+        
+        /* Floating Elements */
+        .floating {
+            animation: floating 6s ease-in-out infinite;
+        }
+        
+        @keyframes floating {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-15px); }
+            100% { transform: translateY(0px); }
+        }
+        
+        /* Custom Shape Dividers */
+        .wave-shape {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            overflow: hidden;
+            line-height: 0;
+        }
+        
+        .wave-shape svg {
+            position: relative;
+            display: block;
+            width: calc(100% + 1.3px);
+            height: 100px;
+        }
+        
+        .wave-shape .shape-fill {
+            fill: #FFFFFF;
+        }
+        
+        /* Modern Navigation */
+        .navbar {
+            padding: 20px 0;
+            transition: all 0.3s ease;
+        }
+        
+        .navbar.scrolled {
+            padding: 10px 0;
+            background-color: rgba(255, 255, 255, 0.95) !important;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            backdrop-filter: blur(10px);
+        }
+        
+        .nav-link {
+            position: relative;
+            margin: 0 10px;
+            font-weight: 500;
+            color: var(--dark);
+        }
+        
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: linear-gradient(90deg, var(--primary), var(--secondary));
+            transition: width 0.3s ease;
+        }
+        
+        .nav-link:hover::after,
+        .nav-link.active::after {
+            width: 100%;
+        }
+        
+        /* Modern Testimonials */
+        .testimonial-card {
+            border: none;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+        
+        .testimonial-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+        
+        /* 3D Product Card */
+        .product-card-3d {
+            transform-style: preserve-3d;
+            transition: all 0.5s ease;
+            perspective: 1000px;
+        }
+        
+        .product-card-3d:hover {
+            transform: rotateY(15deg) rotateX(5deg);
+        }
+        
+        /* Responsive Adjustments */
+        @media (max-width: 768px) {
+            .hero-section {
+                padding: 120px 0;
+            }
+            
+            .section-title {
+                font-size: 28px;
+            }
+            
+            .stats-number {
+                font-size: 36px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold fs-3" href="#">
+                <span style="color: var(--primary);">سدير</span> 
+                <span style="color: var(--dark);">للصناعة والأعمال</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">الرئيسية</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">عن المصنع</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#products">منتجاتنا</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">خدماتنا</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#clients">عملاؤنا</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">تواصل معنا</a>
+                    </li>
+                </ul>
+                <div class="d-flex">
+                    <a href="#contact" class="btn btn-outline-primary btn-modern me-2">طلب عرض سعر</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <h1 class="display-3 fw-bold mb-4 animate__animated animate__fadeInDown">حماية متكاملة لبيئات العمل الخطرة</h1>
+                    <p class="lead mb-5 animate__animated animate__fadeIn animate__delay-1s">مصنع سدير للصناعة والأعمال يقدم حلول حماية شخصية مبتكرة وفق أعلى معايير الجودة العالمية</p>
+                    <div class="d-flex justify-content-center gap-3 animate__animated animate__fadeIn animate__delay-2s">
+                        <a href="#products" class="btn btn-primary btn-modern btn-lg px-4">استكشف المنتجات</a>
+                        <a href="#contact" class="btn btn-outline-light btn-modern btn-lg px-4">تواصل معنا</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="wave-shape">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+            </svg>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5 bg-white">
+        <div class="container py-5">
+            <h2 class="section-title text-center animate__animated animate__fadeIn">عن مصنع سدير</h2>
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <div class="position-relative">
+                        <img src="https://images.unsplash.com/photo-1581093057305-25a0a5b9a0b7?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="عن المصنع" class="img-fluid rounded-4 shadow-lg">
+                        <div class="position-absolute bottom-0 end-0 bg-white p-3 rounded-3 shadow-sm" style="transform: translate(20px, 20px);">
+                            <div class="d-flex align-items-center">
+                                <div class="bg-primary rounded-circle p-2 me-2">
+                                    <i class="fas fa-award text-white"></i>
+                                </div>
+                                <div>
+                                    <h6 class="mb-0">شهادة الجودة</h6>
+                                    <small class="text-muted">ISO 9001:2015</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="ps-lg-5">
+                        <h3 class="mb-4 fw-bold">نحن الأفضل في مجال معدات الحماية الشخصية</h3>
+                        <p class="mb-4 text-gray">مصنع متخصص في تصنيع وتوفير معدات الحماية الشخصية في المملكة العربية السعودية، يقدم حلولًا متكاملة لحماية الأفراد في البيئات الصناعية والكيميائية والبيولوجية والإشعاعية، باستخدام أحدث التقنيات والمعايير العالمية.</p>
+                        
+                        <div class="row gy-3">
+                            <div class="col-md-6">
+                                <div class="d-flex align-items-start">
+                                    <div class="feature-icon">
+                                        <i class="fas fa-check"></i>
+                                    </div>
+                                    <div class="ms-3">
+                                        <h5 class="mb-1">منتجات عالية الجودة</h5>
+                                        <p class="small text-muted mb-0">معايير تصنيع عالمية</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="d-flex align-items-start">
+                                    <div class="feature-icon">
+                                        <i class="fas fa-shield-alt"></i>
+                                    </div>
+                                    <div class="ms-3">
+                                        <h5 class="mb-1">معايير أمان عالمية</h5>
+                                        <p class="small text-muted mb-0">حماية مثبتة علمياً</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="d-flex align-items-start">
+                                    <div class="feature-icon">
+                                        <i class="fas fa-cogs"></i>
+                                    </div>
+                                    <div class="ms-3">
+                                        <h5 class="mb-1">حلول مخصصة</h5>
+                                        <p class="small text-muted mb-0">تصميم حسب الطلب</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="d-flex align-items-start">
+                                    <div class="feature-icon">
+                                        <i class="fas fa-headset"></i>
+                                    </div>
+                                    <div class="ms-3">
+                                        <h5 class="mb-1">دعم فني متكامل</h5>
+                                        <p class="small text-muted mb-0">طوال اليوم</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-4 pt-3">
+                            <a href="#" class="btn btn-primary btn-modern">المزيد عنا</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Vision & Mission -->
+    <section class="py-5 bg-light">
+        <div class="container py-5">
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="neumorphic-card h-100 p-4 p-lg-5">
+                        <div class="floating mb-4">
+                            <div class="feature-icon">
+                                <i class="fas fa-eye"></i>
+                            </div>
+                        </div>
+                        <h3 class="fw-bold mb-3">رؤيتنا</h3>
+                        <p class="text-muted">أن نكون الرائدين في توفير حلول حماية شخصية مبتكرة وفعالة تعزز أمان الأفراد في بيئات العمل الخطرة.</p>
+                        <div class="mt-4">
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="bg-primary bg-opacity-10 p-2 rounded me-3">
+                                    <i class="fas fa-rocket text-primary"></i>
+                                </div>
+                                <span>الريادة في مجال الحماية</span>
+                            </div>
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="bg-primary bg-opacity-10 p-2 rounded me-3">
+                                    <i class="fas fa-lightbulb text-primary"></i>
+                                </div>
+                                <span>الابتكار المستمر</span>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <div class="bg-primary bg-opacity-10 p-2 rounded me-3">
+                                    <i class="fas fa-globe text-primary"></i>
+                                </div>
+                                <span>التوسع الإقليمي</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="neumorphic-card h-100 p-4 p-lg-5">
+                        <div class="floating mb-4">
+                            <div class="feature-icon">
+                                <i class="fas fa-bullseye"></i>
+                            </div>
+                        </div>
+                        <h3 class="fw-bold mb-3">رسالتنا</h3>
+                        <p class="text-muted">توفير منتجات حماية شخصية عالية الجودة باستخدام أحدث التقنيات، تساهم في حماية الأفراد وتقليل الاعتماد على الاستيراد، مع الالتزام بالمعايير الدولية.</p>
+                        <div class="mt-4">
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="bg-primary bg-opacity-10 p-2 rounded me-3">
+                                    <i class="fas fa-check-circle text-primary"></i>
+                                </div>
+                                <span>جودة لا تقبل المساومة</span>
+                            </div>
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="bg-primary bg-opacity-10 p-2 rounded me-3">
+                                    <i class="fas fa-users text-primary"></i>
+                                </div>
+                                <span>حماية الأفراد أولاً</span>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <div class="bg-primary bg-opacity-10 p-2 rounded me-3">
+                                    <i class="fas fa-industry text-primary"></i>
+                                </div>
+                                <span>تعزيز التصنيع المحلي</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="py-5 bg-white">
+        <div class="container py-5">
+            <h2 class="section-title text-center animate__animated animate__fadeIn">منتجاتنا</h2>
+            <p class="text-center text-muted mb-5 animate__animated animate__fadeIn animate__delay-1s">نقدم مجموعة متكاملة من معدات الحماية الشخصية المصممة لتلبية أعلى معايير الأمان</p>
+            
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6">
+                    <div class="product-card-3d feature-card h-100">
+                        <div class="card border-0 h-100">
+                           <div class="position-relative overflow-hidden product-image-container">
+    <img src="images/أقنعة الوقاية.jpg" class="img-cover" alt="أقنعة الوقاية">
+    <div class="position-absolute top-0 end-0 bg-primary text-white px-3 py-1 rounded-bl">
+        <small>جديد</small>
+    </div>
+</div>
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between align-items-center mb-2">
+                                    <h5 class="card-title mb-0">أقنعة الوقاية المتطورة</h5>
+                                    <span class="badge bg-primary bg-opacity-10 text-primary">الأكثر مبيعاً</span>
+                                </div>
+                                <p class="card-text text-muted small">للحماية من الملوثات الصناعية والبيولوجية، بتقنيات متطورة تضمن سلامة المستخدم.</p>
+                                <div class="d-flex justify-content-between align-items-center mt-3">
+                                    <a href="#" class="btn btn-sm btn-outline-primary">تفاصيل المنتج</a>
+                                    <div class="text-warning">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star-half-alt"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="product-card-3d feature-card h-100">
+                        <div class="card border-0 h-100">
+                       
+
+<div class="position-relative overflow-hidden product-image-container">
+    <img src="images/مرشحات الأقنعة.jpg"" class="img-cover" alt="مرشحات الأقنعة">
+    <div class="position-absolute top-0 end-0 bg-primary text-white px-3 py-1 rounded-bl">
+        <small>جديد</small>
+    </div>
+</div>
+
+                            <div class="card-body">
+                                <h5 class="card-title mb-2">مرشحات الأقنعة</h5>
+                                <p class="card-text text-muted small">بتقنية HEPA والكربون النشط، توفر حماية ضد الجزيئات الدقيقة والغازات الضارة.</p>
+                                <div class="d-flex justify-content-between align-items-center mt-3">
+                                    <a href="#" class="btn btn-sm btn-outline-primary">تفاصيل المنتج</a>
+                                    <div class="text-warning">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="product-card-3d feature-card h-100">
+                        <div class="card border-0 h-100">
+
+
+                            <div class="position-relative overflow-hidden product-image-container">
+                                <img src="images/Combinaison-kermel-F1-1-1-400x400.jpg" class="img-cover" alt="البدل الوقائية">
+                                <div class="position-absolute top-0 end-0 bg-primary text-white px-3 py-1 rounded-bl">
+                                    <small>جديد</small>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title mb-2">البدل الوقائية</h5>
+                                <p class="card-text text-muted small">مقاومة للهب والماء والزيوت، مصممة لتحمي الجسم من المخاطر الكيميائية والبيولوجية.</p>
+                                <div class="d-flex justify-content-between align-items-center mt-3">
+                                    <a href="#" class="btn btn-sm btn-outline-primary">تفاصيل المنتج</a>
+                                    <div class="text-warning">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="product-card-3d feature-card h-100">
+                        <div class="card border-0 h-100">
+                            <div class="position-relative overflow-hidden" style="height: 200px;">
+                                <img src="https://images.unsplash.com/photo-1581094271901-8022df4466f9?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" class="card-img-top h-100 w-100 object-cover" alt="ملحقات الحماية">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title mb-2">ملحقات الحماية</h5>
+                                <p class="card-text text-muted small">قفازات، أحذية، غطاء رأس - حلول متكاملة لحماية جميع أجزاء الجسم.</p>
+                                <div class="d-flex justify-content-between align-items-center mt-3">
+                                    <a href="#" class="btn btn-sm btn-outline-primary">تفاصيل المنتج</a>
+                                    <div class="text-warning">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star-half-alt"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-5">
+                <a href="#" class="btn btn-primary btn-modern px-4">
+                    <span>عرض جميع المنتجات</span>
+                    <i class="fas fa-arrow-left ms-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="py-5 bg-dark text-white position-relative">
+        <div class="container py-5">
+            <div class="row g-4">
+                <div class="col-md-3 col-6">
+                    <div class="stats-item">
+                        <div class="stats-number" data-count="25">0</div>
+                        <div>سنوات من الخبرة</div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="stats-item">
+                        <div class="stats-number" data-count="3452">0</div>
+                        <div>عملاء راضون</div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="stats-item">
+                        <div class="stats-number" data-count="751">0</div>
+                        <div>منتج متوفر</div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="stats-item">
+                        <div class="stats-number" data-count="592">0</div>
+                        <div>مشروع مكتمل</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="wave-shape">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-5 bg-light">
+        <div class="container py-5">
+            <h2 class="section-title text-center">خدماتنا</h2>
+            <p class="text-center text-muted mb-5">نقدم مجموعة متكاملة من الخدمات لضمان أعلى مستويات الحماية</p>
+            
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="feature-card h-100">
+                        <div class="card border-0 h-100">
+                            <div class="card-body p-4">
+                                <div class="feature-icon mb-3">
+                                    <i class="fas fa-shield-alt"></i>
+                                </div>
+                                <h4 class="mb-3">حلول الحماية المتكاملة</h4>
+                                <p class="text-muted">نقدم أنظمة حماية شخصية متكاملة مصممة خصيصًا لبيئات العمل المختلفة.</p>
+                                <ul class="list-unstyled mt-3">
+                                    <li class="mb-2">
+                                        <i class="fas fa-check-circle text-primary me-2"></i>
+                                        تقييم مخاطر العمل
+                                    </li>
+                                    <li class="mb-2">
+                                        <i class="fas fa-check-circle text-primary me-2"></i>
+                                        تصميم حلول مخصصة
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-check-circle text-primary me-2"></i>
+                                        تنفيذ على أرض الواقع
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="card-footer bg-transparent border-0 pt-0 pb-4 px-4">
+                                <a href="#" class="btn btn-sm btn-outline-primary">المزيد عن الخدمة</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="feature-card h-100">
+                        <div class="card border-0 h-100">
+                            <div class="card-body p-4">
+                                <div class="feature-icon mb-3">
+                                    <i class="fas fa-flask"></i>
+                                </div>
+                                <h4 class="mb-3">اختبارات الجودة</h4>
+                                <p class="text-muted">جميع منتجاتنا تخضع لاختبارات جودة صارمة لضمان فعاليتها وسلامتها.</p>
+                                <ul class="list-unstyled mt-3">
+                                    <li class="mb-2">
+                                        <i class="fas fa-check-circle text-primary me-2"></i>
+                                        اختبارات المعمل
+                                    </li>
+                                    <li class="mb-2">
+                                        <i class="fas fa-check-circle text-primary me-2"></i>
+                                        اختبارات ميدانية
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-check-circle text-primary me-2"></i>
+                                        شهادات مطابقة
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="card-footer bg-transparent border-0 pt-0 pb-4 px-4">
+                                <a href="#" class="btn btn-sm btn-outline-primary">المزيد عن الخدمة</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="feature-card h-100">
+                        <div class="card border-0 h-100">
+                            <div class="card-body p-4">
+                                <div class="feature-icon mb-3">
+                                    <i class="fas fa-headset"></i>
+                                </div>
+                                <h4 class="mb-3">دعم فني متخصص</h4>
+                                <p class="text-muted">فريق دعم فني على أعلى مستوى لتقديم الاستشارات والحلول الفنية.</p>
+                                <ul class="list-unstyled mt-3">
+                                    <li class="mb-2">
+                                        <i class="fas fa-check-circle text-primary me-2"></i>
+                                        استشارات فنية
+                                    </li>
+                                    <li class="mb-2">
+                                        <i class="fas fa-check-circle text-primary me-2"></i>
+                                        تدريب العاملين
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-check-circle text-primary me-2"></i>
+                                        دعم طوال اليوم
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="card-footer bg-transparent border-0 pt-0 pb-4 px-4">
+                                <a href="#" class="btn btn-sm btn-outline-primary">المزيد عن الخدمة</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+  <!-- Clients Section - Modern Design -->
+<section id="clients" class="py-5 bg-white">
+    <div class="container py-5">
+        <div class="text-center mb-5">
+            <h2 class="section-title">عملاؤنا</h2>
+            <p class="text-muted">نفتخر بشراكتنا مع أبرز المؤسسات والجهات في مختلف القطاعات</p>
+        </div>
+
+        <!-- Client Categories Grid -->
+        <div class="row g-4">
+            <!-- Military -->
+            <div class="col-md-6 col-lg-4">
+                <div class="client-card h-100">
+                    <div class="client-icon bg-primary">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h4>القوات العسكرية</h4>
+                    <p class="text-muted">توفير معدات حماية شخصية متخصصة للقوات العسكرية وفق أعلى المعايير المطلوبة</p>
+                    <div class="client-tag">
+                        <span class="badge bg-primary-light">حماية متكاملة</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- High Containment Labs -->
+            <div class="col-md-6 col-lg-4">
+                <div class="client-card h-100">
+                    <div class="client-icon bg-danger">
+                        <i class="fas fa-virus"></i>
+                    </div>
+                    <h4>المختبرات عالية الاحتواء</h4>
+                    <p class="text-muted">حلول متكاملة للعاملين في بيئات عالية الخطورة مع توفير حلول مخصصة لكل حالة</p>
+                    <div class="client-tag">
+                        <span class="badge bg-danger-light">حماية من الفيروسات</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Medical -->
+            <div class="col-md-6 col-lg-4">
+                <div class="client-card h-100">
+                    <div class="client-icon bg-success">
+                        <i class="fas fa-hospital"></i>
+                    </div>
+                    <h4>المختبرات الطبية</h4>
+                    <p class="text-muted">توفير معدات حماية عالية الجودة للعاملين في المجالات الطبية والصحية</p>
+                    <div class="client-tag">
+                        <span class="badge bg-success-light">معايير طبية</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mining -->
+            <div class="col-md-6 col-lg-4">
+                <div class="client-card h-100">
+                    <div class="client-icon bg-warning">
+                        <i class="fas fa-hammer"></i>
+                    </div>
+                    <h4>قطاع التعدين</h4>
+                    <p class="text-muted">حلول حماية متكاملة للعاملين في قطاعات التعدين والبتروكيماويات</p>
+                    <div class="client-tag">
+                        <span class="badge bg-warning-light">بيئات قاسية</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Chemical -->
+            <div class="col-md-6 col-lg-4">
+                <div class="client-card h-100">
+                    <div class="client-icon bg-info">
+                        <i class="fas fa-flask"></i>
+                    </div>
+                    <h4>المعامل الكيميائية</h4>
+                    <p class="text-muted">حماية شاملة من جميع أنواع المخاطر الكيميائية والمذيبات الخطرة</p>
+                    <div class="client-tag">
+                        <span class="badge bg-info-light">مقاومة كيميائية</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Additional Client -->
+            <div class="col-md-6 col-lg-4">
+                <div class="client-card h-100">
+                    <div class="client-icon bg-secondary">
+                        <i class="fas fa-industry"></i>
+                    </div>
+                    <h4>القطاع الصناعي</h4>
+                    <p class="text-muted">حلول متكاملة للحماية الشخصية في مختلف البيئات الصناعية</p>
+                    <div class="client-tag">
+                        <span class="badge bg-secondary-light">حماية صناعية</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Testimonials -->
+    <section class="py-5 bg-primary text-white position-relative">
+        <div class="container py-5">
+            <h2 class="section-title text-center text-white">آراء عملائنا</h2>
+            <p class="text-center text-white-50 mb-5">ما يقوله عملاؤنا عن جودة منتجاتنا وخدماتنا</p>
+            
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="testimonial-card h-100 bg-white text-dark p-4">
+                        <div class="d-flex align-items-center mb-3">
+                            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="عميل" class="rounded-circle me-3" width="50">
+                            <div>
+                                <h6 class="mb-0">أحمد السديري</h6>
+                                <small class="text-muted">مدير السلامة - شركة النفط</small>
+                            </div>
+                        </div>
+                        <div class="mb-3 text-warning">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="mb-0">"منتجات مصنع سدير غيرت مفهومنا للحماية الشخصية في مواقع العمل، الجودة لا تقارن والخدمة ممتازة."</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="testimonial-card h-100 bg-white text-dark p-4">
+                        <div class="d-flex align-items-center mb-3">
+                            <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="عميل" class="rounded-circle me-3" width="50">
+                            <div>
+                                <h6 class="mb-0">د. نورة الفهد</h6>
+                                <small class="text-muted">مديرة المختبرات - مستشفى الجامعة</small>
+                            </div>
+                        </div>
+                        <div class="mb-3 text-warning">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <p class="mb-0">"نستخدم معدات الحماية من سدير في مختبراتنا عالية الخطورة منذ 3 سنوات ولم نواجه أي مشاكل، موثوقة جدًا."</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="testimonial-card h-100 bg-white text-dark p-4">
+                        <div class="d-flex align-items-center mb-3">
+                            <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="عميل" class="rounded-circle me-3" width="50">
+                            <div>
+                                <h6 class="mb-0">م. خالد الرشيد</h6>
+                                <small class="text-muted">مدير المشتريات - شركة التعدين</small>
+                            </div>
+                        </div>
+                        <div class="mb-3 text-warning">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="mb-0">"بعد تجربة عدة موردين، استقرينا على منتجات سدير لجودتها العالية وسعرها التنافسي، أنصح بها بشدة."</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="wave-shape">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="py-5 bg-white">
+        <div class="container py-5">
+            <h2 class="section-title text-center">لماذا تختار مصنع سدير؟</h2>
+            
+            <div class="row align-items-center g-4">
+                <div class="col-lg-6">
+                    <div class="pe-lg-4">
+                        <div class="d-flex align-items-start mb-4">
+                            <div class="feature-icon me-4">
+                                <i class="fas fa-cogs"></i>
+                            </div>
+                            <div>
+                                <h4 class="mb-2">أحدث التقنيات</h4>
+                                <p class="text-muted mb-0">نستخدم أحدث التقنيات في تصنيع معدات الحماية الشخصية لضمان أعلى مستويات الجودة والفعالية، مع تحديث مستمر لخطوط الإنتاج.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="d-flex align-items-start mb-4">
+                            <div class="feature-icon me-4">
+                                <i class="fas fa-globe"></i>
+                            </div>
+                            <div>
+                                <h4 class="mb-2">جودة عالمية</h4>
+                                <p class="text-muted mb-0">منتجاتنا مصنوعة وفقًا لأعلى المعايير العالمية وتخضع لاختبارات جودة صارمة في كل مرحلة من مراحل التصنيع.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="d-flex align-items-start">
+                            <div class="feature-icon me-4">
+                                <i class="fas fa-leaf"></i>
+                            </div>
+                            <div>
+                                <h4 class="mb-2">التزام بيئي</h4>
+                                <p class="text-muted mb-0">نلتزم بالمعايير البيئية في جميع عمليات التصنيع والتغليف والتوزيع، مع استخدام مواد صديقة للبيئة حيثما أمكن.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="position-relative">
+                        <img src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="لماذا تختارنا" class="img-fluid rounded-4 shadow-lg">
+                        <div class="position-absolute bottom-0 start-0 bg-white p-3 rounded-3 shadow-sm" style="transform: translate(-20px, 20px); width: 80%;">
+                            <div class="d-flex align-items-center">
+                                <div class="bg-primary rounded-circle p-2 me-2">
+                                    <i class="fas fa-certificate text-white"></i>
+                                </div>
+                                <div>
+                                    <h6 class="mb-0">ضمان الجودة</h6>
+                                    <small class="text-muted">ضمان لمدة عامين على جميع المنتجات</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5 bg-light">
+        <div class="container py-5">
+            <h2 class="section-title text-center">تواصل معنا</h2>
+            
+            <div class="row g-4">
+                <div class="col-lg-6">
+                    <div class="neumorphic-card p-4 p-lg-5 h-100">
+                        <h4 class="mb-4">أرسل لنا رسالة</h4>
+                        <form>
+                            <div class="mb-3">
+                                <label for="name" class="form-label">الاسم الكامل</label>
+                                <input type="text" class="form-control" id="name" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">البريد الإلكتروني</label>
+                                <input type="email" class="form-control" id="email" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="phone" class="form-label">رقم الهاتف</label>
+                                <input type="tel" class="form-control" id="phone">
+                            </div>
+                            <div class="mb-3">
+                                <label for="message" class="form-label">الرسالة</label>
+                                <textarea class="form-control" id="message" rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-modern w-100">إرسال الرسالة</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="neumorphic-card p-4 p-lg-5 h-100">
+                        <h4 class="mb-4">معلومات التواصل</h4>
+                        <div class="mb-4">
+                            <div class="d-flex align-items-start mb-3">
+                                <div class="feature-icon me-3">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div>
+                                    <h6 class="mb-1">العنوان</h6>
+                                    <p class="text-muted mb-0">المملكة العربية السعودية، الرياض - منطقة الصناعات</p>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-start mb-3">
+                                <div class="feature-icon me-3">
+                                    <i class="fas fa-phone"></i>
+                                </div>
+                                <div>
+                                    <h6 class="mb-1">الهاتف</h6>
+                                    <p class="text-muted mb-0">+966 12 345 6789</p>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-start mb-3">
+                                <div class="feature-icon me-3">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div>
+                                    <h6 class="mb-1">البريد الإلكتروني</h6>
+                                    <p class="text-muted mb-0">info@sudair-ppe.com</p>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-start">
+                                <div class="feature-icon me-3">
+                                    <i class="fas fa-clock"></i>
+                                </div>
+                                <div>
+                                    <h6 class="mb-1">ساعات العمل</h6>
+                                    <p class="text-muted mb-0">الأحد - الخميس: 8 صباحًا - 5 مساءً</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-4 pt-3">
+                            <h5 class="mb-3">تابعنا على</h5>
+                            <div class="d-flex">
+                                <a href="#" class="btn btn-outline-primary btn-modern me-2">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a href="#" class="btn btn-outline-primary btn-modern me-2">
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+                                <a href="#" class="btn btn-outline-primary btn-modern me-2">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="#" class="btn btn-outline-primary btn-modern">
+                                    <i class="fab fa-youtube"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-5 bg-dark text-white">
+        <div class="container py-4">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <a class="navbar-brand fw-bold fs-3 mb-3 d-block" href="#">
+                        <span style="color: var(--primary);">سدير</span> 
+                        <span style="color: white;">للصناعة والأعمال</span>
+                    </a>
+                    <p class="text-muted">مصنع متخصص في تصنيع وتوفير معدات الحماية الشخصية في المملكة العربية السعودية، يقدم حلولًا متكاملة لحماية الأفراد في البيئات الصناعية والكيميائية والبيولوجية والإشعاعية.</p>
+                    <div class="social-icons mt-3">
+                        <a href="#" class="me-2"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="me-2"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="me-2"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="me-2"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4">
+                    <h5 class="mb-3">روابط سريعة</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#" class="text-white">الرئيسية</a></li>
+                        <li class="mb-2"><a href="#about" class="text-white">عن المصنع</a></li>
+                        <li class="mb-2"><a href="#products" class="text-white">منتجاتنا</a></li>
+                        <li class="mb-2"><a href="#services" class="text-white">خدماتنا</a></li>
+                        <li class="mb-2"><a href="#contact" class="text-white">تواصل معنا</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-4">
+                    <h5 class="mb-3">منتجاتنا</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#" class="text-white">أقنعة الوقاية</a></li>
+                        <li class="mb-2"><a href="#" class="text-white">مرشحات الأقنعة</a></li>
+                        <li class="mb-2"><a href="#" class="text-white">البدل الوقائية</a></li>
+                        <li class="mb-2"><a href="#" class="text-white">ملحقات الحماية</a></li>
+                        <li class="mb-2"><a href="#" class="text-white">حلول مخصصة</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-4">
+                    <h5 class="mb-3">النشرة البريدية</h5>
+                    <p class="text-muted">اشترك لتصلك آخر أخبارنا وعروضنا.</p>
+                    <form class="mb-3">
+                        <div class="input-group">
+                            <input type="email" class="form-control" placeholder="بريدك الإلكتروني" required>
+                            <button class="btn btn-primary" type="submit">
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </div>
+                    </form>
+                    <div class="d-flex align-items-center">
+                        <i class="fas fa-phone me-2 text-primary"></i>
+                        <div>
+                            <small class="text-muted">للاستفسارات السريعة</small>
+                            <h6 class="mb-0">+966 12 345 6789</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4 bg-secondary">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0 small">&copy; 2023 مصنع سدير للصناعة والأعمال. جميع الحقوق محفوظة.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <p class="mb-0 small">تصميم وتطوير <a href="#" class="text-primary">فريق سدير</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Arabic Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <script>
+        // Navbar scroll effect
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+        
+        // Animate stats counter
+        function animateCounters() {
+            const counters = document.querySelectorAll('.stats-number');
+            const speed = 200;
+            
+            counters.forEach(counter => {
+                const target = +counter.getAttribute('data-count');
+                const count = +counter.innerText;
+                const increment = target / speed;
+                
+                if (count < target) {
+                    counter.innerText = Math.ceil(count + increment);
+                    setTimeout(animateCounters, 1);
+                } else {
+                    counter.innerText = target;
+                }
+            });
+        }
+        
+        // Initialize counters when section is in view
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    animateCounters();
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.5 });
+        
+        const statsSection = document.querySelector('.bg-dark');
+        if (statsSection) {
+            observer.observe(statsSection);
+        }
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
