@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+      <!-- Same head -->
+    <title>الجودة والشهادات - مصنع سدير</title>
+     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+        <link rel="stylesheet" href="css/main.css">
+    <style>
+        /* Improved Certificates Section */
+        .certificates-section {
+            background-color: #f9fafc;
+            padding: 80px 0;
+        }
+        
+        .certificate-card {
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+            background: white;
+            height: 100%;
+            position: relative;
+            border: 1px solid rgba(0,0,0,0.05);
+        }
+        
+        .certificate-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(37, 99, 235, 0.1);
+        }
+        
+        .certificate-badge {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background: var(--primary);
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 600;
+        }
+        
+        .certificate-img-container {
+            height: 180px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 30px;
+            border-bottom: 1px solid rgba(0,0,0,0.05);
+        }
+        
+        .certificate-img {
+            max-height: 100%;
+            max-width: 100%;
+            object-fit: contain;
+        }
+        
+        .certificate-body {
+            padding: 25px;
+        }
+        
+        .certificate-title {
+            font-weight: 700;
+            margin-bottom: 15px;
+            color: var(--dark);
+            font-size: 1.25rem;
+        }
+        
+        .certificate-desc {
+            color: #64748b;
+            margin-bottom: 20px;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+        
+        .certificate-link {
+            display: inline-flex;
+            align-items: center;
+            color: var(--primary);
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s;
+        }
+        
+        .certificate-link:hover {
+            color: var(--primary-dark);
+        }
+        
+        .certificate-link i {
+            margin-right: 8px;
+            transition: transform 0.3s;
+        }
+        
+        .certificate-link:hover i {
+            transform: translateX(-5px);
+        }
+        
+        .section-header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+        
+        .section-title {
+            font-size: 2.2rem;
+            font-weight: 700;
+            color: var(--dark);
+            margin-bottom: 15px;
+            position: relative;
+            display: inline-block;
+        }
+        
+        .section-title:after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 3px;
+            background: linear-gradient(to right, var(--primary), var(--secondary));
+        }
+        
+        .section-subtitle {
+            color: #64748b;
+            font-size: 1.1rem;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+        <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold fs-3" href="#">
+                <span style="color: var(--primary);">سدير</span> 
+                <span style="color: var(--dark);">للصناعة والأعمال</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">الرئيسية</a>
+                    </li>
+                    
+                    <!-- Add this link in the navigation -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="products.html">المنتجات</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">خدماتنا</a>
+                    </li>
+                    <!-- Add to navigation -->
+<li class="nav-item">
+    <a class="nav-link" href="solutions.html">حلول مخصصة</a>
+</li>
+<!-- Add to navigation -->
+<li class="nav-item">
+    <a class="nav-link" href="certifications.html">الجودة والشهادات</a>
+</li>
+<!-- Add to navigation -->
+<li class="nav-item">
+    <a class="nav-link" href="faq.html">الأسئلة الشائعة</a>
+</li>
+                  
+                  
+                </ul>
+                <div class="d-flex">
+                    <a href="quote.html" class="btn btn-outline-primary btn-modern me-2">طلب عرض سعر</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <h1 class="display-4 fw-bold mb-4">الجودة والشهادات</h1>
+                    <p class="lead mb-5">التزامنا بمعايير الجودة العالمية يضمن منتجات آمنة وفعالة لجميع عملائنا</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certificates Section - Improved Design -->
+    <section class="certificates-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">شهاداتنا ومعاييرنا</h2>
+                <p class="section-subtitle">جميع منتجاتنا مصنوعة وفقًا لأعلى المعايير الدولية وتخضع لاختبارات جودة صارمة</p>
+            </div>
+            
+            <div class="row g-4">
+                <!-- Certificate 1 - ISO -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="certificate-card">
+                        <div class="certificate-badge">معتمد</div>
+                        <div class="certificate-img-container">
+                            <img src="images/OI PLAYSCHOOL IS NOW ISO 9001_2008 CERTIFIED PRESCHOOL_ Oi Play school is the Best PlaySchool in india____.jpeg" alt="شهادة ISO 9001" class="certificate-img">
+                        </div>
+                        <div class="certificate-body">
+                            <h3 class="certificate-title">ISO 9001:2015</h3>
+                            <p class="certificate-desc">
+                                شهادة نظام إدارة الجودة التي تؤكد التزامنا بتطبيق أفضل الممارسات في جميع عمليات التصنيع والتصميم.
+                            </p>
+                            <a href="#" class="certificate-link">
+                                <i class="fas fa-file-pdf"></i> عرض الشهادة الكاملة
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Certificate 2 - CE Mark -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="certificate-card">
+                        <div class="certificate-badge">معتمد</div>
+                        <div class="certificate-img-container">
+                            <img src="images/ce-mark.png" alt="علامة CE" class="certificate-img">
+                        </div>
+                        <div class="certificate-body">
+                            <h3 class="certificate-title">علامة CE الأوروبية</h3>
+                            <p class="certificate-desc">
+                                توافق منتجاتنا مع متطلبات الصحة والسلامة والأداء البيئي في الاتحاد الأوروبي وفقاً للتشريعات الأوروبية.
+                            </p>
+                            <a href="#" class="certificate-link">
+                                <i class="fas fa-file-pdf"></i> عرض التفاصيل الفنية
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Certificate 3 - NIOSH -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="certificate-card">
+                        <div class="certificate-badge">معتمد</div>
+                        <div class="certificate-img-container">
+                            <img src="images/1.jpeg" alt="شهادة NIOSH" class="certificate-img">
+                        </div>
+                        <div class="certificate-body">
+                            <h3 class="certificate-title">NIOSH N95</h3>
+                            <p class="certificate-desc">
+                                أقنعتنا معتمدة من المعهد الوطني الأمريكي للسلامة والصحة المهنية لمستوى حماية N95 مع كفاءة ترشيح 95%.
+                            </p>
+                            <a href="#" class="certificate-link">
+                                <i class="fas fa-file-pdf"></i> عرض تقارير الاختبار
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            
+            <!-- Additional Certificates (hidden by default, can be toggled) -->
+            <div class="row mt-4" id="moreCertificates" style="display: none;">
+                <!-- Additional certificates can be added here -->
+            </div>
+            
+          
+        </div>
+    </section>
+
+     <!-- Quality Process -->
+    <section class="py-5 bg-light">
+        <div class="container py-5">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-5 mb-lg-0">
+                    <h2 class="fw-bold mb-4">عملية ضمان الجودة</h2>
+                    <p class="text-muted mb-5">نتبع عملية صارمة من 6 مراحل لضمان جودة كل منتج يخرج من مصنعنا</p>
+                    
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <h5>فحص المواد الخام</h5>
+                            <p class="text-muted small">جميع المواد الخام تخضع لفحوصات دقيقة قبل دخول خط الإنتاج</p>
+                        </div>
+                        <div class="timeline-item">
+                            <h5>مراقبة الإنتاج</h5>
+                            <p class="text-muted small">مراقبة مستمرة لعمليات التصنيع لضمان التطابق مع المواصفات</p>
+                        </div>
+                        <div class="timeline-item">
+                            <h5>اختبارات المعمل</h5>
+                            <p class="text-muted small">اختبارات شاملة في معملنا الداخلي لقياس أداء المنتجات</p>
+                        </div>
+                        <div class="timeline-item">
+                            <h5>اختبارات الأداء</h5>
+                            <p class="text-muted small">اختبارات ميدانية في بيئات عمل حقيقية</p>
+                        </div>
+                        <div class="timeline-item">
+                            <h5>مراجعة الجودة النهائية</h5>
+                            <p class="text-muted small">فحص كل وحدة قبل التغليف والشحن</p>
+                        </div>
+                        <div class="timeline-item">
+                            <h5>تتبع الجودة بعد البيع</h5>
+                            <p class="text-muted small">جمع ملاحظات العملاء لتحسين المنتجات باستمرار</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="position-relative">
+                        <img  src="images/download new.jpeg" style="max-width: 78%;" alt="مراقبة الجودة"  class="img-fluid rounded-3 shadow" >
+                        <div class="position-absolute bottom-0 start-0 bg-white p-3 rounded-3 shadow-sm" style="transform: translate(-20px, 20px);">
+                            <div class="d-flex align-items-center">
+                                <div class="bg-primary rounded-circle p-2 me-2">
+                                    <i class="fas fa-microscope text-white"></i>
+                                </div>
+                                <div>
+                                    <h6 class="mb-0">معمل الجودة</h6>
+                                    <small class="text-muted">أحدث أجهزة الاختبار</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+         <!-- Footer -->
+    <footer class="py-5 bg-dark text-white">
+        <div class="container py-4">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <a class="navbar-brand fw-bold fs-3 mb-3 d-block" href="#">
+                        <span style="color: var(--primary);">سدير</span> 
+                        <span style="color: white;">للصناعة والأعمال</span>
+                    </a>
+                    <p class="text-muted">مصنع متخصص في تصنيع وتوفير معدات الحماية الشخصية في المملكة العربية السعودية، يقدم حلولًا متكاملة لحماية الأفراد في البيئات الصناعية والكيميائية والبيولوجية والإشعاعية.</p>
+                    <div class="social-icons mt-3">
+                        <a href="#" class="me-2"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="me-2"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="me-2"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="me-2"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4">
+                    <h5 class="mb-3">روابط سريعة</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#" class="text-white">الرئيسية</a></li>
+                        <li class="mb-2"><a href="#about" class="text-white">عن المصنع</a></li>
+                        <li class="mb-2"><a href="#products" class="text-white">منتجاتنا</a></li>
+                        <li class="mb-2"><a href="#services" class="text-white">خدماتنا</a></li>
+                        <li class="mb-2"><a href="#contact" class="text-white">تواصل معنا</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-4">
+                    <h5 class="mb-3">منتجاتنا</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#" class="text-white">أقنعة الوقاية</a></li>
+                        <li class="mb-2"><a href="#" class="text-white">مرشحات الأقنعة</a></li>
+                        <li class="mb-2"><a href="#" class="text-white">البدل الوقائية</a></li>
+                        <li class="mb-2"><a href="#" class="text-white">ملحقات الحماية</a></li>
+                        <li class="mb-2"><a href="#" class="text-white">حلول مخصصة</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-4">
+                    <h5 class="mb-3">النشرة البريدية</h5>
+                    <p class="text-muted">اشترك لتصلك آخر أخبارنا وعروضنا.</p>
+                    <form class="mb-3">
+                        <div class="input-group">
+                            <input type="email" class="form-control" placeholder="بريدك الإلكتروني" required>
+                            <button class="btn btn-primary" type="submit">
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </div>
+                    </form>
+                    <div class="d-flex align-items-center">
+                        <i class="fas fa-phone me-2 text-primary"></i>
+                        <div>
+                            <small class="text-muted">للاستفسارات السريعة</small>
+                            <h6 class="mb-0">+966 12 345 6789</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4 bg-secondary">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0 small">&copy; 2023 مصنع سدير للصناعة والأعمال. جميع الحقوق محفوظة.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <p class="mb-0 small">تصميم وتطوير <a href="#" class="text-primary">فريق سدير</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Arabic Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+
+  
+</body>
+</html>

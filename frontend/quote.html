@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <title>طلب عرض سعر - مصنع سدير</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <style>
+        .quote-progress {
+            position: relative;
+            padding-bottom: 50px;
+        }
+        .quote-progress::after {
+            content: '';
+            position: absolute;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80%;
+            height: 3px;
+            background: #e9ecef;
+            z-index: 1;
+        }
+        .progress-step {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+        }
+        .step-number {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 10px;
+            background: #e9ecef;
+            color: #6c757d;
+            font-weight: bold;
+            transition: all 0.3s;
+        }
+        .step-label {
+            font-size: 14px;
+            color: #6c757d;
+            transition: all 0.3s;
+        }
+        .progress-step.active .step-number {
+            background: var(--primary);
+            color: white;
+            transform: scale(1.1);
+        }
+        .progress-step.active .step-label {
+            color: var(--primary);
+            font-weight: bold;
+        }
+        .progress-step.completed .step-number {
+            background: var(--primary);
+            color: white;
+        }
+        .progress-step.completed .step-number::after {
+            content: '\f00c';
+            font-family: 'Font Awesome 5 Free';
+            font-weight: 900;
+        }
+        .progress-step.completed .step-label {
+            color: var(--dark);
+        }
+        .product-card {
+            border: 1px solid #eee;
+            border-radius: 10px;
+            transition: all 0.3s;
+            overflow: hidden;
+        }
+        .product-card:hover {
+            border-color: var(--primary);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+        .product-img {
+            height: 120px;
+            object-fit: contain;
+            padding: 10px;
+        }
+        .form-section {
+            display: none;
+        }
+        .form-section.active {
+            display: block;
+            animation: fadeIn 0.5s ease;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .form-control:focus, .form-select:focus {
+            border-color: var(--primary);
+            box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.15);
+        }
+        .required-field::after {
+            content: " *";
+            color: #dc3545;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold fs-3" href="#">
+                <span style="color: var(--primary);">سدير</span> 
+                <span style="color: var(--dark);">للصناعة والأعمال</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">الرئيسية</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="products.html">المنتجات</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">خدماتنا</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="solutions.html">حلول مخصصة</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="certifications.html">الجودة والشهادات</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="faq.html">الأسئلة الشائعة</a>
+                    </li>
+                </ul>
+                <div class="d-flex">
+                    <a href="quote.html" class="btn btn-primary btn-modern">طلب عرض سعر</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <h1 class="display-4 fw-bold mb-4">طلب عرض سعر</h1>
+                    <p class="lead mb-5">أكمل النموذج وسيتواصل معك فريق المبيعات خلال 24 ساعة</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quote Progress -->
+    <section class="py-5 bg-white">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="quote-progress">
+                        <div class="row">
+                            <div class="col progress-step completed" id="step1-indicator">
+                                <div class="step-number">1</div>
+                                <div class="step-label">معلومات العميل</div>
+                            </div>
+                            <div class="col progress-step active" id="step2-indicator">
+                                <div class="step-number">2</div>
+                                <div class="step-label">تفاصيل الطلب</div>
+                            </div>
+                            <div class="col progress-step" id="step3-indicator">
+                                <div class="step-number">3</div>
+                                <div class="step-label">التأكيد</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quote Form -->
+    <section class="py-5 bg-light">
+        <div class="container py-4">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="card border-0 shadow-sm rounded-3 overflow-hidden">
+                        <div class="card-body p-4 p-lg-5">
+                            <!-- Step 1: Customer Information -->
+                            <div class="form-section active" id="step1">
+                                <h4 class="mb-4"><i class="fas fa-user-circle me-2 text-primary"></i> معلومات العميل</h4>
+                                
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <label for="fullName" class="form-label required-field">الاسم الكامل</label>
+                                        <input type="text" class="form-control" id="fullName" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="company" class="form-label">اسم الشركة (إن وجد)</label>
+                                        <input type="text" class="form-control" id="company">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="email" class="form-label required-field">البريد الإلكتروني</label>
+                                        <input type="email" class="form-control" id="email" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="phone" class="form-label required-field">رقم الهاتف</label>
+                                        <input type="tel" class="form-control" id="phone" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="country" class="form-label required-field">الدولة</label>
+                                        <select class="form-select" id="country" required>
+                                            <option value="" selected disabled>اختر الدولة</option>
+                                            <option value="SA">المملكة العربية السعودية</option>
+                                            <option value="AE">الإمارات العربية المتحدة</option>
+                                            <option value="KW">الكويت</option>
+                                            <option value="QA">قطر</option>
+                                            <option value="BH">البحرين</option>
+                                            <option value="OM">عُمان</option>
+                                            <option value="other">دولة أخرى</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="city" class="form-label required-field">المدينة</label>
+                                        <input type="text" class="form-control" id="city" required>
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="address" class="form-label">العنوان التفصيلي</label>
+                                        <textarea class="form-control" id="address" rows="2"></textarea>
+                                    </div>
+                                </div>
+                                
+                                <div class="d-flex justify-content-between mt-4">
+                                    <div></div> <!-- Empty div for spacing -->
+                                    <button type="button" class="btn btn-primary" onclick="nextStep(1, 2)">
+                                        التالي <i class="fas fa-arrow-left ms-2"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            
+                            <!-- Step 2: Order Details -->
+                            <div class="form-section" id="step2">
+                                <h4 class="mb-4"><i class="fas fa-clipboard-list me-2 text-primary"></i> تفاصيل الطلب</h4>
+                                
+                                <div class="mb-4">
+                                    <h5 class="mb-3">اختر المنتجات المطلوبة</h5>
+                                    <div class="row g-3">
+                                        <!-- Product 1 -->
+                                        <div class="col-md-4">
+                                            <div class="product-card p-3 h-100">
+                                                <div class="text-center mb-3">
+                                                    <img src="images/أقنعة الوقاية.jpg" alt="قناع وقاية" class="product-img">
+                                                </div>
+                                                <h6 class="text-center">قناع الوقاية المتطور</h6>
+                                                <p class="text-muted text-center small mb-3">كود: SD-MASK-2023</p>
+                                                <div class="mb-3">
+                                                    <label class="form-label small">الكمية</label>
+                                                    <input type="number" class="form-control" min="1" value="0">
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label class="form-label small">نوع الفلتر</label>
+                                                    <select class="form-select">
+                                                        <option value="">اختر الفلتر</option>
+                                                        <option>HEPA</option>
+                                                        <option>كربون نشط</option>
+                                                        <option>مدمج</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <!-- Product 2 -->
+                                        <div class="col-md-4">
+                                            <div class="product-card p-3 h-100">
+                                                <div class="text-center mb-3">
+                                                    <img src="images/download (8).jpeg" alt="بدلة وقاية" class="product-img">
+                                                </div>
+                                                <h6 class="text-center">بدلة الحماية الكيميائية</h6>
+                                                <p class="text-muted text-center small mb-3">كود: SD-SUIT-2023</p>
+                                                <div class="mb-3">
+                                                    <label class="form-label small">الكمية</label>
+                                                    <input type="number" class="form-control" min="1" value="0">
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label class="form-label small">المقاس</label>
+                                                    <select class="form-select">
+                                                        <option value="">اختر المقاس</option>
+                                                        <option>صغير (S)</option>
+                                                        <option>متوسط (M)</option>
+                                                        <option>كبير (L)</option>
+                                                        <option>كبير جداً (XL)</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <!-- Product 3 -->
+                                        <div class="col-md-4">
+                                            <div class="product-card p-3 h-100">
+                                                <div class="text-center mb-3">
+                                                    <img src="images/مرشحات الأقنعة.jpg" alt="نظارات وقاية" class="product-img">
+                                                </div>
+                                                <h6 class="text-center">نظارات الحماية</h6>
+                                                <p class="text-muted text-center small mb-3">كود: SD-GOGGLE-2023</p>
+                                                <div class="mb-3">
+                                                    <label class="form-label small">الكمية</label>
+                                                    <input type="number" class="form-control" min="1" value="0">
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label class="form-label small">النوع</label>
+                                                    <select class="form-select">
+                                                        <option value="">اختر النوع</option>
+                                                        <option>شفافة</option>
+                                                        <option>ملونة</option>
+                                                        <option>مضببة</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <button class="btn btn-outline-primary w-100 mt-3">
+                                        <i class="fas fa-plus me-2"></i> إضافة منتج مخصص
+                                    </button>
+                                </div>
+                                
+                                <div class="mb-4">
+                                    <h5 class="mb-3">معلومات إضافية</h5>
+                                    <div class="mb-3">
+                                        <label for="usage" class="form-label">الاستخدام المقصود للمنتجات</label>
+                                        <textarea class="form-control" id="usage" rows="2" placeholder="ما هو الغرض من استخدام هذه المنتجات؟"></textarea>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="budget" class="form-label">الميزانية المتوقعة (إن وجدت)</label>
+                                        <input type="text" class="form-control" id="budget" placeholder="مثال: 5000 ريال سعودي">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="deadline" class="form-label">موعد التسليم المطلوب</label>
+                                        <select class="form-select" id="deadline">
+                                            <option value="" selected disabled>اختر الموعد</option>
+                                            <option>عادي (2-3 أسابيع)</option>
+                                            <option>عاجل (7-10 أيام)</option>
+                                            <option>فوري (أقل من أسبوع)</option>
+                                            <option>ليس لدي موعد محدد</option>
+                                        </select>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="notes" class="form-label">ملاحظات إضافية</label>
+                                        <textarea class="form-control" id="notes" rows="3" placeholder="أي متطلبات خاصة أو تفاصيل إضافية"></textarea>
+                                    </div>
+                                </div>
+                                
+                                <div class="d-flex justify-content-between mt-4">
+                                    <button type="button" class="btn btn-outline-secondary" onclick="prevStep(2, 1)">
+                                        <i class="fas fa-arrow-right me-2"></i> السابق
+                                    </button>
+                                    <button type="button" class="btn btn-primary" onclick="nextStep(2, 3)">
+                                        التالي <i class="fas fa-arrow-left ms-2"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            
+                            <!-- Step 3: Confirmation -->
+                            <div class="form-section" id="step3">
+                                <h4 class="mb-4"><i class="fas fa-check-circle me-2 text-primary"></i> تأكيد الطلب</h4>
+                                
+                                <div class="alert alert-success">
+                                    <h5 class="alert-heading"><i class="fas fa-check-circle me-2"></i> شكراً لتقديم طلب عرض السعر</h5>
+                                    <p class="mb-0">سيقوم فريق المبيعات لدينا بمراجعة طلبك والتواصل معك خلال 24 ساعة عمل.</p>
+                                </div>
+                                
+                                <div class="card border-0 bg-light mb-4">
+                                    <div class="card-body">
+                                        <h5 class="card-title mb-3">ملخص الطلب</h5>
+                                        
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <h6 class="text-primary">معلومات العميل</h6>
+                                                <ul class="list-unstyled">
+                                                    <li class="mb-2"><strong>الاسم:</strong> <span id="summary-name"></span></li>
+                                                    <li class="mb-2"><strong>الشركة:</strong> <span id="summary-company"></span></li>
+                                                    <li class="mb-2"><strong>البريد الإلكتروني:</strong> <span id="summary-email"></span></li>
+                                                    <li class="mb-2"><strong>الهاتف:</strong> <span id="summary-phone"></span></li>
+                                                    <li class="mb-2"><strong>المدينة:</strong> <span id="summary-city"></span></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <h6 class="text-primary">تفاصيل الطلب</h6>
+                                                <ul class="list-unstyled">
+                                                    <li class="mb-2"><strong>عدد المنتجات:</strong> 3 منتجات</li>
+                                                    <li class="mb-2"><strong>الاستخدام:</strong> <span id="summary-usage"></span></li>
+                                                    <li class="mb-2"><strong>موعد التسليم:</strong> <span id="summary-deadline"></span></li>
+                                                    <li class="mb-2"><strong>ملاحظات:</strong> <span id="summary-notes"></span></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="d-flex justify-content-between">
+                                    <button type="button" class="btn btn-outline-secondary" onclick="prevStep(3, 2)">
+                                        <i class="fas fa-arrow-right me-2"></i> السابق
+                                    </button>
+                                    <button type="button" class="btn btn-success" onclick="submitQuote()">
+                                        <i class="fas fa-paper-plane me-2"></i> إرسال الطلب
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-5 bg-dark text-white">
+        <div class="container py-4">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <a class="navbar-brand fw-bold fs-3 mb-3 d-block" href="#">
+                        <span style="color: var(--primary);">سدير</span> 
+                        <span style="color: white;">للصناعة والأعمال</span>
+                    </a>
+                    <p class="text-muted">مصنع متخصص في تصنيع وتوفير معدات الحماية الشخصية في المملكة العربية السعودية، يقدم حلولًا متكاملة لحماية الأفراد في البيئات الصناعية والكيميائية والبيولوجية والإشعاعية.</p>
+                    <div class="social-icons mt-3">
+                        <a href="#" class="me-2"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="me-2"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="me-2"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="me-2"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4">
+                    <h5 class="mb-3">روابط سريعة</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="index.html" class="text-white">الرئيسية</a></li>
+                        <li class="mb-2"><a href="products.html" class="text-white">منتجاتنا</a></li>
+                        <li class="mb-2"><a href="services.html" class="text-white">خدماتنا</a></li>
+                        <li class="mb-2"><a href="solutions.html" class="text-white">حلول مخصصة</a></li>
+                        <li class="mb-2"><a href="contact.html" class="text-white">تواصل معنا</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-4">
+                    <h5 class="mb-3">منتجاتنا</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#" class="text-white">أقنعة الوقاية</a></li>
+                        <li class="mb-2"><a href="#" class="text-white">مرشحات الأقنعة</a></li>
+                        <li class="mb-2"><a href="#" class="text-white">البدل الوقائية</a></li>
+                        <li class="mb-2"><a href="#" class="text-white">ملحقات الحماية</a></li>
+                        <li class="mb-2"><a href="#" class="text-white">حلول مخصصة</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-4">
+                    <h5 class="mb-3">النشرة البريدية</h5>
+                    <p class="text-muted">اشترك لتصلك آخر أخبارنا وعروضنا.</p>
+                    <form class="mb-3">
+                        <div class="input-group">
+                            <input type="email" class="form-control" placeholder="بريدك الإلكتروني" required>
+                            <button class="btn btn-primary" type="submit">
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </div>
+                    </form>
+                    <div class="d-flex align-items-center">
+                        <i class="fas fa-phone me-2 text-primary"></i>
+                        <div>
+                            <small class="text-muted">للاستفسارات السريعة</small>
+                            <h6 class="mb-0">+966 12 345 6789</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4 bg-secondary">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0 small">&copy; 2023 مصنع سدير للصناعة والأعمال. جميع الحقوق محفوظة.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <p class="mb-0 small">تصميم وتطوير <a href="#" class="text-primary">فريق سدير</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Arabic Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <script>
+        // Form navigation functions
+        function nextStep(current, next) {
+            // Validate current step before proceeding
+            if(validateStep(current)) {
+                document.getElementById('step' + current).classList.remove('active');
+                document.getElementById('step' + next).classList.add('active');
+                
+                document.getElementById('step' + current + '-indicator').classList.remove('active');
+                document.getElementById('step' + current + '-indicator').classList.add('completed');
+                document.getElementById('step' + next + '-indicator').classList.add('active');
+                
+                // Update summary in step 3
+                if(next === 3) {
+                    updateSummary();
+                }
+                
+                // Scroll to top of form
+                window.scrollTo({
+                    top: document.querySelector('.hero-section').offsetHeight,
+                    behavior: 'smooth'
+                });
+            }
+        }
+        
+        function prevStep(current, prev) {
+            document.getElementById('step' + current).classList.remove('active');
+            document.getElementById('step' + prev).classList.add('active');
+            
+            document.getElementById('step' + current + '-indicator').classList.remove('active');
+            document.getElementById('step' + prev + '-indicator').classList.add('active');
+            
+            // Scroll to top of form
+            window.scrollTo({
+                top: document.querySelector('.hero-section').offsetHeight,
+                behavior: 'smooth'
+            });
+        }
+        
+        function validateStep(step) {
+            if(step === 1) {
+                const requiredFields = ['fullName', 'email', 'phone', 'country', 'city'];
+                let isValid = true;
+                
+                requiredFields.forEach(field => {
+                    const element = document.getElementById(field);
+                    if(!element.value) {
+                        element.classList.add('is-invalid');
+                        isValid = false;
+                    } else {
+                        element.classList.remove('is-invalid');
+                    }
+                });
+                
+                if(!isValid) {
+                    alert('الرجاء إكمال جميع الحقول المطلوبة');
+                }
+                
+                return isValid;
+            }
+            return true;
+        }
+        
+        function updateSummary() {
+            // Customer info
+            document.getElementById('summary-name').textContent = document.getElementById('fullName').value;
+            document.getElementById('summary-company').textContent = document.getElementById('company').value || 'غير محدد';
+            document.getElementById('summary-email').textContent = document.getElementById('email').value;
+            document.getElementById('summary-phone').textContent = document.getElementById('phone').value;
+            document.getElementById('summary-city').textContent = document.getElementById('city').value + ', ' + 
+                                                              document.getElementById('country').options[document.getElementById('country').selectedIndex].text;
+            
+            // Order details
+            document.getElementById('summary-usage').textContent = document.getElementById('usage').value || 'غير محدد';
+            document.getElementById('summary-deadline').textContent = document.getElementById('deadline').options[document.getElementById('deadline').selectedIndex]?.text || 'غير محدد';
+            document.getElementById('summary-notes').textContent = document.getElementById('notes').value || 'لا يوجد';
+        }
+        
+        function submitQuote() {
+            // Here you would normally send the form data to the server
+            alert('تم إرسال طلب عرض السعر بنجاح! سيتم التواصل معك قريباً.');
+            
+            // Reset form and go back to step 1
+            document.getElementById('step3').classList.remove('active');
+            document.getElementById('step1').classList.add('active');
+            
+            document.getElementById('step3-indicator').classList.remove('active');
+            document.getElementById('step1-indicator').classList.add('active');
+            document.getElementById('step2-indicator').classList.remove('completed', 'active');
+            document.getElementById('step3-indicator').classList.remove('completed', 'active');
+            
+            // Scroll to top
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+            
+            // Reset form (in a real app, you might not want to do this)
+            document.querySelector('form').reset();
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\Naira\\مصنع منتجات الحماية\\Backend\\Factory\\Factory\\wwwroot\\uploads\\products\\1eca5fa1-66d8-4d7b-980f-12420775d3f2.jpeg",
+      "PackagePath": "staticwebassets\\uploads\\products\\1eca5fa1-66d8-4d7b-980f-12420775d3f2.jpeg"
+    },
+    {
+      "Id": "D:\\Naira\\مصنع منتجات الحماية\\Backend\\Factory\\Factory\\wwwroot\\uploads\\products\\47bc105d-200c-4f7f-94f1-cc9fbcd92ec9.jpg",
+      "PackagePath": "staticwebassets\\uploads\\products\\47bc105d-200c-4f7f-94f1-cc9fbcd92ec9.jpg"
+    },
+    {
+      "Id": "D:\\Naira\\مصنع منتجات الحماية\\Backend\\Factory\\Factory\\wwwroot\\uploads\\products\\892ecabd-7e24-4d8d-900d-0847b9b2c312.png",
+      "PackagePath": "staticwebassets\\uploads\\products\\892ecabd-7e24-4d8d-900d-0847b9b2c312.png"
+    },
+    {
+      "Id": "D:\\Naira\\مصنع منتجات الحماية\\Backend\\Factory\\Factory\\wwwroot\\uploads\\products\\938c4098-90cd-4cdf-ae7b-cc9f9e9add26.jpeg",
+      "PackagePath": "staticwebassets\\uploads\\products\\938c4098-90cd-4cdf-ae7b-cc9f9e9add26.jpeg"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Factory.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Factory.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.Factory.props",
+      "PackagePath": "build\\Factory.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.Factory.props",
+      "PackagePath": "buildMultiTargeting\\Factory.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.Factory.props",
+      "PackagePath": "buildTransitive\\Factory.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

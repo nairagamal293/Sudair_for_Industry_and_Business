@@ -10,418 +10,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <!-- Animate.css -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-    <style>
-        :root {
-            --primary: #2563eb;
-            --primary-dark: #1e40af;
-            --secondary: #f59e0b;
-            --dark: #1e293b;
-            --light: #f8fafc;
-            --gray: #94a3b8;
-        }
-        
-        body {
-            font-family: 'Tajawal', sans-serif;
-            background-color: var(--light);
-            overflow-x: hidden;
-        }
-        /* Add this to your CSS */
-.img-cover {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-}
+        <link rel="stylesheet" href="css/main.css">
 
-.img-contain {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    object-position: center;
-}
-
-/* For product cards */
-.product-image-container {
-    height: 200px;
-    overflow: hidden;
-    position: relative;
-}
-
-/* For client logos */
-.client-logo {
-    max-height: 50px;
-    width: auto;
-    object-fit: contain;
-}
-        /* Glassmorphism Effect */
-        .glass-card {
-            background: rgba(255, 255, 255, 0.15);
-            backdrop-filter: blur(10px);
-            -webkit-backdrop-filter: blur(10px);
-            border-radius: 16px;
-            border: 1px solid rgba(255, 255, 255, 0.18);
-            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
-        }
-        
-        /* Neumorphism Effect */
-        .neumorphic-card {
-            border-radius: 16px;
-            background: #f8fafc;
-            box-shadow:  8px 8px 16px #d9d9d9,
-                        -8px -8px 16px #ffffff;
-            transition: all 0.3s ease;
-        }
-        
-        .neumorphic-card:hover {
-            box-shadow:  4px 4px 8px #d9d9d9,
-                        -4px -4px 8px #ffffff;
-            transform: translateY(-5px);
-        }
-        
-        /* Hero Section with Gradient Mesh Background */
-        .hero-section {
-            position: relative;
-            overflow: hidden;
-            padding: 180px 0;
-            color: white;
-            text-align: center;
-        }
-        
-        .hero-section::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: 
-                radial-gradient(circle at 20% 30%, rgba(37, 99, 235, 0.3) 0%, transparent 40%),
-                radial-gradient(circle at 80% 70%, rgba(245, 158, 11, 0.3) 0%, transparent 40%),
-                linear-gradient(to bottom, #1e293b, #0f172a);
-            z-index: -2;
-        }
-        
-        .hero-section::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            height: 100px;
-            background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 120' preserveAspectRatio='none'%3E%3Cpath d='M1200 120L0 16.48 0 0 1200 0 1200 120z' fill='%23f8fafc'%3E%3C/path%3E%3C/svg%3E");
-            background-size: cover;
-            background-repeat: no-repeat;
-            z-index: -1;
-        }
-        
-        /* Modern Section Titles */
-        .section-title {
-            position: relative;
-            display: inline-block;
-            margin-bottom: 60px;
-            font-weight: 700;
-            color: var(--dark);
-        }
-        
-        .section-title::after {
-            content: '';
-            position: absolute;
-            bottom: -15px;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 60px;
-            height: 4px;
-            background: linear-gradient(90deg, var(--primary), var(--secondary));
-            border-radius: 2px;
-        }
-        .client-card {
-        background: #fff;
-        border-radius: 12px;
-        padding: 30px;
-        box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-        transition: all 0.3s ease;
-        border: 1px solid rgba(0,0,0,0.05);
-        text-align: center;
-    }
-    
-    .client-card:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-    }
-    
-    .client-icon {
-        width: 70px;
-        height: 70px;
-        margin: 0 auto 20px;
-        border-radius: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: white;
-        font-size: 28px;
-    }
-    
-    .client-card h4 {
-        margin-bottom: 15px;
-        color: #2c3e50;
-    }
-    
-    .client-card p {
-        margin-bottom: 20px;
-        font-size: 15px;
-    }
-    
-    .badge {
-        padding: 5px 12px;
-        border-radius: 20px;
-        font-weight: 500;
-        font-size: 13px;
-    }
-    
-    .bg-primary-light {
-        background-color: rgba(13,110,253,0.1);
-        color: #0d6efd;
-    }
-    
-    .bg-danger-light {
-        background-color: rgba(220,53,69,0.1);
-        color: #dc3545;
-    }
-    
-    .bg-success-light {
-        background-color: rgba(25,135,84,0.1);
-        color: #198754;
-    }
-    
-    .bg-warning-light {
-        background-color: rgba(255,193,7,0.1);
-        color: #ffc107;
-    }
-    
-    .bg-info-light {
-        background-color: rgba(13,202,240,0.1);
-        color: #0dcaf0;
-    }
-    
-    .bg-secondary-light {
-        background-color: rgba(108,117,125,0.1);
-        color: #6c757d;
-    }
-    
-        /* Modern Feature Cards */
-        .feature-card {
-            border: none;
-            border-radius: 16px;
-            overflow: hidden;
-            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-            height: 100%;
-        }
-        
-        .feature-card:hover {
-            transform: translateY(-10px) scale(1.02);
-            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
-        }
-        
-        .feature-icon {
-            width: 80px;
-            height: 80px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
-            color: white;
-            font-size: 32px;
-            border-radius: 16px;
-            margin: 0 auto 20px;
-            box-shadow: 0 10px 15px -3px rgba(37, 99, 235, 0.3);
-        }
-        
-        /* Modern Stats Counter */
-        .stats-item {
-            position: relative;
-            padding: 30px;
-            text-align: center;
-            z-index: 1;
-        }
-        
-        .stats-item::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(135deg, rgba(37, 99, 235, 0.1), rgba(245, 158, 11, 0.1));
-            border-radius: 16px;
-            z-index: -1;
-            opacity: 0;
-            transition: opacity 0.3s ease;
-        }
-        
-        .stats-item:hover::before {
-            opacity: 1;
-        }
-        
-        .stats-number {
-            font-size: 48px;
-            font-weight: 700;
-            background: linear-gradient(90deg, var(--primary), var(--secondary));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            margin-bottom: 10px;
-        }
-        
-        /* Modern Button Styles */
-        .btn-modern {
-            position: relative;
-            overflow: hidden;
-            border: none;
-            border-radius: 12px;
-            padding: 12px 24px;
-            font-weight: 600;
-            transition: all 0.3s ease;
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-        }
-        
-        .btn-modern::after {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(90deg, rgba(255,255,255,0.1), rgba(255,255,255,0.3));
-            transform: translateX(-100%);
-            transition: transform 0.3s ease;
-        }
-        
-        .btn-modern:hover::after {
-            transform: translateX(0);
-        }
-        
-        .btn-primary {
-            background: linear-gradient(90deg, var(--primary), var(--primary-dark));
-        }
-        
-        .btn-outline-primary {
-            background: transparent;
-            border: 2px solid var(--primary);
-            color: var(--primary);
-        }
-        
-        .btn-outline-primary:hover {
-            background: linear-gradient(90deg, var(--primary), var(--primary-dark));
-            color: white;
-        }
-        
-        /* Floating Elements */
-        .floating {
-            animation: floating 6s ease-in-out infinite;
-        }
-        
-        @keyframes floating {
-            0% { transform: translateY(0px); }
-            50% { transform: translateY(-15px); }
-            100% { transform: translateY(0px); }
-        }
-        
-        /* Custom Shape Dividers */
-        .wave-shape {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            overflow: hidden;
-            line-height: 0;
-        }
-        
-        .wave-shape svg {
-            position: relative;
-            display: block;
-            width: calc(100% + 1.3px);
-            height: 100px;
-        }
-        
-        .wave-shape .shape-fill {
-            fill: #FFFFFF;
-        }
-        
-        /* Modern Navigation */
-        .navbar {
-            padding: 20px 0;
-            transition: all 0.3s ease;
-        }
-        
-        .navbar.scrolled {
-            padding: 10px 0;
-            background-color: rgba(255, 255, 255, 0.95) !important;
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-            backdrop-filter: blur(10px);
-        }
-        
-        .nav-link {
-            position: relative;
-            margin: 0 10px;
-            font-weight: 500;
-            color: var(--dark);
-        }
-        
-        .nav-link::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 0;
-            height: 2px;
-            background: linear-gradient(90deg, var(--primary), var(--secondary));
-            transition: width 0.3s ease;
-        }
-        
-        .nav-link:hover::after,
-        .nav-link.active::after {
-            width: 100%;
-        }
-        
-        /* Modern Testimonials */
-        .testimonial-card {
-            border: none;
-            border-radius: 16px;
-            overflow: hidden;
-            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
-            transition: all 0.3s ease;
-        }
-        
-        .testimonial-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
-        }
-        
-        /* 3D Product Card */
-        .product-card-3d {
-            transform-style: preserve-3d;
-            transition: all 0.5s ease;
-            perspective: 1000px;
-        }
-        
-        .product-card-3d:hover {
-            transform: rotateY(15deg) rotateX(5deg);
-        }
-        
-        /* Responsive Adjustments */
-        @media (max-width: 768px) {
-            .hero-section {
-                padding: 120px 0;
-            }
-            
-            .section-title {
-                font-size: 28px;
-            }
-            
-            .stats-number {
-                font-size: 36px;
-            }
-        }
-    </style>
 </head>
 <body>
     <!-- Navigation -->
@@ -437,26 +27,34 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav me-auto">
                     <li class="nav-item">
-                        <a class="nav-link active" href="#">الرئيسية</a>
+                        <a class="nav-link active" href="index.html">الرئيسية</a>
                     </li>
+                    
+                    <!-- Add this link in the navigation -->
                     <li class="nav-item">
-                        <a class="nav-link" href="#about">عن المصنع</a>
+                        <a class="nav-link" href="products.html">المنتجات</a>
                     </li>
+
                     <li class="nav-item">
-                        <a class="nav-link" href="#products">منتجاتنا</a>
+                        <a class="nav-link" href="services.html">خدماتنا</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#services">خدماتنا</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#clients">عملاؤنا</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">تواصل معنا</a>
-                    </li>
+                    <!-- Add to navigation -->
+<li class="nav-item">
+    <a class="nav-link" href="solutions.html">حلول مخصصة</a>
+</li>
+<!-- Add to navigation -->
+<li class="nav-item">
+    <a class="nav-link" href="certifications.html">الجودة والشهادات</a>
+</li>
+<!-- Add to navigation -->
+<li class="nav-item">
+    <a class="nav-link" href="faq.html">الأسئلة الشائعة</a>
+</li>
+                  
+                  
                 </ul>
                 <div class="d-flex">
-                    <a href="#contact" class="btn btn-outline-primary btn-modern me-2">طلب عرض سعر</a>
+                    <a href="quote.html" class="btn btn-outline-primary btn-modern me-2">طلب عرض سعر</a>
                 </div>
             </div>
         </div>
@@ -490,7 +88,7 @@
             <div class="row align-items-center">
                 <div class="col-lg-6 mb-4 mb-lg-0">
                     <div class="position-relative">
-                        <img src="https://images.unsplash.com/photo-1581093057305-25a0a5b9a0b7?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="عن المصنع" class="img-fluid rounded-4 shadow-lg">
+                        <img src="images/ChatGPT Image Jun 16, 2025, 09_36_01 AM.png" alt="عن المصنع" class="img-fluid rounded-4 shadow-lg" style="max-width: 475px;">
                         <div class="position-absolute bottom-0 end-0 bg-white p-3 rounded-3 shadow-sm" style="transform: translate(20px, 20px);">
                             <div class="d-flex align-items-center">
                                 <div class="bg-primary rounded-circle p-2 me-2">
@@ -998,7 +596,7 @@
 </section>
 
     <!-- Testimonials -->
-    <section class="py-5 bg-primary text-white position-relative">
+    <section class="py-5 bg-primary text-white position-relative" style="background-color: rgb(16 58 120) !important;">
         <div class="container py-5">
             <h2 class="section-title text-center text-white">آراء عملائنا</h2>
             <p class="text-center text-white-50 mb-5">ما يقوله عملاؤنا عن جودة منتجاتنا وخدماتنا</p>
@@ -1299,61 +897,6 @@
     <!-- Arabic Font -->
     <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
     
-    <script>
-        // Navbar scroll effect
-        window.addEventListener('scroll', function() {
-            const navbar = document.querySelector('.navbar');
-            if (window.scrollY > 50) {
-                navbar.classList.add('scrolled');
-            } else {
-                navbar.classList.remove('scrolled');
-            }
-        });
-        
-        // Animate stats counter
-        function animateCounters() {
-            const counters = document.querySelectorAll('.stats-number');
-            const speed = 200;
-            
-            counters.forEach(counter => {
-                const target = +counter.getAttribute('data-count');
-                const count = +counter.innerText;
-                const increment = target / speed;
-                
-                if (count < target) {
-                    counter.innerText = Math.ceil(count + increment);
-                    setTimeout(animateCounters, 1);
-                } else {
-                    counter.innerText = target;
-                }
-            });
-        }
-        
-        // Initialize counters when section is in view
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    animateCounters();
-                    observer.unobserve(entry.target);
-                }
-            });
-        }, { threshold: 0.5 });
-        
-        const statsSection = document.querySelector('.bg-dark');
-        if (statsSection) {
-            observer.observe(statsSection);
-        }
-        
-        // Smooth scrolling for anchor links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
-    </script>
+<script src="js/main.js"></script>
 </body>
 </html>

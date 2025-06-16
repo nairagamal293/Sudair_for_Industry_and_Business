@@ -1,0 +1,347 @@
+
+<!-- Create products.html -->
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <!-- Same head as index.html -->
+    <title>منتجاتنا - مصنع سدير للصناعة والأعمال</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+        <link rel="stylesheet" href="css/main.css">
+    <style>
+        .product-detail-hero {
+            background: linear-gradient(135deg, rgba(37, 99, 235, 0.8), rgba(30, 64, 175, 0.9)), 
+                        url('images/products-bg.jpg') center/cover;
+            padding: 120px 0 80px;
+        }
+        .specs-table {
+            border-collapse: separate;
+            border-spacing: 0 10px;
+        }
+        .specs-table tr td:first-child {
+            font-weight: 600;
+            min-width: 150px;
+        }
+        .product-tab {
+            border-bottom: 3px solid transparent;
+            transition: all 0.3s;
+        }
+        .product-tab.active {
+            border-color: var(--primary);
+            color: var(--primary);
+        }
+    </style>
+</head>
+<body>
+   <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold fs-3" href="#">
+                <span style="color: var(--primary);">سدير</span> 
+                <span style="color: var(--dark);">للصناعة والأعمال</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">الرئيسية</a>
+                    </li>
+                    
+                    <!-- Add this link in the navigation -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="products.html">المنتجات</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">خدماتنا</a>
+                    </li>
+                    <!-- Add to navigation -->
+<li class="nav-item">
+    <a class="nav-link" href="solutions.html">حلول مخصصة</a>
+</li>
+<!-- Add to navigation -->
+<li class="nav-item">
+    <a class="nav-link" href="certifications.html">الجودة والشهادات</a>
+</li>
+<!-- Add to navigation -->
+<li class="nav-item">
+    <a class="nav-link" href="faq.html">الأسئلة الشائعة</a>
+</li>
+                  
+                  
+                </ul>
+                <div class="d-flex">
+                    <a href="quote.html" class="btn btn-outline-primary btn-modern me-2">طلب عرض سعر</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Product Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="index.html" class="text-white">الرئيسية</a></li>
+                            <li class="breadcrumb-item"><a href="products.html" class="text-white">المنتجات</a></li>
+                            <li class="breadcrumb-item active text-white" aria-current="page">أقنعة الوقاية المتطورة</li>
+                        </ol>
+                    </nav>
+                    <h1 class="display-4 fw-bold mb-3">أقنعة الوقاية المتطورة</h1>
+                    <p class="lead">تصميم متطور يوفر حماية كاملة ضد الجسيمات الدقيقة والغازات الضارة</p>
+                </div>
+                <div class="col-lg-6">
+                    <img src="images/Turmerry_Mattresses__Safe__Healthy_and_Comfortable_Sleep-removebg-preview.png" alt="قناع وقاية" class="img-fluid floating">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Details -->
+    <section class="py-5 bg-white">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-6">
+                    <div class="sticky-top" style="top: 100px;">
+                        <div class="card border-0 shadow-sm rounded-3 overflow-hidden mb-4">
+                            <div class="product-image-container" style="height: 350px;">
+                                <img src="images/mask-detail-1.jpg" class="img-cover" alt="قناع وقاية">
+                            </div>
+                        </div>
+                        <div class="row g-3">
+                            <div class="col-4">
+                                <div class="cursor-pointer border rounded-3 p-2">
+                                    <img src="images/mask-detail-2.jpg" class="img-fluid rounded-2" alt="تفاصيل القناع">
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="cursor-pointer border rounded-3 p-2">
+                                    <img src="images/mask-detail-3.jpg" class="img-fluid rounded-2" alt="تفاصيل القناع">
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="cursor-pointer border rounded-3 p-2">
+                                    <img src="images/mask-detail-4.jpg" class="img-fluid rounded-2" alt="تفاصيل القناع">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="d-flex justify-content-between align-items-start mb-4">
+                        <div>
+                            <h2 class="fw-bold mb-1">قناع الوقاية المتطور - نموذج SD-2023</h2>
+                            <div class="text-warning mb-3">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <span class="text-muted ms-2">(48 تقييم)</span>
+                            </div>
+                        </div>
+                        <span class="badge bg-success bg-opacity-10 text-success">متوفر</span>
+                    </div>
+
+                    <div class="mb-4">
+                        <h4 class="text-primary">SAR 149.00</h4>
+                        <p class="text-muted">السعر لا يشمل الضريبة</p>
+                    </div>
+
+                    <div class="mb-5">
+                        <p>قناع وقاية متطور بتقنية HEPA مع فلتر كربون نشط، يوفر حماية ضد الجسيمات الدقيقة حتى 0.3 ميكرون والغازات العضوية. مناسب للاستخدام في البيئات الصناعية والطبية.</p>
+                        
+                        <div class="row g-3 mt-4">
+                            <div class="col-md-6">
+                                <label class="form-label">نوع الفلتر</label>
+                                <select class="form-select">
+                                    <option>HEPA - للجسيمات الدقيقة</option>
+                                    <option>كربون نشط - للغازات</option>
+                                    <option>مدمج - HEPA + كربون</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label">الكمية</label>
+                                <div class="input-group">
+                                    <button class="btn btn-outline-secondary" type="button">-</button>
+                                    <input type="text" class="form-control text-center" value="1">
+                                    <button class="btn btn-outline-secondary" type="button">+</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="d-flex gap-3 mb-5">
+                        <button class="btn btn-primary btn-modern flex-grow-1 py-3">
+                            <i class="fas fa-shopping-cart me-2"></i> أضف إلى السلة
+                        </button>
+                        <button class="btn btn-outline-primary btn-modern py-3">
+                            <i class="fas fa-heart"></i>
+                        </button>
+                    </div>
+
+                    <div class="border-top pt-4">
+                        <ul class="nav nav-tabs border-bottom-0" id="productTabs" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link product-tab active" id="specs-tab" data-bs-toggle="tab" data-bs-target="#specs" type="button">المواصفات الفنية</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link product-tab" id="features-tab" data-bs-toggle="tab" data-bs-target="#features" type="button">المميزات</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link product-tab" id="downloads-tab" data-bs-toggle="tab" data-bs-target="#downloads" type="button">الملفات</button>
+                            </li>
+                        </ul>
+                        <div class="tab-content pt-3" id="productTabsContent">
+                            <div class="tab-pane fade show active" id="specs" role="tabpanel">
+                                <table class="specs-table">
+                                    <tr>
+                                        <td>نوع الحماية:</td>
+                                        <td>جسيمات دقيقة، غازات، أبخرة</td>
+                                    </tr>
+                                    <tr>
+                                        <td>كفاءة الترشيح:</td>
+                                        <td>99.97% @ 0.3 ميكرون</td>
+                                    </tr>
+                                    <tr>
+                                        <td>المعايير:</td>
+                                        <td>NIOSH N95, EN 149:2001+A1:2009</td>
+                                    </tr>
+                                    <tr>
+                                        <td>مدة الصلاحية:</td>
+                                        <td>5 سنوات في التغليف الأصلي</td>
+                                    </tr>
+                                    <tr>
+                                        <td>بلد المنشأ:</td>
+                                        <td>المملكة العربية السعودية</td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="tab-pane fade" id="features" role="tabpanel">
+                                <ul class="list-unstyled">
+                                    <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i> صمام زفير لخفض الرطوبة داخل القناع</li>
+                                    <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i> حزام رأس قابل للتعديل لضمان الراحة</li>
+                                    <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i> طبقة داخلية ناعمة للراحة أثناء الاستخدام المطول</li>
+                                    <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i> تصميم خفيف الوزن (85 جرام فقط)</li>
+                                </ul>
+                            </div>
+                            <div class="tab-pane fade" id="downloads" role="tabpanel">
+                                <div class="list-group">
+                                    <a href="#" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+                                        كتالوج المنتج (PDF)
+                                        <i class="fas fa-download text-muted"></i>
+                                    </a>
+                                    <a href="#" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+                                        شهادة المطابقة (PDF)
+                                        <i class="fas fa-download text-muted"></i>
+                                    </a>
+                                    <a href="#" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+                                        دليل الاستخدام (PDF)
+                                        <i class="fas fa-download text-muted"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Related Products -->
+    <section class="py-5 bg-light">
+        <div class="container py-4">
+            <h3 class="mb-4 fw-bold">منتجات ذات صلة</h3>
+            <div class="row g-4">
+                <!-- Repeat product cards from index.html -->
+            </div>
+        </div>
+    </section>
+
+      <!-- Footer -->
+    <footer class="py-5 bg-dark text-white">
+        <div class="container py-4">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <a class="navbar-brand fw-bold fs-3 mb-3 d-block" href="#">
+                        <span style="color: var(--primary);">سدير</span> 
+                        <span style="color: white;">للصناعة والأعمال</span>
+                    </a>
+                    <p class="text-muted">مصنع متخصص في تصنيع وتوفير معدات الحماية الشخصية في المملكة العربية السعودية، يقدم حلولًا متكاملة لحماية الأفراد في البيئات الصناعية والكيميائية والبيولوجية والإشعاعية.</p>
+                    <div class="social-icons mt-3">
+                        <a href="#" class="me-2"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="me-2"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="me-2"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="me-2"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4">
+                    <h5 class="mb-3">روابط سريعة</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#" class="text-white">الرئيسية</a></li>
+                        <li class="mb-2"><a href="#about" class="text-white">عن المصنع</a></li>
+                        <li class="mb-2"><a href="#products" class="text-white">منتجاتنا</a></li>
+                        <li class="mb-2"><a href="#services" class="text-white">خدماتنا</a></li>
+                        <li class="mb-2"><a href="#contact" class="text-white">تواصل معنا</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-4">
+                    <h5 class="mb-3">منتجاتنا</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#" class="text-white">أقنعة الوقاية</a></li>
+                        <li class="mb-2"><a href="#" class="text-white">مرشحات الأقنعة</a></li>
+                        <li class="mb-2"><a href="#" class="text-white">البدل الوقائية</a></li>
+                        <li class="mb-2"><a href="#" class="text-white">ملحقات الحماية</a></li>
+                        <li class="mb-2"><a href="#" class="text-white">حلول مخصصة</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-4">
+                    <h5 class="mb-3">النشرة البريدية</h5>
+                    <p class="text-muted">اشترك لتصلك آخر أخبارنا وعروضنا.</p>
+                    <form class="mb-3">
+                        <div class="input-group">
+                            <input type="email" class="form-control" placeholder="بريدك الإلكتروني" required>
+                            <button class="btn btn-primary" type="submit">
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </div>
+                    </form>
+                    <div class="d-flex align-items-center">
+                        <i class="fas fa-phone me-2 text-primary"></i>
+                        <div>
+                            <small class="text-muted">للاستفسارات السريعة</small>
+                            <h6 class="mb-0">+966 12 345 6789</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4 bg-secondary">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0 small">&copy; 2023 مصنع سدير للصناعة والأعمال. جميع الحقوق محفوظة.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <p class="mb-0 small">تصميم وتطوير <a href="#" class="text-primary">فريق سدير</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+     <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Arabic Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+    
+</body>
+</html>
