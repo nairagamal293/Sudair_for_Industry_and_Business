@@ -1,12 +1,8 @@
-
-
-<!-- Create faq.html -->
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-    <!-- Same head -->
     <title>الأسئلة الشائعة - مصنع سدير</title>
-     <meta charset="UTF-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <!-- Bootstrap CSS -->
@@ -15,51 +11,51 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <!-- Animate.css -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-        <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/main.css">
     <style>
         .faq-card {
-            border: 1px solid rgba(0,0,0,0.05);
-            transition: all 0.3s;
+            border: 1px solid #eee;
+            border-radius: 8px;
+            margin-bottom: 10px;
             overflow: hidden;
         }
-        .faq-card:not(:last-child) {
-            margin-bottom: 15px;
-        }
         .faq-header {
-            padding: 20px;
+            padding: 15px 20px;
+            background-color: #f8f9fa;
             cursor: pointer;
-            background-color: #f9f9f9;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: all 0.3s;
         }
         .faq-header:hover {
-            background-color: #f1f1f1;
+            background-color: #e9ecef;
         }
         .faq-header[aria-expanded="true"] {
-            background-color: var(--primary);
+            background-color: #0d6efd;
             color: white;
+        }
+        .faq-header h5 {
+            margin: 0;
+            font-size: 1.1rem;
         }
         .faq-body {
             padding: 0 20px;
-            max-height: 0;
-            overflow: hidden;
-            transition: max-height 0.3s ease;
+            background-color: white;
         }
-        .faq-body.show {
-            padding: 20px;
-            max-height: 500px;
+        .faq-body-inner {
+            padding: 20px 0;
+        }
+        .fa-chevron-down {
+            transition: transform 0.3s;
+        }
+        .faq-header[aria-expanded="true"] .fa-chevron-down {
+            transform: rotate(180deg);
         }
         .faq-category {
-            position: relative;
-            padding-right: 20px;
-            margin-bottom: 30px;
-        }
-        .faq-category::after {
-            content: '';
-            position: absolute;
-            right: 0;
-            top: 0;
-            height: 100%;
-            width: 4px;
-            background: var(--primary);
+            border-right: 4px solid #0d6efd;
+            padding-right: 15px;
+            margin: 30px 0;
         }
     </style>
 </head>
@@ -79,29 +75,21 @@
                     <li class="nav-item">
                         <a class="nav-link active" href="index.html">الرئيسية</a>
                     </li>
-                    
-                    <!-- Add this link in the navigation -->
                     <li class="nav-item">
                         <a class="nav-link" href="products.html">المنتجات</a>
                     </li>
-
                     <li class="nav-item">
                         <a class="nav-link" href="services.html">خدماتنا</a>
                     </li>
-                    <!-- Add to navigation -->
-<li class="nav-item">
-    <a class="nav-link" href="solutions.html">حلول مخصصة</a>
-</li>
-<!-- Add to navigation -->
-<li class="nav-item">
-    <a class="nav-link" href="certifications.html">الجودة والشهادات</a>
-</li>
-<!-- Add to navigation -->
-<li class="nav-item">
-    <a class="nav-link" href="faq.html">الأسئلة الشائعة</a>
-</li>
-                  
-                  
+                    <li class="nav-item">
+                        <a class="nav-link" href="solutions.html">حلول مخصصة</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="certifications.html">الجودة والشهادات</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="faq.html">الأسئلة الشائعة</a>
+                    </li>
                 </ul>
                 <div class="d-flex">
                     <a href="quote.html" class="btn btn-outline-primary btn-modern me-2">طلب عرض سعر</a>
@@ -123,137 +111,136 @@
     </section>
 
     <!-- FAQ Section -->
+   <!-- FAQ Section -->
     <section class="py-5 bg-white">
         <div class="container py-5">
             <div class="row">
-                <div class="col-lg-4 mb-5 mb-lg-0">
-                    <div class="sticky-top" style="top: 100px;">
-                        <div class="card border-0 shadow-sm rounded-3">
-                            <div class="card-body p-4">
-                                <h5 class="fw-bold mb-4">تصفح حسب الموضوع</h5>
-                                <ul class="nav flex-column">
-                                    <li class="nav-item mb-2">
-                                        <a class="nav-link active d-flex align-items-center" href="#products">
-                                            <i class="fas fa-box-open text-primary me-2"></i>
-                                            المنتجات
-                                        </a>
-                                    </li>
-                                    <li class="nav-item mb-2">
-                                        <a class="nav-link d-flex align-items-center" href="#ordering">
-                                            <i class="fas fa-shopping-cart text-primary me-2"></i>
-                                            الطلبات
-                                        </a>
-                                    </li>
-                                    <li class="nav-item mb-2">
-                                        <a class="nav-link d-flex align-items-center" href="#shipping">
-                                            <i class="fas fa-truck text-primary me-2"></i>
-                                            الشحن والتسليم
-                                        </a>
-                                    </li>
-                                    <li class="nav-item mb-2">
-                                        <a class="nav-link d-flex align-items-center" href="#quality">
-                                            <i class="fas fa-certificate text-primary me-2"></i>
-                                            الجودة والضمان
-                                        </a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link d-flex align-items-center" href="#custom">
-                                            <i class="fas fa-cogs text-primary me-2"></i>
-                                            الحلول المخصصة
-                                        </a>
-                                    </li>
-                                </ul>
-                                
-                                <div class="mt-4 pt-3">
-                                    <h6 class="fw-bold mb-3">لم تجد إجابتك؟</h6>
-                                    <a href="contact.html" class="btn btn-outline-primary w-100">
-                                        <i class="fas fa-headset me-2"></i> تواصل معنا
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-8">
+                <div class="col-lg-8 mx-auto">
                     <!-- Products FAQ -->
                     <div class="mb-5" id="products">
                         <h3 class="faq-category fw-bold">المنتجات</h3>
                         
-                        <div class="accordion" id="productsAccordion">
-                            <div class="faq-card rounded-3">
-                                <div class="faq-header d-flex justify-content-between align-items-center" id="headingOne" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true">
-                                    <h5 class="mb-0">ما هي أنواع الأقنعة التي تقدمونها؟</h5>
-                                    <i class="fas fa-chevron-down"></i>
-                                </div>
-                                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne">
-                                    <div class="faq-body">
-                                        <p>نقدم ثلاثة أنواع رئيسية من الأقنعة:</p>
+                        <!-- Question 1 -->
+                        <div class="faq-card">
+                            <div class="faq-header collapsed" data-bs-toggle="collapse" data-bs-target="#productQuestion1" aria-expanded="false">
+                                <h5>ما هي أنواع القائمة التي تقدمونها؟</h5>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div id="productQuestion1" class="collapse" data-bs-parent="#products">
+                                <div class="faq-body">
+                                    <div class="faq-body-inner">
+                                        <p>نقدم مجموعة متنوعة من المنتجات تشمل:</p>
                                         <ul>
-                                            <li>أقنعة جراحية للاستخدام الطبي</li>
-                                            <li>أقنعة N95/KN95 مع فلتر HEPA</li>
-                                            <li>أقنعة كاملة الوجه مع فلتر للغازات الكيميائية</li>
+                                            <li>أقنعة الحماية بأنواعها (طبية - صناعية - كيميائية)</li>
+                                            <li>معدات الوقاية الشخصية الكاملة</li>
+                                            <li>ملحقات وقطع الغيار</li>
+                                            <li>حلول مخصصة حسب الطلب</li>
                                         </ul>
-                                        <p>كل نوع متوفر بعدة أحجام ومواصفات تناسب مختلف الاستخدامات.</p>
                                     </div>
                                 </div>
                             </div>
-                            
-                            <div class="faq-card rounded-3">
-                                <div class="faq-header d-flex justify-content-between align-items-center" id="headingTwo" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
-                                    <h5 class="mb-0">كيف أعرف أن القناع مناسب لي؟</h5>
-                                    <i class="fas fa-chevron-down"></i>
-                                </div>
-                                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo">
-                                    <div class="faq-body">
-                                        <p>اختيار القناع المناسب يعتمد على:</p>
+                        </div>
+                        
+                        <!-- Question 2 -->
+                        <div class="faq-card">
+                            <div class="faq-header collapsed" data-bs-toggle="collapse" data-bs-target="#productQuestion2" aria-expanded="false">
+                                <h5>كيف أعرف أن المنتج مناسب لي؟</h5>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div id="productQuestion2" class="collapse" data-bs-parent="#products">
+                                <div class="faq-body">
+                                    <div class="faq-body-inner">
+                                        <p>لاختيار المنتج المناسب:</p>
                                         <ol>
-                                            <li>نوع المخاطر في بيئة عملك (جسيمات، غازات، إلخ)</li>
-                                            <li>مدة الاستخدام المطلوبة</li>
-                                            <li>راحة المستخدم</li>
+                                            <li>حدد نوع الحماية المطلوبة (جسيمات، غازات، إلخ)</li>
+                                            <li>حدد بيئة الاستخدام (طبية، صناعية، كيميائية)</li>
+                                            <li>استشر فريق المبيعات لدينا للحصول على النصيحة</li>
+                                            <li>يمكنك طلب عينات للاختبار قبل الشراء</li>
                                         </ol>
-                                        <p>يمكنك استخدام دليل المنتجات على موقعنا أو الاتصال بفريق المبيعات للحصول على استشارة مجانية.</p>
                                     </div>
                                 </div>
                             </div>
-                            
-                            <!-- Add more product FAQs -->
                         </div>
                     </div>
                     
-                    <!-- Ordering FAQ -->
-                    <div class="mb-5" id="ordering">
+                    <!-- Orders FAQ -->
+                    <div class="mb-5" id="orders">
                         <h3 class="faq-category fw-bold">الطلبات</h3>
                         
-                        <div class="accordion" id="orderingAccordion">
-                            <div class="faq-card rounded-3">
-                                <div class="faq-header d-flex justify-content-between align-items-center" id="headingThree" data-bs-toggle="collapse" data-bs-target="#collapseThree">
-                                    <h5 class="mb-0">كيف يمكنني تقديم طلب؟</h5>
-                                    <i class="fas fa-chevron-down"></i>
-                                </div>
-                                <div id="collapseThree" class="collapse" aria-labelledby="headingThree">
-                                    <div class="faq-body">
-                                        <p>يمكنك تقديم طلب بعدة طرق:</p>
-                                        <ol>
-                                            <li>من خلال موقعنا الإلكتروني عبر صفحة "طلب عرض سعر"</li>
-                                            <li>بإرسال بريد إلكتروني إلى sales@sudair-ppe.com</li>
-                                            <li>بالاتصال بفريق المبيعات على الرقم +966 12 345 6789</li>
-                                        </ol>
-                                        <p>للاستفسارات السريعة، يمكنك استخدام خدمة الدردشة المباشرة على موقعنا.</p>
+                        <!-- Question 1 -->
+                        <div class="faq-card">
+                            <div class="faq-header collapsed" data-bs-toggle="collapse" data-bs-target="#orderQuestion1" aria-expanded="false">
+                                <h5>كيف يمكنني تقديم طلب؟</h5>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div id="orderQuestion1" class="collapse" data-bs-parent="#orders">
+                                <div class="faq-body">
+                                    <div class="faq-body-inner">
+                                        <p>يمكنك تقديم طلب عبر:</p>
+                                        <ul>
+                                            <li>الموقع الإلكتروني (صفحة طلب عرض سعر)</li>
+                                            <li>الاتصال بفريق المبيعات على الرقم: 0123456789</li>
+                                            <li>البريد الإلكتروني: sales@sudair-ppe.com</li>
+                                            <li>زيارة مقرنا الرئيسي في الرياض</li>
+                                        </ul>
                                     </div>
                                 </div>
                             </div>
-                            
-                            <!-- Add more ordering FAQs -->
+                        </div>
+                        
+                        <!-- Question 2 -->
+                        <div class="faq-card">
+                            <div class="faq-header collapsed" data-bs-toggle="collapse" data-bs-target="#orderQuestion2" aria-expanded="false">
+                                <h5>كيف أعرف أن المنتج مناسب لي؟</h5>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div id="orderQuestion2" class="collapse" data-bs-parent="#orders">
+                                <div class="faq-body">
+                                    <div class="faq-body-inner">
+                                        <p>لضمان ملائمة المنتج:</p>
+                                        <ol>
+                                            <li>اطلب استشارة فنية من فريقنا</li>
+                                            <li>استعرض المواصفات الفنية للمنتج</li>
+                                            <li>يمكنك طلب عينات للاختبار</li>
+                                            <li>نحن نقدم ضمان الرضا الكامل</li>
+                                        </ol>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     
-                    <!-- Add more FAQ categories -->
+                    <!-- Shipping FAQ -->
+                    <div class="mb-5" id="shipping">
+                        <h3 class="faq-category fw-bold">الشحن والتسليم</h3>
+                        
+                        <!-- Question 1 -->
+                        <div class="faq-card">
+                            <div class="faq-header collapsed" data-bs-toggle="collapse" data-bs-target="#shippingQuestion1" aria-expanded="false">
+                                <h5>ما هي مدة التوصيل؟</h5>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div id="shippingQuestion1" class="collapse" data-bs-parent="#shipping">
+                                <div class="faq-body">
+                                    <div class="faq-body-inner">
+                                        <p>تختلف مدة التوصيل حسب:</p>
+                                        <ul>
+                                            <li>الموقع الجغرافي (داخل المملكة أو خارجها)</li>
+                                            <li>نوع الشحن المختار (عادي أو سريع)</li>
+                                            <li>توفر المنتج في المخزن</li>
+                                        </ul>
+                                        <p>متوسط مدة التوصيل داخل المملكة: 2-5 أيام عمل</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-      <!-- Footer -->
+    <!-- Footer -->
     <footer class="py-5 bg-dark text-white">
         <div class="container py-4">
             <div class="row g-4">
@@ -327,6 +314,35 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Arabic Font -->
     <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
-
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Initialize Bootstrap tooltips
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl)
+        });
+        // Add smooth scrolling to all links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+        
+        // Add animation when FAQ items are shown
+        document.querySelectorAll('.faq-header').forEach(header => {
+            header.addEventListener('click', function() {
+                const icon = this.querySelector('i');
+                if (this.getAttribute('aria-expanded') === 'true') {
+                    icon.classList.add('animate__animated', 'animate__flipInX');
+                } else {
+                    icon.classList.remove('animate__animated', 'animate__flipInX');
+                }
+            });
+        });
+    </script>
 </body>
 </html>

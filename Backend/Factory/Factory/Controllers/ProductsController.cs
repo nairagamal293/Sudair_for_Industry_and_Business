@@ -24,12 +24,27 @@ namespace Factory.Controllers
             _fileService = fileService;
         }
 
+        // Add to your GetProducts endpoint in ProductsController
         [HttpGet]
         [AllowAnonymous]
-        public async Task<ActionResult<IEnumerable<ProductDTO>>> GetProducts()
+        public async Task<ActionResult<IEnumerable<ProductDTO>>> GetProducts(
+            [FromQuery] int page = 1,
+            [FromQuery] int pageSize = 10,
+            [FromQuery] int? categoryId = null)
         {
-            var products = await _context.Products
+            var query = _context.Products
                 .Include(p => p.Category)
+                .AsQueryable();
+
+            if (categoryId.HasValue)
+            {
+                query = query.Where(p => p.CategoryId == categoryId.Value);
+            }
+
+            var products = await query
+                .OrderBy(p => p.Name)
+                .Skip((page - 1) * pageSize)
+                .Take(pageSize)
                 .Select(p => new ProductDTO
                 {
                     Id = p.Id,
@@ -47,6 +62,7 @@ namespace Factory.Controllers
         }
 
         [HttpGet("{id}")]
+        [AllowAnonymous]
         public async Task<ActionResult<ProductDTO>> GetProduct(int id)
         {
             var product = await _context.Products
@@ -107,7 +123,6 @@ namespace Factory.Controllers
         }
 
 
-        // PUT: api/products/5
         [HttpPut("{id}")]
         [Authorize]
         public async Task<IActionResult> UpdateProduct(int id, [FromForm] ProductUpdateModel model)
@@ -121,6 +136,7 @@ namespace Factory.Controllers
             product.CategoryId = model.CategoryId;
             product.UpdatedAt = DateTime.UtcNow;
 
+            // Only update the image if a new file is provided
             if (model.ImageFile != null && model.ImageFile.Length > 0)
             {
                 // Delete old image
@@ -130,10 +146,12 @@ namespace Factory.Controllers
                 product.ImagePath = await _fileService.SaveFile(model.ImageFile);
             }
 
+            _context.Products.Update(product);
             await _context.SaveChangesAsync();
 
             return NoContent();
         }
+
 
         // DELETE: api/products/5
         [HttpDelete("{id}")]
@@ -176,6 +194,6 @@ namespace Factory.Controllers
         [Required]
         public int CategoryId { get; set; }
 
-        public IFormFile ImageFile { get; set; }
+        public IFormFile? ImageFile { get; set; } // Now nullable
     }
 }

@@ -328,6 +328,34 @@
         "tags": [
           "Products"
         ],
+        "parameters": [
+          {
+            "name": "page",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 1
+            }
+          },
+          {
+            "name": "pageSize",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 10
+            }
+          },
+          {
+            "name": "categoryId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
         "responses": {
           "200": {
             "description": "OK",
@@ -826,31 +854,40 @@
             "format": "int32"
           },
           "fullName": {
-            "minLength": 1,
+            "maxLength": 100,
+            "minLength": 0,
             "type": "string"
           },
           "company": {
+            "maxLength": 100,
+            "minLength": 0,
             "type": "string",
             "nullable": true
           },
           "email": {
-            "minLength": 1,
+            "maxLength": 100,
+            "minLength": 0,
             "type": "string",
             "format": "email"
           },
           "phone": {
-            "minLength": 1,
+            "maxLength": 20,
+            "minLength": 0,
             "type": "string"
           },
           "country": {
-            "minLength": 1,
+            "maxLength": 50,
+            "minLength": 0,
             "type": "string"
           },
           "city": {
-            "minLength": 1,
+            "maxLength": 50,
+            "minLength": 0,
             "type": "string"
           },
           "address": {
+            "maxLength": 200,
+            "minLength": 0,
             "type": "string",
             "nullable": true
           },
@@ -858,23 +895,12 @@
             "type": "string",
             "nullable": true
           },
+          "productNames": {
+            "type": "string",
+            "nullable": true,
+            "readOnly": true
+          },
           "quantity": {
-            "type": "string",
-            "nullable": true
-          },
-          "intendedUse": {
-            "type": "string",
-            "nullable": true
-          },
-          "budget": {
-            "type": "string",
-            "nullable": true
-          },
-          "deliveryTimeline": {
-            "type": "string",
-            "nullable": true
-          },
-          "additionalNotes": {
             "type": "string",
             "nullable": true
           },
@@ -911,19 +937,6 @@
         },
         "additionalProperties": false
       }
-    },
-    "securitySchemes": {
-      "Bearer": {
-        "type": "apiKey",
-        "description": "JWT Authorization header using the Bearer scheme.",
-        "name": "Authorization",
-        "in": "header"
-      }
     }
-  },
-  "security": [
-    {
-      "Bearer": [ ]
-    }
-  ]
+  }
 }

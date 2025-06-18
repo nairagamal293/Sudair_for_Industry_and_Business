@@ -118,10 +118,10 @@ namespace Factory.Migrations
                 columns: new[] { "Id", "CreatedAt", "Name", "UpdatedAt" },
                 values: new object[,]
                 {
-                    { 1, new DateTime(2025, 6, 16, 12, 46, 56, 164, DateTimeKind.Utc).AddTicks(7197), "أقنعة الوقاية", null },
-                    { 2, new DateTime(2025, 6, 16, 12, 46, 56, 164, DateTimeKind.Utc).AddTicks(7200), "مرشحات الأقنعة", null },
-                    { 3, new DateTime(2025, 6, 16, 12, 46, 56, 164, DateTimeKind.Utc).AddTicks(7201), "البدل الوقائية", null },
-                    { 4, new DateTime(2025, 6, 16, 12, 46, 56, 164, DateTimeKind.Utc).AddTicks(7202), "ملحقات الحماية", null }
+                    { 1, new DateTime(2025, 6, 17, 8, 41, 1, 531, DateTimeKind.Utc).AddTicks(5499), "أقنعة الوقاية", null },
+                    { 2, new DateTime(2025, 6, 17, 8, 41, 1, 531, DateTimeKind.Utc).AddTicks(5502), "مرشحات الأقنعة", null },
+                    { 3, new DateTime(2025, 6, 17, 8, 41, 1, 531, DateTimeKind.Utc).AddTicks(5504), "البدل الوقائية", null },
+                    { 4, new DateTime(2025, 6, 17, 8, 41, 1, 531, DateTimeKind.Utc).AddTicks(5505), "ملحقات الحماية", null }
                 });
 
             migrationBuilder.CreateIndex(

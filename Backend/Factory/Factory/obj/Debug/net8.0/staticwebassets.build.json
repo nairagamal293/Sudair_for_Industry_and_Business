@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "W9b15dJgkwFxzcwUIaxXbTHGS1k+8TMYAKJgfAEuylc=",
+  "Hash": "J/sJ3hnRXrf5nwjCN2IaJ5+1J6g37DOmv3k2xLg8XMo=",
   "Source": "Factory",
   "BasePath": "_content/Factory",
   "Mode": "Default",
@@ -16,6 +16,27 @@
     }
   ],
   "Assets": [
+    {
+      "Identity": "D:\\Naira\\مصنع منتجات الحماية\\Backend\\Factory\\Factory\\wwwroot\\uploads\\products\\1156a9a2-7735-424a-82b5-b109fb9622b6.jpeg",
+      "SourceId": "Factory",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Naira\\مصنع منتجات الحماية\\Backend\\Factory\\Factory\\wwwroot\\",
+      "BasePath": "_content/Factory",
+      "RelativePath": "uploads/products/1156a9a2-7735-424a-82b5-b109fb9622b6#[.{fingerprint}]?.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "eyrrv9exzx",
+      "Integrity": "Rim+jTwIHfQ41WCLfzXUxNn/99nlThb6252Hih4Xec8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\products\\1156a9a2-7735-424a-82b5-b109fb9622b6.jpeg"
+    },
     {
       "Identity": "D:\\Naira\\مصنع منتجات الحماية\\Backend\\Factory\\Factory\\wwwroot\\uploads\\products\\1eca5fa1-66d8-4d7b-980f-12420775d3f2.jpeg",
       "SourceId": "Factory",
@@ -36,6 +57,69 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\uploads\\products\\1eca5fa1-66d8-4d7b-980f-12420775d3f2.jpeg"
+    },
+    {
+      "Identity": "D:\\Naira\\مصنع منتجات الحماية\\Backend\\Factory\\Factory\\wwwroot\\uploads\\products\\281a838f-8f64-40d1-876e-cfe7fb7f06d4.jpeg",
+      "SourceId": "Factory",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Naira\\مصنع منتجات الحماية\\Backend\\Factory\\Factory\\wwwroot\\",
+      "BasePath": "_content/Factory",
+      "RelativePath": "uploads/products/281a838f-8f64-40d1-876e-cfe7fb7f06d4#[.{fingerprint}]?.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "asfzj6o55u",
+      "Integrity": "Vjpi+wXyauW/W19Dsfawjqpn9b4Ngz8L/rxhj3QXo0M=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\products\\281a838f-8f64-40d1-876e-cfe7fb7f06d4.jpeg"
+    },
+    {
+      "Identity": "D:\\Naira\\مصنع منتجات الحماية\\Backend\\Factory\\Factory\\wwwroot\\uploads\\products\\36199bc4-2ab4-4724-8d40-083ba382f71b.jpg",
+      "SourceId": "Factory",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Naira\\مصنع منتجات الحماية\\Backend\\Factory\\Factory\\wwwroot\\",
+      "BasePath": "_content/Factory",
+      "RelativePath": "uploads/products/36199bc4-2ab4-4724-8d40-083ba382f71b#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "nhulxpduw6",
+      "Integrity": "m6LOlr7mYbxJU20grdO5VrCs3vHTW8E9r9FRRJhxr0M=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\products\\36199bc4-2ab4-4724-8d40-083ba382f71b.jpg"
+    },
+    {
+      "Identity": "D:\\Naira\\مصنع منتجات الحماية\\Backend\\Factory\\Factory\\wwwroot\\uploads\\products\\476c0669-d874-49ab-a7b9-dc9350471217.jpeg",
+      "SourceId": "Factory",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Naira\\مصنع منتجات الحماية\\Backend\\Factory\\Factory\\wwwroot\\",
+      "BasePath": "_content/Factory",
+      "RelativePath": "uploads/products/476c0669-d874-49ab-a7b9-dc9350471217#[.{fingerprint}]?.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "727hnkz9h4",
+      "Integrity": "AQthe7Qk9424y5lukS5x8plGrN6bnBS9TsBByA1Kedg=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\products\\476c0669-d874-49ab-a7b9-dc9350471217.jpeg"
     },
     {
       "Identity": "D:\\Naira\\مصنع منتجات الحماية\\Backend\\Factory\\Factory\\wwwroot\\uploads\\products\\47bc105d-200c-4f7f-94f1-cc9fbcd92ec9.jpg",
@@ -59,6 +143,153 @@
       "OriginalItemSpec": "wwwroot\\uploads\\products\\47bc105d-200c-4f7f-94f1-cc9fbcd92ec9.jpg"
     },
     {
+      "Identity": "D:\\Naira\\مصنع منتجات الحماية\\Backend\\Factory\\Factory\\wwwroot\\uploads\\products\\4d8fbbf4-dcf7-4efb-b67f-4591238eb9fa.jpeg",
+      "SourceId": "Factory",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Naira\\مصنع منتجات الحماية\\Backend\\Factory\\Factory\\wwwroot\\",
+      "BasePath": "_content/Factory",
+      "RelativePath": "uploads/products/4d8fbbf4-dcf7-4efb-b67f-4591238eb9fa#[.{fingerprint}]?.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "727hnkz9h4",
+      "Integrity": "AQthe7Qk9424y5lukS5x8plGrN6bnBS9TsBByA1Kedg=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\products\\4d8fbbf4-dcf7-4efb-b67f-4591238eb9fa.jpeg"
+    },
+    {
+      "Identity": "D:\\Naira\\مصنع منتجات الحماية\\Backend\\Factory\\Factory\\wwwroot\\uploads\\products\\4e7f6127-5066-43e6-89a7-b32e42993ac9.jpeg",
+      "SourceId": "Factory",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Naira\\مصنع منتجات الحماية\\Backend\\Factory\\Factory\\wwwroot\\",
+      "BasePath": "_content/Factory",
+      "RelativePath": "uploads/products/4e7f6127-5066-43e6-89a7-b32e42993ac9#[.{fingerprint}]?.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "eyrrv9exzx",
+      "Integrity": "Rim+jTwIHfQ41WCLfzXUxNn/99nlThb6252Hih4Xec8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\products\\4e7f6127-5066-43e6-89a7-b32e42993ac9.jpeg"
+    },
+    {
+      "Identity": "D:\\Naira\\مصنع منتجات الحماية\\Backend\\Factory\\Factory\\wwwroot\\uploads\\products\\5fa9c6bf-0678-4c96-ba5b-65057cc9f0e3.jpg",
+      "SourceId": "Factory",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Naira\\مصنع منتجات الحماية\\Backend\\Factory\\Factory\\wwwroot\\",
+      "BasePath": "_content/Factory",
+      "RelativePath": "uploads/products/5fa9c6bf-0678-4c96-ba5b-65057cc9f0e3#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ov2pge8st8",
+      "Integrity": "LJ26rzwhXxrFCCoNqUcBchd/UrWDSTbuPHyA3yl/awE=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\products\\5fa9c6bf-0678-4c96-ba5b-65057cc9f0e3.jpg"
+    },
+    {
+      "Identity": "D:\\Naira\\مصنع منتجات الحماية\\Backend\\Factory\\Factory\\wwwroot\\uploads\\products\\608025fe-ac3c-4842-9a88-d7c49f4b0a0f.jpeg",
+      "SourceId": "Factory",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Naira\\مصنع منتجات الحماية\\Backend\\Factory\\Factory\\wwwroot\\",
+      "BasePath": "_content/Factory",
+      "RelativePath": "uploads/products/608025fe-ac3c-4842-9a88-d7c49f4b0a0f#[.{fingerprint}]?.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "eyrrv9exzx",
+      "Integrity": "Rim+jTwIHfQ41WCLfzXUxNn/99nlThb6252Hih4Xec8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\products\\608025fe-ac3c-4842-9a88-d7c49f4b0a0f.jpeg"
+    },
+    {
+      "Identity": "D:\\Naira\\مصنع منتجات الحماية\\Backend\\Factory\\Factory\\wwwroot\\uploads\\products\\699a61d1-1748-4c53-b3fc-c5ca9f60b281.jpg",
+      "SourceId": "Factory",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Naira\\مصنع منتجات الحماية\\Backend\\Factory\\Factory\\wwwroot\\",
+      "BasePath": "_content/Factory",
+      "RelativePath": "uploads/products/699a61d1-1748-4c53-b3fc-c5ca9f60b281#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ov2pge8st8",
+      "Integrity": "LJ26rzwhXxrFCCoNqUcBchd/UrWDSTbuPHyA3yl/awE=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\products\\699a61d1-1748-4c53-b3fc-c5ca9f60b281.jpg"
+    },
+    {
+      "Identity": "D:\\Naira\\مصنع منتجات الحماية\\Backend\\Factory\\Factory\\wwwroot\\uploads\\products\\767c3af1-3eea-4471-8062-d8a3d19e1cd3.jpeg",
+      "SourceId": "Factory",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Naira\\مصنع منتجات الحماية\\Backend\\Factory\\Factory\\wwwroot\\",
+      "BasePath": "_content/Factory",
+      "RelativePath": "uploads/products/767c3af1-3eea-4471-8062-d8a3d19e1cd3#[.{fingerprint}]?.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "eyrrv9exzx",
+      "Integrity": "Rim+jTwIHfQ41WCLfzXUxNn/99nlThb6252Hih4Xec8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\products\\767c3af1-3eea-4471-8062-d8a3d19e1cd3.jpeg"
+    },
+    {
+      "Identity": "D:\\Naira\\مصنع منتجات الحماية\\Backend\\Factory\\Factory\\wwwroot\\uploads\\products\\7f18eaf0-3a39-40a0-bc97-e79feaca3773.jpeg",
+      "SourceId": "Factory",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Naira\\مصنع منتجات الحماية\\Backend\\Factory\\Factory\\wwwroot\\",
+      "BasePath": "_content/Factory",
+      "RelativePath": "uploads/products/7f18eaf0-3a39-40a0-bc97-e79feaca3773#[.{fingerprint}]?.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "eyrrv9exzx",
+      "Integrity": "Rim+jTwIHfQ41WCLfzXUxNn/99nlThb6252Hih4Xec8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\products\\7f18eaf0-3a39-40a0-bc97-e79feaca3773.jpeg"
+    },
+    {
       "Identity": "D:\\Naira\\مصنع منتجات الحماية\\Backend\\Factory\\Factory\\wwwroot\\uploads\\products\\892ecabd-7e24-4d8d-900d-0847b9b2c312.png",
       "SourceId": "Factory",
       "SourceType": "Discovered",
@@ -80,6 +311,27 @@
       "OriginalItemSpec": "wwwroot\\uploads\\products\\892ecabd-7e24-4d8d-900d-0847b9b2c312.png"
     },
     {
+      "Identity": "D:\\Naira\\مصنع منتجات الحماية\\Backend\\Factory\\Factory\\wwwroot\\uploads\\products\\90c463d4-e9e9-468c-9fbd-ea52c172f5ca.jpeg",
+      "SourceId": "Factory",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Naira\\مصنع منتجات الحماية\\Backend\\Factory\\Factory\\wwwroot\\",
+      "BasePath": "_content/Factory",
+      "RelativePath": "uploads/products/90c463d4-e9e9-468c-9fbd-ea52c172f5ca#[.{fingerprint}]?.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "eyrrv9exzx",
+      "Integrity": "Rim+jTwIHfQ41WCLfzXUxNn/99nlThb6252Hih4Xec8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\products\\90c463d4-e9e9-468c-9fbd-ea52c172f5ca.jpeg"
+    },
+    {
       "Identity": "D:\\Naira\\مصنع منتجات الحماية\\Backend\\Factory\\Factory\\wwwroot\\uploads\\products\\938c4098-90cd-4cdf-ae7b-cc9f9e9add26.jpeg",
       "SourceId": "Factory",
       "SourceType": "Discovered",
@@ -99,9 +351,217 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\uploads\\products\\938c4098-90cd-4cdf-ae7b-cc9f9e9add26.jpeg"
+    },
+    {
+      "Identity": "D:\\Naira\\مصنع منتجات الحماية\\Backend\\Factory\\Factory\\wwwroot\\uploads\\products\\973428bf-6042-4ce7-8bbd-ed1a474b9780.jpeg",
+      "SourceId": "Factory",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Naira\\مصنع منتجات الحماية\\Backend\\Factory\\Factory\\wwwroot\\",
+      "BasePath": "_content/Factory",
+      "RelativePath": "uploads/products/973428bf-6042-4ce7-8bbd-ed1a474b9780#[.{fingerprint}]?.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "eyrrv9exzx",
+      "Integrity": "Rim+jTwIHfQ41WCLfzXUxNn/99nlThb6252Hih4Xec8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\products\\973428bf-6042-4ce7-8bbd-ed1a474b9780.jpeg"
+    },
+    {
+      "Identity": "D:\\Naira\\مصنع منتجات الحماية\\Backend\\Factory\\Factory\\wwwroot\\uploads\\products\\9e4997ed-ab87-47a8-a439-285d0eb252f8.jpeg",
+      "SourceId": "Factory",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Naira\\مصنع منتجات الحماية\\Backend\\Factory\\Factory\\wwwroot\\",
+      "BasePath": "_content/Factory",
+      "RelativePath": "uploads/products/9e4997ed-ab87-47a8-a439-285d0eb252f8#[.{fingerprint}]?.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "w0twdzkar4",
+      "Integrity": "8LNvbYEPPzQ3/kZ5RL6vY2N33/0lKjPv2WEZnPGxMbY=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\products\\9e4997ed-ab87-47a8-a439-285d0eb252f8.jpeg"
+    },
+    {
+      "Identity": "D:\\Naira\\مصنع منتجات الحماية\\Backend\\Factory\\Factory\\wwwroot\\uploads\\products\\a4e574a0-744f-466e-9afb-898af2c61411.jpeg",
+      "SourceId": "Factory",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Naira\\مصنع منتجات الحماية\\Backend\\Factory\\Factory\\wwwroot\\",
+      "BasePath": "_content/Factory",
+      "RelativePath": "uploads/products/a4e574a0-744f-466e-9afb-898af2c61411#[.{fingerprint}]?.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "2k34c64w6d",
+      "Integrity": "/nBL1iFkI+iTCBsvkzJXaB2CNyFfOA39ehmdBASSrRU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\products\\a4e574a0-744f-466e-9afb-898af2c61411.jpeg"
+    },
+    {
+      "Identity": "D:\\Naira\\مصنع منتجات الحماية\\Backend\\Factory\\Factory\\wwwroot\\uploads\\products\\a7a6af1c-6b4c-4aed-bd56-fc1b722150c4.jpg",
+      "SourceId": "Factory",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Naira\\مصنع منتجات الحماية\\Backend\\Factory\\Factory\\wwwroot\\",
+      "BasePath": "_content/Factory",
+      "RelativePath": "uploads/products/a7a6af1c-6b4c-4aed-bd56-fc1b722150c4#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ov2pge8st8",
+      "Integrity": "LJ26rzwhXxrFCCoNqUcBchd/UrWDSTbuPHyA3yl/awE=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\products\\a7a6af1c-6b4c-4aed-bd56-fc1b722150c4.jpg"
+    },
+    {
+      "Identity": "D:\\Naira\\مصنع منتجات الحماية\\Backend\\Factory\\Factory\\wwwroot\\uploads\\products\\b09c4b18-a767-48e1-ac7b-7b015a83ef83.jpg",
+      "SourceId": "Factory",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Naira\\مصنع منتجات الحماية\\Backend\\Factory\\Factory\\wwwroot\\",
+      "BasePath": "_content/Factory",
+      "RelativePath": "uploads/products/b09c4b18-a767-48e1-ac7b-7b015a83ef83#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "nhulxpduw6",
+      "Integrity": "m6LOlr7mYbxJU20grdO5VrCs3vHTW8E9r9FRRJhxr0M=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\products\\b09c4b18-a767-48e1-ac7b-7b015a83ef83.jpg"
+    },
+    {
+      "Identity": "D:\\Naira\\مصنع منتجات الحماية\\Backend\\Factory\\Factory\\wwwroot\\uploads\\products\\d1236337-289b-4775-a9fb-260eacdb9408.jpeg",
+      "SourceId": "Factory",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Naira\\مصنع منتجات الحماية\\Backend\\Factory\\Factory\\wwwroot\\",
+      "BasePath": "_content/Factory",
+      "RelativePath": "uploads/products/d1236337-289b-4775-a9fb-260eacdb9408#[.{fingerprint}]?.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "eyrrv9exzx",
+      "Integrity": "Rim+jTwIHfQ41WCLfzXUxNn/99nlThb6252Hih4Xec8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\products\\d1236337-289b-4775-a9fb-260eacdb9408.jpeg"
     }
   ],
   "Endpoints": [
+    {
+      "Route": "uploads/products/1156a9a2-7735-424a-82b5-b109fb9622b6.eyrrv9exzx.jpeg",
+      "AssetFile": "D:\\Naira\\مصنع منتجات الحماية\\Backend\\Factory\\Factory\\wwwroot\\uploads\\products\\1156a9a2-7735-424a-82b5-b109fb9622b6.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "36350"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Rim+jTwIHfQ41WCLfzXUxNn/99nlThb6252Hih4Xec8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 17 Jun 2025 07:35:56 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "eyrrv9exzx"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/products/1156a9a2-7735-424a-82b5-b109fb9622b6.jpeg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Rim+jTwIHfQ41WCLfzXUxNn/99nlThb6252Hih4Xec8="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/products/1156a9a2-7735-424a-82b5-b109fb9622b6.jpeg",
+      "AssetFile": "D:\\Naira\\مصنع منتجات الحماية\\Backend\\Factory\\Factory\\wwwroot\\uploads\\products\\1156a9a2-7735-424a-82b5-b109fb9622b6.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "36350"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Rim+jTwIHfQ41WCLfzXUxNn/99nlThb6252Hih4Xec8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 17 Jun 2025 07:35:56 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Rim+jTwIHfQ41WCLfzXUxNn/99nlThb6252Hih4Xec8="
+        }
+      ]
+    },
     {
       "Route": "uploads/products/1eca5fa1-66d8-4d7b-980f-12420775d3f2.jpeg",
       "AssetFile": "D:\\Naira\\مصنع منتجات الحماية\\Backend\\Factory\\Factory\\wwwroot\\uploads\\products\\1eca5fa1-66d8-4d7b-980f-12420775d3f2.jpeg",
@@ -181,6 +641,252 @@
         {
           "Name": "integrity",
           "Value": "sha256-NsN+y9Tmkvsw02GraFLgnPMTACMbKysKqclCT/H3PLA="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/products/281a838f-8f64-40d1-876e-cfe7fb7f06d4.asfzj6o55u.jpeg",
+      "AssetFile": "D:\\Naira\\مصنع منتجات الحماية\\Backend\\Factory\\Factory\\wwwroot\\uploads\\products\\281a838f-8f64-40d1-876e-cfe7fb7f06d4.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "41748"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Vjpi+wXyauW/W19Dsfawjqpn9b4Ngz8L/rxhj3QXo0M=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 17 Jun 2025 09:13:37 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "asfzj6o55u"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/products/281a838f-8f64-40d1-876e-cfe7fb7f06d4.jpeg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Vjpi+wXyauW/W19Dsfawjqpn9b4Ngz8L/rxhj3QXo0M="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/products/281a838f-8f64-40d1-876e-cfe7fb7f06d4.jpeg",
+      "AssetFile": "D:\\Naira\\مصنع منتجات الحماية\\Backend\\Factory\\Factory\\wwwroot\\uploads\\products\\281a838f-8f64-40d1-876e-cfe7fb7f06d4.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "41748"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Vjpi+wXyauW/W19Dsfawjqpn9b4Ngz8L/rxhj3QXo0M=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 17 Jun 2025 09:13:37 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Vjpi+wXyauW/W19Dsfawjqpn9b4Ngz8L/rxhj3QXo0M="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/products/36199bc4-2ab4-4724-8d40-083ba382f71b.jpg",
+      "AssetFile": "D:\\Naira\\مصنع منتجات الحماية\\Backend\\Factory\\Factory\\wwwroot\\uploads\\products\\36199bc4-2ab4-4724-8d40-083ba382f71b.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "134101"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"m6LOlr7mYbxJU20grdO5VrCs3vHTW8E9r9FRRJhxr0M=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 16 Jun 2025 13:55:56 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-m6LOlr7mYbxJU20grdO5VrCs3vHTW8E9r9FRRJhxr0M="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/products/36199bc4-2ab4-4724-8d40-083ba382f71b.nhulxpduw6.jpg",
+      "AssetFile": "D:\\Naira\\مصنع منتجات الحماية\\Backend\\Factory\\Factory\\wwwroot\\uploads\\products\\36199bc4-2ab4-4724-8d40-083ba382f71b.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "134101"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"m6LOlr7mYbxJU20grdO5VrCs3vHTW8E9r9FRRJhxr0M=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 16 Jun 2025 13:55:56 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "nhulxpduw6"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/products/36199bc4-2ab4-4724-8d40-083ba382f71b.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-m6LOlr7mYbxJU20grdO5VrCs3vHTW8E9r9FRRJhxr0M="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/products/476c0669-d874-49ab-a7b9-dc9350471217.727hnkz9h4.jpeg",
+      "AssetFile": "D:\\Naira\\مصنع منتجات الحماية\\Backend\\Factory\\Factory\\wwwroot\\uploads\\products\\476c0669-d874-49ab-a7b9-dc9350471217.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "30814"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"AQthe7Qk9424y5lukS5x8plGrN6bnBS9TsBByA1Kedg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 17 Jun 2025 07:10:30 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "727hnkz9h4"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/products/476c0669-d874-49ab-a7b9-dc9350471217.jpeg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-AQthe7Qk9424y5lukS5x8plGrN6bnBS9TsBByA1Kedg="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/products/476c0669-d874-49ab-a7b9-dc9350471217.jpeg",
+      "AssetFile": "D:\\Naira\\مصنع منتجات الحماية\\Backend\\Factory\\Factory\\wwwroot\\uploads\\products\\476c0669-d874-49ab-a7b9-dc9350471217.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "30814"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"AQthe7Qk9424y5lukS5x8plGrN6bnBS9TsBByA1Kedg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 17 Jun 2025 07:10:30 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-AQthe7Qk9424y5lukS5x8plGrN6bnBS9TsBByA1Kedg="
         }
       ]
     },
@@ -267,6 +973,580 @@
       ]
     },
     {
+      "Route": "uploads/products/4d8fbbf4-dcf7-4efb-b67f-4591238eb9fa.727hnkz9h4.jpeg",
+      "AssetFile": "D:\\Naira\\مصنع منتجات الحماية\\Backend\\Factory\\Factory\\wwwroot\\uploads\\products\\4d8fbbf4-dcf7-4efb-b67f-4591238eb9fa.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "30814"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"AQthe7Qk9424y5lukS5x8plGrN6bnBS9TsBByA1Kedg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 17 Jun 2025 09:10:44 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "727hnkz9h4"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/products/4d8fbbf4-dcf7-4efb-b67f-4591238eb9fa.jpeg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-AQthe7Qk9424y5lukS5x8plGrN6bnBS9TsBByA1Kedg="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/products/4d8fbbf4-dcf7-4efb-b67f-4591238eb9fa.jpeg",
+      "AssetFile": "D:\\Naira\\مصنع منتجات الحماية\\Backend\\Factory\\Factory\\wwwroot\\uploads\\products\\4d8fbbf4-dcf7-4efb-b67f-4591238eb9fa.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "30814"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"AQthe7Qk9424y5lukS5x8plGrN6bnBS9TsBByA1Kedg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 17 Jun 2025 09:10:44 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-AQthe7Qk9424y5lukS5x8plGrN6bnBS9TsBByA1Kedg="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/products/4e7f6127-5066-43e6-89a7-b32e42993ac9.eyrrv9exzx.jpeg",
+      "AssetFile": "D:\\Naira\\مصنع منتجات الحماية\\Backend\\Factory\\Factory\\wwwroot\\uploads\\products\\4e7f6127-5066-43e6-89a7-b32e42993ac9.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "36350"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Rim+jTwIHfQ41WCLfzXUxNn/99nlThb6252Hih4Xec8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 17 Jun 2025 08:31:54 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "eyrrv9exzx"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/products/4e7f6127-5066-43e6-89a7-b32e42993ac9.jpeg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Rim+jTwIHfQ41WCLfzXUxNn/99nlThb6252Hih4Xec8="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/products/4e7f6127-5066-43e6-89a7-b32e42993ac9.jpeg",
+      "AssetFile": "D:\\Naira\\مصنع منتجات الحماية\\Backend\\Factory\\Factory\\wwwroot\\uploads\\products\\4e7f6127-5066-43e6-89a7-b32e42993ac9.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "36350"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Rim+jTwIHfQ41WCLfzXUxNn/99nlThb6252Hih4Xec8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 17 Jun 2025 08:31:54 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Rim+jTwIHfQ41WCLfzXUxNn/99nlThb6252Hih4Xec8="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/products/5fa9c6bf-0678-4c96-ba5b-65057cc9f0e3.jpg",
+      "AssetFile": "D:\\Naira\\مصنع منتجات الحماية\\Backend\\Factory\\Factory\\wwwroot\\uploads\\products\\5fa9c6bf-0678-4c96-ba5b-65057cc9f0e3.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "36813"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"LJ26rzwhXxrFCCoNqUcBchd/UrWDSTbuPHyA3yl/awE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 17 Jun 2025 07:55:40 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-LJ26rzwhXxrFCCoNqUcBchd/UrWDSTbuPHyA3yl/awE="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/products/5fa9c6bf-0678-4c96-ba5b-65057cc9f0e3.ov2pge8st8.jpg",
+      "AssetFile": "D:\\Naira\\مصنع منتجات الحماية\\Backend\\Factory\\Factory\\wwwroot\\uploads\\products\\5fa9c6bf-0678-4c96-ba5b-65057cc9f0e3.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "36813"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"LJ26rzwhXxrFCCoNqUcBchd/UrWDSTbuPHyA3yl/awE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 17 Jun 2025 07:55:40 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ov2pge8st8"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/products/5fa9c6bf-0678-4c96-ba5b-65057cc9f0e3.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-LJ26rzwhXxrFCCoNqUcBchd/UrWDSTbuPHyA3yl/awE="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/products/608025fe-ac3c-4842-9a88-d7c49f4b0a0f.eyrrv9exzx.jpeg",
+      "AssetFile": "D:\\Naira\\مصنع منتجات الحماية\\Backend\\Factory\\Factory\\wwwroot\\uploads\\products\\608025fe-ac3c-4842-9a88-d7c49f4b0a0f.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "36350"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Rim+jTwIHfQ41WCLfzXUxNn/99nlThb6252Hih4Xec8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 17 Jun 2025 07:55:07 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "eyrrv9exzx"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/products/608025fe-ac3c-4842-9a88-d7c49f4b0a0f.jpeg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Rim+jTwIHfQ41WCLfzXUxNn/99nlThb6252Hih4Xec8="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/products/608025fe-ac3c-4842-9a88-d7c49f4b0a0f.jpeg",
+      "AssetFile": "D:\\Naira\\مصنع منتجات الحماية\\Backend\\Factory\\Factory\\wwwroot\\uploads\\products\\608025fe-ac3c-4842-9a88-d7c49f4b0a0f.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "36350"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Rim+jTwIHfQ41WCLfzXUxNn/99nlThb6252Hih4Xec8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 17 Jun 2025 07:55:07 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Rim+jTwIHfQ41WCLfzXUxNn/99nlThb6252Hih4Xec8="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/products/699a61d1-1748-4c53-b3fc-c5ca9f60b281.jpg",
+      "AssetFile": "D:\\Naira\\مصنع منتجات الحماية\\Backend\\Factory\\Factory\\wwwroot\\uploads\\products\\699a61d1-1748-4c53-b3fc-c5ca9f60b281.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "36813"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"LJ26rzwhXxrFCCoNqUcBchd/UrWDSTbuPHyA3yl/awE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 17 Jun 2025 08:22:02 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-LJ26rzwhXxrFCCoNqUcBchd/UrWDSTbuPHyA3yl/awE="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/products/699a61d1-1748-4c53-b3fc-c5ca9f60b281.ov2pge8st8.jpg",
+      "AssetFile": "D:\\Naira\\مصنع منتجات الحماية\\Backend\\Factory\\Factory\\wwwroot\\uploads\\products\\699a61d1-1748-4c53-b3fc-c5ca9f60b281.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "36813"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"LJ26rzwhXxrFCCoNqUcBchd/UrWDSTbuPHyA3yl/awE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 17 Jun 2025 08:22:02 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ov2pge8st8"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/products/699a61d1-1748-4c53-b3fc-c5ca9f60b281.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-LJ26rzwhXxrFCCoNqUcBchd/UrWDSTbuPHyA3yl/awE="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/products/767c3af1-3eea-4471-8062-d8a3d19e1cd3.eyrrv9exzx.jpeg",
+      "AssetFile": "D:\\Naira\\مصنع منتجات الحماية\\Backend\\Factory\\Factory\\wwwroot\\uploads\\products\\767c3af1-3eea-4471-8062-d8a3d19e1cd3.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "36350"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Rim+jTwIHfQ41WCLfzXUxNn/99nlThb6252Hih4Xec8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 17 Jun 2025 08:27:30 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "eyrrv9exzx"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/products/767c3af1-3eea-4471-8062-d8a3d19e1cd3.jpeg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Rim+jTwIHfQ41WCLfzXUxNn/99nlThb6252Hih4Xec8="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/products/767c3af1-3eea-4471-8062-d8a3d19e1cd3.jpeg",
+      "AssetFile": "D:\\Naira\\مصنع منتجات الحماية\\Backend\\Factory\\Factory\\wwwroot\\uploads\\products\\767c3af1-3eea-4471-8062-d8a3d19e1cd3.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "36350"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Rim+jTwIHfQ41WCLfzXUxNn/99nlThb6252Hih4Xec8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 17 Jun 2025 08:27:30 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Rim+jTwIHfQ41WCLfzXUxNn/99nlThb6252Hih4Xec8="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/products/7f18eaf0-3a39-40a0-bc97-e79feaca3773.eyrrv9exzx.jpeg",
+      "AssetFile": "D:\\Naira\\مصنع منتجات الحماية\\Backend\\Factory\\Factory\\wwwroot\\uploads\\products\\7f18eaf0-3a39-40a0-bc97-e79feaca3773.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "36350"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Rim+jTwIHfQ41WCLfzXUxNn/99nlThb6252Hih4Xec8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 17 Jun 2025 08:21:28 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "eyrrv9exzx"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/products/7f18eaf0-3a39-40a0-bc97-e79feaca3773.jpeg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Rim+jTwIHfQ41WCLfzXUxNn/99nlThb6252Hih4Xec8="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/products/7f18eaf0-3a39-40a0-bc97-e79feaca3773.jpeg",
+      "AssetFile": "D:\\Naira\\مصنع منتجات الحماية\\Backend\\Factory\\Factory\\wwwroot\\uploads\\products\\7f18eaf0-3a39-40a0-bc97-e79feaca3773.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "36350"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Rim+jTwIHfQ41WCLfzXUxNn/99nlThb6252Hih4Xec8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 17 Jun 2025 08:21:28 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Rim+jTwIHfQ41WCLfzXUxNn/99nlThb6252Hih4Xec8="
+        }
+      ]
+    },
+    {
       "Route": "uploads/products/892ecabd-7e24-4d8d-900d-0847b9b2c312.04xphv5j33.png",
       "AssetFile": "D:\\Naira\\مصنع منتجات الحماية\\Backend\\Factory\\Factory\\wwwroot\\uploads\\products\\892ecabd-7e24-4d8d-900d-0847b9b2c312.png",
       "Selectors": [],
@@ -349,6 +1629,88 @@
       ]
     },
     {
+      "Route": "uploads/products/90c463d4-e9e9-468c-9fbd-ea52c172f5ca.eyrrv9exzx.jpeg",
+      "AssetFile": "D:\\Naira\\مصنع منتجات الحماية\\Backend\\Factory\\Factory\\wwwroot\\uploads\\products\\90c463d4-e9e9-468c-9fbd-ea52c172f5ca.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "36350"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Rim+jTwIHfQ41WCLfzXUxNn/99nlThb6252Hih4Xec8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 17 Jun 2025 07:26:09 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "eyrrv9exzx"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/products/90c463d4-e9e9-468c-9fbd-ea52c172f5ca.jpeg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Rim+jTwIHfQ41WCLfzXUxNn/99nlThb6252Hih4Xec8="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/products/90c463d4-e9e9-468c-9fbd-ea52c172f5ca.jpeg",
+      "AssetFile": "D:\\Naira\\مصنع منتجات الحماية\\Backend\\Factory\\Factory\\wwwroot\\uploads\\products\\90c463d4-e9e9-468c-9fbd-ea52c172f5ca.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "36350"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Rim+jTwIHfQ41WCLfzXUxNn/99nlThb6252Hih4Xec8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 17 Jun 2025 07:26:09 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Rim+jTwIHfQ41WCLfzXUxNn/99nlThb6252Hih4Xec8="
+        }
+      ]
+    },
+    {
       "Route": "uploads/products/938c4098-90cd-4cdf-ae7b-cc9f9e9add26.eyrrv9exzx.jpeg",
       "AssetFile": "D:\\Naira\\مصنع منتجات الحماية\\Backend\\Factory\\Factory\\wwwroot\\uploads\\products\\938c4098-90cd-4cdf-ae7b-cc9f9e9add26.jpeg",
       "Selectors": [],
@@ -417,6 +1779,498 @@
         {
           "Name": "Last-Modified",
           "Value": "Mon, 16 Jun 2025 12:49:17 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Rim+jTwIHfQ41WCLfzXUxNn/99nlThb6252Hih4Xec8="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/products/973428bf-6042-4ce7-8bbd-ed1a474b9780.eyrrv9exzx.jpeg",
+      "AssetFile": "D:\\Naira\\مصنع منتجات الحماية\\Backend\\Factory\\Factory\\wwwroot\\uploads\\products\\973428bf-6042-4ce7-8bbd-ed1a474b9780.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "36350"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Rim+jTwIHfQ41WCLfzXUxNn/99nlThb6252Hih4Xec8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 17 Jun 2025 07:30:57 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "eyrrv9exzx"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/products/973428bf-6042-4ce7-8bbd-ed1a474b9780.jpeg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Rim+jTwIHfQ41WCLfzXUxNn/99nlThb6252Hih4Xec8="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/products/973428bf-6042-4ce7-8bbd-ed1a474b9780.jpeg",
+      "AssetFile": "D:\\Naira\\مصنع منتجات الحماية\\Backend\\Factory\\Factory\\wwwroot\\uploads\\products\\973428bf-6042-4ce7-8bbd-ed1a474b9780.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "36350"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Rim+jTwIHfQ41WCLfzXUxNn/99nlThb6252Hih4Xec8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 17 Jun 2025 07:30:57 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Rim+jTwIHfQ41WCLfzXUxNn/99nlThb6252Hih4Xec8="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/products/9e4997ed-ab87-47a8-a439-285d0eb252f8.jpeg",
+      "AssetFile": "D:\\Naira\\مصنع منتجات الحماية\\Backend\\Factory\\Factory\\wwwroot\\uploads\\products\\9e4997ed-ab87-47a8-a439-285d0eb252f8.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "20975"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"8LNvbYEPPzQ3/kZ5RL6vY2N33/0lKjPv2WEZnPGxMbY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 17 Jun 2025 09:15:47 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-8LNvbYEPPzQ3/kZ5RL6vY2N33/0lKjPv2WEZnPGxMbY="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/products/9e4997ed-ab87-47a8-a439-285d0eb252f8.w0twdzkar4.jpeg",
+      "AssetFile": "D:\\Naira\\مصنع منتجات الحماية\\Backend\\Factory\\Factory\\wwwroot\\uploads\\products\\9e4997ed-ab87-47a8-a439-285d0eb252f8.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "20975"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"8LNvbYEPPzQ3/kZ5RL6vY2N33/0lKjPv2WEZnPGxMbY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 17 Jun 2025 09:15:47 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "w0twdzkar4"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/products/9e4997ed-ab87-47a8-a439-285d0eb252f8.jpeg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-8LNvbYEPPzQ3/kZ5RL6vY2N33/0lKjPv2WEZnPGxMbY="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/products/a4e574a0-744f-466e-9afb-898af2c61411.2k34c64w6d.jpeg",
+      "AssetFile": "D:\\Naira\\مصنع منتجات الحماية\\Backend\\Factory\\Factory\\wwwroot\\uploads\\products\\a4e574a0-744f-466e-9afb-898af2c61411.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "30907"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"/nBL1iFkI+iTCBsvkzJXaB2CNyFfOA39ehmdBASSrRU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 17 Jun 2025 09:12:36 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "2k34c64w6d"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/products/a4e574a0-744f-466e-9afb-898af2c61411.jpeg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-/nBL1iFkI+iTCBsvkzJXaB2CNyFfOA39ehmdBASSrRU="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/products/a4e574a0-744f-466e-9afb-898af2c61411.jpeg",
+      "AssetFile": "D:\\Naira\\مصنع منتجات الحماية\\Backend\\Factory\\Factory\\wwwroot\\uploads\\products\\a4e574a0-744f-466e-9afb-898af2c61411.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "30907"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"/nBL1iFkI+iTCBsvkzJXaB2CNyFfOA39ehmdBASSrRU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 17 Jun 2025 09:12:36 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-/nBL1iFkI+iTCBsvkzJXaB2CNyFfOA39ehmdBASSrRU="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/products/a7a6af1c-6b4c-4aed-bd56-fc1b722150c4.jpg",
+      "AssetFile": "D:\\Naira\\مصنع منتجات الحماية\\Backend\\Factory\\Factory\\wwwroot\\uploads\\products\\a7a6af1c-6b4c-4aed-bd56-fc1b722150c4.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "36813"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"LJ26rzwhXxrFCCoNqUcBchd/UrWDSTbuPHyA3yl/awE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 17 Jun 2025 09:10:05 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-LJ26rzwhXxrFCCoNqUcBchd/UrWDSTbuPHyA3yl/awE="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/products/a7a6af1c-6b4c-4aed-bd56-fc1b722150c4.ov2pge8st8.jpg",
+      "AssetFile": "D:\\Naira\\مصنع منتجات الحماية\\Backend\\Factory\\Factory\\wwwroot\\uploads\\products\\a7a6af1c-6b4c-4aed-bd56-fc1b722150c4.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "36813"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"LJ26rzwhXxrFCCoNqUcBchd/UrWDSTbuPHyA3yl/awE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 17 Jun 2025 09:10:05 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ov2pge8st8"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/products/a7a6af1c-6b4c-4aed-bd56-fc1b722150c4.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-LJ26rzwhXxrFCCoNqUcBchd/UrWDSTbuPHyA3yl/awE="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/products/b09c4b18-a767-48e1-ac7b-7b015a83ef83.jpg",
+      "AssetFile": "D:\\Naira\\مصنع منتجات الحماية\\Backend\\Factory\\Factory\\wwwroot\\uploads\\products\\b09c4b18-a767-48e1-ac7b-7b015a83ef83.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "134101"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"m6LOlr7mYbxJU20grdO5VrCs3vHTW8E9r9FRRJhxr0M=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 17 Jun 2025 06:53:39 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-m6LOlr7mYbxJU20grdO5VrCs3vHTW8E9r9FRRJhxr0M="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/products/b09c4b18-a767-48e1-ac7b-7b015a83ef83.nhulxpduw6.jpg",
+      "AssetFile": "D:\\Naira\\مصنع منتجات الحماية\\Backend\\Factory\\Factory\\wwwroot\\uploads\\products\\b09c4b18-a767-48e1-ac7b-7b015a83ef83.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "134101"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"m6LOlr7mYbxJU20grdO5VrCs3vHTW8E9r9FRRJhxr0M=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 17 Jun 2025 06:53:39 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "nhulxpduw6"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/products/b09c4b18-a767-48e1-ac7b-7b015a83ef83.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-m6LOlr7mYbxJU20grdO5VrCs3vHTW8E9r9FRRJhxr0M="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/products/d1236337-289b-4775-a9fb-260eacdb9408.eyrrv9exzx.jpeg",
+      "AssetFile": "D:\\Naira\\مصنع منتجات الحماية\\Backend\\Factory\\Factory\\wwwroot\\uploads\\products\\d1236337-289b-4775-a9fb-260eacdb9408.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "36350"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Rim+jTwIHfQ41WCLfzXUxNn/99nlThb6252Hih4Xec8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 16 Jun 2025 13:45:44 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "eyrrv9exzx"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/products/d1236337-289b-4775-a9fb-260eacdb9408.jpeg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Rim+jTwIHfQ41WCLfzXUxNn/99nlThb6252Hih4Xec8="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/products/d1236337-289b-4775-a9fb-260eacdb9408.jpeg",
+      "AssetFile": "D:\\Naira\\مصنع منتجات الحماية\\Backend\\Factory\\Factory\\wwwroot\\uploads\\products\\d1236337-289b-4775-a9fb-260eacdb9408.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "36350"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Rim+jTwIHfQ41WCLfzXUxNn/99nlThb6252Hih4Xec8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 16 Jun 2025 13:45:44 GMT"
         },
         {
           "Name": "Cache-Control",

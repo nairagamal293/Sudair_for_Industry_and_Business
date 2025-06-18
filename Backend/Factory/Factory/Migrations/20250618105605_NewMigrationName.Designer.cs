@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Factory.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20250616124656_InitialCreate")]
-    partial class InitialCreate
+    [Migration("20250618105605_NewMigrationName")]
+    partial class NewMigrationName
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -79,25 +79,25 @@ namespace Factory.Migrations
                         new
                         {
                             Id = 1,
-                            CreatedAt = new DateTime(2025, 6, 16, 12, 46, 56, 164, DateTimeKind.Utc).AddTicks(7197),
+                            CreatedAt = new DateTime(2025, 6, 18, 10, 56, 4, 703, DateTimeKind.Utc).AddTicks(1219),
                             Name = "أقنعة الوقاية"
                         },
                         new
                         {
                             Id = 2,
-                            CreatedAt = new DateTime(2025, 6, 16, 12, 46, 56, 164, DateTimeKind.Utc).AddTicks(7200),
+                            CreatedAt = new DateTime(2025, 6, 18, 10, 56, 4, 703, DateTimeKind.Utc).AddTicks(1222),
                             Name = "مرشحات الأقنعة"
                         },
                         new
                         {
                             Id = 3,
-                            CreatedAt = new DateTime(2025, 6, 16, 12, 46, 56, 164, DateTimeKind.Utc).AddTicks(7201),
+                            CreatedAt = new DateTime(2025, 6, 18, 10, 56, 4, 703, DateTimeKind.Utc).AddTicks(1223),
                             Name = "البدل الوقائية"
                         },
                         new
                         {
                             Id = 4,
-                            CreatedAt = new DateTime(2025, 6, 16, 12, 46, 56, 164, DateTimeKind.Utc).AddTicks(7202),
+                            CreatedAt = new DateTime(2025, 6, 18, 10, 56, 4, 703, DateTimeKind.Utc).AddTicks(1224),
                             Name = "ملحقات الحماية"
                         });
                 });
@@ -173,7 +173,7 @@ namespace Factory.Migrations
                     b.ToTable("Products");
                 });
 
-            modelBuilder.Entity("Factory.Models.QuoteRequest", b =>
+            modelBuilder.Entity("QuoteRequest", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -181,52 +181,43 @@ namespace Factory.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<string>("AdditionalNotes")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
                     b.Property<string>("Address")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Budget")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(200)
+                        .HasColumnType("nvarchar(200)");
 
                     b.Property<string>("City")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
 
                     b.Property<string>("Company")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
 
                     b.Property<string>("Country")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("DeliveryTimeline")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
 
                     b.Property<string>("Email")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
 
                     b.Property<string>("FullName")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("IntendedUse")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
 
                     b.Property<bool>("IsRead")
                         .HasColumnType("bit");
 
                     b.Property<string>("Phone")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(20)
+                        .HasColumnType("nvarchar(20)");
 
                     b.Property<string>("ProductDetails")
                         .IsRequired()

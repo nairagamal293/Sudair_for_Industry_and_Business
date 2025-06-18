@@ -1,9 +1,6 @@
-
-<!-- Create products.html -->
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-    <!-- Same head as index.html -->
     <title>منتجاتنا - مصنع سدير للصناعة والأعمال</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,33 +11,78 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <!-- Animate.css -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-        <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/main.css">
     <style>
-        .product-detail-hero {
+        .product-hero {
             background: linear-gradient(135deg, rgba(37, 99, 235, 0.8), rgba(30, 64, 175, 0.9)), 
                         url('images/products-bg.jpg') center/cover;
             padding: 120px 0 80px;
         }
-        .specs-table {
-            border-collapse: separate;
-            border-spacing: 0 10px;
+        
+        .product-card {
+            border: none;
+            border-radius: 12px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            height: 100%;
         }
-        .specs-table tr td:first-child {
-            font-weight: 600;
-            min-width: 150px;
+        
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
         }
-        .product-tab {
-            border-bottom: 3px solid transparent;
-            transition: all 0.3s;
+        
+        .product-img-container {
+            height: 200px;
+            overflow: hidden;
+            position: relative;
         }
-        .product-tab.active {
-            border-color: var(--primary);
-            color: var(--primary);
+        
+        .product-img-container img {
+            transition: transform 0.5s ease;
+        }
+        
+        .product-card:hover .product-img-container img {
+            transform: scale(1.05);
+        }
+        
+        .category-badge {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            z-index: 2;
+        }
+        
+        .loading-spinner {
+            display: none;
+            width: 3rem;
+            height: 3rem;
+        }
+        
+        .filter-btn {
+            transition: all 0.3s ease;
+        }
+        
+        .filter-btn.active {
+            background-color: var(--primary);
+            color: white;
+        }
+        
+        .product-detail-modal .modal-content {
+            border-radius: 16px;
+            overflow: hidden;
+        }
+        
+        .product-detail-img {
+            height: 350px;
+            object-fit: cover;
+            width: 100%;
         }
     </style>
 </head>
 <body>
-   <!-- Navigation -->
+    <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
         <div class="container">
             <a class="navbar-brand fw-bold fs-3" href="#">
@@ -108,168 +150,79 @@
         </div>
     </section>
 
-    <!-- Product Details -->
-    <section class="py-5 bg-white">
-        <div class="container py-5">
-            <div class="row g-5">
-                <div class="col-lg-6">
-                    <div class="sticky-top" style="top: 100px;">
-                        <div class="card border-0 shadow-sm rounded-3 overflow-hidden mb-4">
-                            <div class="product-image-container" style="height: 350px;">
-                                <img src="images/mask-detail-1.jpg" class="img-cover" alt="قناع وقاية">
-                            </div>
-                        </div>
-                        <div class="row g-3">
-                            <div class="col-4">
-                                <div class="cursor-pointer border rounded-3 p-2">
-                                    <img src="images/mask-detail-2.jpg" class="img-fluid rounded-2" alt="تفاصيل القناع">
-                                </div>
-                            </div>
-                            <div class="col-4">
-                                <div class="cursor-pointer border rounded-3 p-2">
-                                    <img src="images/mask-detail-3.jpg" class="img-fluid rounded-2" alt="تفاصيل القناع">
-                                </div>
-                            </div>
-                            <div class="col-4">
-                                <div class="cursor-pointer border rounded-3 p-2">
-                                    <img src="images/mask-detail-4.jpg" class="img-fluid rounded-2" alt="تفاصيل القناع">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="d-flex justify-content-between align-items-start mb-4">
-                        <div>
-                            <h2 class="fw-bold mb-1">قناع الوقاية المتطور - نموذج SD-2023</h2>
-                            <div class="text-warning mb-3">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star-half-alt"></i>
-                                <span class="text-muted ms-2">(48 تقييم)</span>
-                            </div>
-                        </div>
-                        <span class="badge bg-success bg-opacity-10 text-success">متوفر</span>
-                    </div>
 
-                    <div class="mb-4">
-                        <h4 class="text-primary">SAR 149.00</h4>
-                        <p class="text-muted">السعر لا يشمل الضريبة</p>
-                    </div>
-
-                    <div class="mb-5">
-                        <p>قناع وقاية متطور بتقنية HEPA مع فلتر كربون نشط، يوفر حماية ضد الجسيمات الدقيقة حتى 0.3 ميكرون والغازات العضوية. مناسب للاستخدام في البيئات الصناعية والطبية.</p>
-                        
-                        <div class="row g-3 mt-4">
-                            <div class="col-md-6">
-                                <label class="form-label">نوع الفلتر</label>
-                                <select class="form-select">
-                                    <option>HEPA - للجسيمات الدقيقة</option>
-                                    <option>كربون نشط - للغازات</option>
-                                    <option>مدمج - HEPA + كربون</option>
-                                </select>
-                            </div>
-                            <div class="col-md-6">
-                                <label class="form-label">الكمية</label>
-                                <div class="input-group">
-                                    <button class="btn btn-outline-secondary" type="button">-</button>
-                                    <input type="text" class="form-control text-center" value="1">
-                                    <button class="btn btn-outline-secondary" type="button">+</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="d-flex gap-3 mb-5">
-                        <button class="btn btn-primary btn-modern flex-grow-1 py-3">
-                            <i class="fas fa-shopping-cart me-2"></i> أضف إلى السلة
-                        </button>
-                        <button class="btn btn-outline-primary btn-modern py-3">
-                            <i class="fas fa-heart"></i>
-                        </button>
-                    </div>
-
-                    <div class="border-top pt-4">
-                        <ul class="nav nav-tabs border-bottom-0" id="productTabs" role="tablist">
-                            <li class="nav-item" role="presentation">
-                                <button class="nav-link product-tab active" id="specs-tab" data-bs-toggle="tab" data-bs-target="#specs" type="button">المواصفات الفنية</button>
-                            </li>
-                            <li class="nav-item" role="presentation">
-                                <button class="nav-link product-tab" id="features-tab" data-bs-toggle="tab" data-bs-target="#features" type="button">المميزات</button>
-                            </li>
-                            <li class="nav-item" role="presentation">
-                                <button class="nav-link product-tab" id="downloads-tab" data-bs-toggle="tab" data-bs-target="#downloads" type="button">الملفات</button>
-                            </li>
-                        </ul>
-                        <div class="tab-content pt-3" id="productTabsContent">
-                            <div class="tab-pane fade show active" id="specs" role="tabpanel">
-                                <table class="specs-table">
-                                    <tr>
-                                        <td>نوع الحماية:</td>
-                                        <td>جسيمات دقيقة، غازات، أبخرة</td>
-                                    </tr>
-                                    <tr>
-                                        <td>كفاءة الترشيح:</td>
-                                        <td>99.97% @ 0.3 ميكرون</td>
-                                    </tr>
-                                    <tr>
-                                        <td>المعايير:</td>
-                                        <td>NIOSH N95, EN 149:2001+A1:2009</td>
-                                    </tr>
-                                    <tr>
-                                        <td>مدة الصلاحية:</td>
-                                        <td>5 سنوات في التغليف الأصلي</td>
-                                    </tr>
-                                    <tr>
-                                        <td>بلد المنشأ:</td>
-                                        <td>المملكة العربية السعودية</td>
-                                    </tr>
-                                </table>
-                            </div>
-                            <div class="tab-pane fade" id="features" role="tabpanel">
-                                <ul class="list-unstyled">
-                                    <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i> صمام زفير لخفض الرطوبة داخل القناع</li>
-                                    <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i> حزام رأس قابل للتعديل لضمان الراحة</li>
-                                    <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i> طبقة داخلية ناعمة للراحة أثناء الاستخدام المطول</li>
-                                    <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i> تصميم خفيف الوزن (85 جرام فقط)</li>
-                                </ul>
-                            </div>
-                            <div class="tab-pane fade" id="downloads" role="tabpanel">
-                                <div class="list-group">
-                                    <a href="#" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
-                                        كتالوج المنتج (PDF)
-                                        <i class="fas fa-download text-muted"></i>
-                                    </a>
-                                    <a href="#" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
-                                        شهادة المطابقة (PDF)
-                                        <i class="fas fa-download text-muted"></i>
-                                    </a>
-                                    <a href="#" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
-                                        دليل الاستخدام (PDF)
-                                        <i class="fas fa-download text-muted"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Related Products -->
+    <!-- Products Section -->
     <section class="py-5 bg-light">
         <div class="container py-4">
-            <h3 class="mb-4 fw-bold">منتجات ذات صلة</h3>
-            <div class="row g-4">
-                <!-- Repeat product cards from index.html -->
+            <div class="row mb-4">
+                <div class="col-md-6">
+                    <h2 class="fw-bold">تصفح منتجاتنا</h2>
+                    <p class="text-muted">اختر من بين مجموعة واسعة من منتجات الحماية الشخصية</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <div class="btn-group" role="group" aria-label="Product filters">
+                        <button type="button" class="btn btn-outline-primary filter-btn active" data-category="all">الكل</button>
+                        <button type="button" class="btn btn-outline-primary filter-btn" data-category="1">أقنعة الوقاية</button>
+                        <button type="button" class="btn btn-outline-primary filter-btn" data-category="2">مرشحات الأقنعة</button>
+                        <button type="button" class="btn btn-outline-primary filter-btn" data-category="3">البدل الوقائية</button>
+                        <button type="button" class="btn btn-outline-primary filter-btn" data-category="4">ملحقات الحماية</button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Loading Spinner -->
+            <div class="text-center my-5">
+                <div class="spinner-border text-primary loading-spinner" role="status">
+                    <span class="visually-hidden">جاري التحميل...</span>
+                </div>
+            </div>
+            
+            <!-- Products Grid -->
+            <div class="row g-4" id="products-container">
+                <!-- Products will be loaded here dynamically -->
+            </div>
+            
+            <!-- Load More Button -->
+            <div class="text-center mt-5">
+                <button id="load-more" class="btn btn-primary btn-modern px-4" style="display: none;">
+                    <i class="fas fa-plus-circle me-2"></i> تحميل المزيد
+                </button>
             </div>
         </div>
     </section>
 
-      <!-- Footer -->
+    <!-- Product Detail Modal -->
+    <div class="modal fade" id="productDetailModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="productDetailModalTitle">تفاصيل المنتج</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img src="" alt="Product Image" class="product-detail-img rounded-3 mb-3" id="modalProductImage">
+                        </div>
+                        <div class="col-md-6">
+                            <h3 id="modalProductName" class="fw-bold mb-3"></h3>
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <h4 class="text-primary mb-0" id="modalProductPrice"></h4>
+                                <span class="badge bg-success bg-opacity-10 text-success" id="modalProductAvailability"></span>
+                            </div>
+                            <p class="text-muted mb-4" id="modalProductCategory"></p>
+                            <p id="modalProductDescription" class="mb-4"></p>
+                            <div class="d-flex gap-3">
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
     <footer class="py-5 bg-dark text-white">
         <div class="container py-4">
             <div class="row g-4">
@@ -338,10 +291,181 @@
             </div>
         </div>
     </footer>
-     <!-- Bootstrap JS -->
+
+    <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Arabic Font -->
     <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
     
+    <!-- JavaScript for Product Loading -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const productsContainer = document.getElementById('products-container');
+            const loadMoreBtn = document.getElementById('load-more');
+            const loadingSpinner = document.querySelector('.loading-spinner');
+            const filterButtons = document.querySelectorAll('.filter-btn');
+            
+            let currentPage = 1;
+            let currentCategory = 'all';
+            let isLoading = false;
+            
+            // Initialize modal
+            const productDetailModal = new bootstrap.Modal(document.getElementById('productDetailModal'));
+            
+            // Fetch products from API
+            async function fetchProducts(page = 1, categoryId = 'all') {
+                isLoading = true;
+                loadingSpinner.style.display = 'block';
+                
+                try {
+                    let apiUrl = `https://localhost:7158/api/products?page=${page}`;
+                    if (categoryId !== 'all') {
+                        apiUrl += `&categoryId=${categoryId}`;
+                    }
+                    
+                    const response = await fetch(apiUrl);
+                    const products = await response.json();
+                    
+                    if (response.ok) {
+                        displayProducts(products);
+                        
+                        // Show/hide load more button based on response
+                        if (products.length >= 10) { // Assuming 10 products per page
+                            loadMoreBtn.style.display = 'block';
+                        } else {
+                            loadMoreBtn.style.display = 'none';
+                        }
+                    } else {
+                        console.error('Error fetching products:', products);
+                        showError('حدث خطأ أثناء جلب المنتجات. يرجى المحاولة مرة أخرى.');
+                    }
+                } catch (error) {
+                    console.error('Network error:', error);
+                    showError('تعذر الاتصال بالخادم. يرجى التحقق من اتصال الإنترنت.');
+                } finally {
+                    isLoading = false;
+                    loadingSpinner.style.display = 'none';
+                }
+            }
+            
+            // Display products in the grid
+            function displayProducts(products) {
+                if (currentPage === 1) {
+                    productsContainer.innerHTML = '';
+                }
+                
+                if (products.length === 0 && currentPage === 1) {
+                    productsContainer.innerHTML = `
+                        <div class="col-12 text-center py-5">
+                            <i class="fas fa-box-open fa-3x text-muted mb-3"></i>
+                            <h4 class="text-muted">لا توجد منتجات متاحة</h4>
+                        </div>
+                    `;
+                    return;
+                }
+                
+                products.forEach(product => {
+                    const productCard = document.createElement('div');
+                    productCard.className = 'col-lg-3 col-md-4 col-sm-6';
+                    productCard.innerHTML = `
+                        <div class="product-card h-100">
+                            <div class="product-img-container position-relative">
+                                <img src="${product.imagePath || 'images/product-placeholder.jpg'}" 
+                                     class="img-cover" 
+                                     alt="${product.name}">
+                                <span class="category-badge badge bg-primary">
+                                    ${product.categoryName || 'فئة غير محددة'}
+                                </span>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">${product.name}</h5>
+                                <p class="card-text text-muted small">${product.description ? product.description.substring(0, 60) + '...' : 'لا يوجد وصف'}</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    
+                                    <button class="btn btn-sm btn-outline-primary view-details" 
+                                            data-product-id="${product.id}">
+                                        التفاصيل
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    `;
+                    productsContainer.appendChild(productCard);
+                });
+                
+                // Add event listeners to detail buttons
+                document.querySelectorAll('.view-details').forEach(btn => {
+                    btn.addEventListener('click', function() {
+                        const productId = this.getAttribute('data-product-id');
+                        showProductDetails(productId);
+                    });
+                });
+            }
+            
+            // Show error message
+            function showError(message) {
+                productsContainer.innerHTML = `
+                    <div class="col-12 text-center py-5">
+                        <i class="fas fa-exclamation-triangle fa-3x text-danger mb-3"></i>
+                        <h4 class="text-danger">${message}</h4>
+                        <button class="btn btn-primary mt-3" onclick="location.reload()">
+                            <i class="fas fa-sync-alt me-2"></i> إعادة المحاولة
+                        </button>
+                    </div>
+                `;
+            }
+            
+            // Show product details in modal
+            async function showProductDetails(productId) {
+                try {
+                    const response = await fetch(`https://localhost:7158/api/Products/${productId}`);
+                    const product = await response.json();
+                    
+                    if (response.ok) {
+                        document.getElementById('modalProductName').textContent = product.name;
+                        document.getElementById('modalProductDescription').textContent = 
+                            product.description || 'لا يوجد وصف مفصل لهذا المنتج';
+                        document.getElementById('modalProductCategory').textContent = 
+                            `الفئة: ${product.categoryName || 'غير محدد'}`;
+                      
+                        document.getElementById('modalProductAvailability').textContent = 'متوفر';
+                        document.getElementById('modalProductImage').src = 
+                            product.imagePath || 'images/product-placeholder.jpg';
+                        
+                        productDetailModal.show();
+                    } else {
+                        console.error('Error fetching product details:', product);
+                        alert('حدث خطأ أثناء جلب تفاصيل المنتج');
+                    }
+                } catch (error) {
+                    console.error('Network error:', error);
+                    alert('تعذر الاتصال بالخادم. يرجى التحقق من اتصال الإنترنت.');
+                }
+            }
+            
+            // Filter products by category
+            filterButtons.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    filterButtons.forEach(b => b.classList.remove('active'));
+                    this.classList.add('active');
+                    
+                    currentCategory = this.getAttribute('data-category');
+                    currentPage = 1;
+                    fetchProducts(currentPage, currentCategory);
+                });
+            });
+            
+            // Load more products
+            loadMoreBtn.addEventListener('click', function() {
+                if (!isLoading) {
+                    currentPage++;
+                    fetchProducts(currentPage, currentCategory);
+                }
+            });
+            
+            // Initial load
+            fetchProducts(currentPage, currentCategory);
+        });
+    </script>
 </body>
 </html>

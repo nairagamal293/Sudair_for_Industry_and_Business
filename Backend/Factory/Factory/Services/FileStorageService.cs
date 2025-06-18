@@ -1,23 +1,21 @@
 ﻿using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Http;
 using System.IO;
 using System.Threading.Tasks;
-using Microsoft.AspNetCore.Http;
 
 namespace Factory.Services
 {
     public class FileStorageService
     {
         private readonly string _uploadPath;
+        private readonly IHttpContextAccessor _httpContextAccessor;
 
-        public FileStorageService(IWebHostEnvironment env)
+        public FileStorageService(IWebHostEnvironment env, IHttpContextAccessor httpContextAccessor)
         {
-            // Ensure WebRootPath exists or fall back to a default location
             var basePath = env.WebRootPath ?? Path.Combine(Directory.GetCurrentDirectory(), "wwwroot");
-
             _uploadPath = Path.Combine(basePath, "uploads", "products");
-
-            // Create directory if it doesn't exist
             Directory.CreateDirectory(_uploadPath);
+            _httpContextAccessor = httpContextAccessor;
         }
 
         public async Task<string> SaveFile(IFormFile file)
@@ -33,7 +31,11 @@ namespace Factory.Services
                 await file.CopyToAsync(stream);
             }
 
-            return $"/uploads/products/{uniqueFileName}";
+            // Get the base URL dynamically
+            var request = _httpContextAccessor.HttpContext.Request;
+            var baseUrl = $"{request.Scheme}://{request.Host}";
+
+            return $"{baseUrl}/uploads/products/{uniqueFileName}";
         }
 
         public void DeleteFile(string filePath)
