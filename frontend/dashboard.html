@@ -350,6 +350,43 @@ table th, table td {
         margin-left: 0;
     }
 }
+
+/* Notification styles */
+.icon-circle {
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.toast {
+    direction: rtl;
+    text-align: right;
+}
+
+.dropdown-list {
+    padding: 0;
+    border: none;
+    overflow: hidden;
+    width: 20rem !important;
+}
+
+.dropdown-header {
+    font-weight: 800;
+    font-size: 0.65rem;
+    color: #b7b9cc;
+    text-align: right;
+}
+
+.badge-counter {
+    position: absolute;
+    transform: scale(0.7);
+    transform-origin: top right;
+    right: 0.25rem;
+    margin-top: -0.25rem;
+}
     </style>
 </head>
 <body>
@@ -397,13 +434,16 @@ table th, table td {
                     <a class="nav-link" href="#" data-section="messages">
                         <i class="fas fa-fw fa-envelope"></i>
                         <span>الرسائل</span>
+                        <span id="unreadMessagesBadge" class="badge bg-danger rounded-pill ms-2 d-none">0</span>
+                        
                     </a>
                 </li>
-                
+
                 <li class="nav-item">
                     <a class="nav-link" href="#" data-section="quotes">
                         <i class="fas fa-fw fa-file-invoice-dollar"></i>
                         <span>طلبات العروض</span>
+                        <span id="unreadQuotesBadge" class="badge bg-danger rounded-pill ms-2 d-none">0</span>
                     </a>
                 </li>
                 <li class="nav-item mt-auto">
@@ -413,6 +453,8 @@ table th, table td {
                     </a>
                 </li>
             </ul>
+            <!-- Topbar Navbar -->
+
         </div>
         
         <!-- Content -->
@@ -426,62 +468,62 @@ table th, table td {
                     <!-- Content Row -->
                     <div class="row">
                         <!-- Products Card -->
-                        <div class="col-xl-3 col-md-6 mb-4">
-                            <div class="card stat-card border-left-success shadow h-100 py-2">
-                                <div class="card-body">
-                                    <div class="row no-gutters align-items-center">
-                                        <div class="col mr-2">
-                                            <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
-                                                المنتجات</div>
-                                            <div class="h5 mb-0 font-weight-bold text-gray-800">215</div>
-                                        </div>
-                                        <div class="col-auto">
-                                            <i class="fas fa-box-open fa-2x text-gray-300 stat-icon"></i>
-                                        </div>
-                                    </div>
+<div class="col-xl-3 col-md-6 mb-4">
+    <div class="card stat-card border-left-success shadow h-100 py-2">
+        <div class="card-body">
+            <div class="row no-gutters align-items-center">
+                <div class="col mr-2">
+                    <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
+                        المنتجات</div>
+                    <div class="h5 mb-0 font-weight-bold text-gray-800" id="productsCount">215</div>
+                                </div>
+                                <div class="col-auto">
+                                    <i class="fas fa-box-open fa-2x text-gray-300 stat-icon"></i>
                                 </div>
                             </div>
                         </div>
-                        
-                        <!-- Messages Card -->
-                        <div class="col-xl-3 col-md-6 mb-4">
-                            <div class="card stat-card border-left-info shadow h-100 py-2">
-                                <div class="card-body">
+                    </div>
+                </div>
+                
+                <!-- Messages Card -->
+                <div class="col-xl-3 col-md-6 mb-4">
+                    <div class="card stat-card border-left-info shadow h-100 py-2">
+                        <div class="card-body">
+                            <div class="row no-gutters align-items-center">
+                                <div class="col mr-2">
+                                    <div class="text-xs font-weight-bold text-info text-uppercase mb-1">الرسائل
+                                    </div>
                                     <div class="row no-gutters align-items-center">
-                                        <div class="col mr-2">
-                                            <div class="text-xs font-weight-bold text-info text-uppercase mb-1">الرسائل
-                                            </div>
-                                            <div class="row no-gutters align-items-center">
-                                                <div class="col-auto">
-                                                    <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800">12</div>
-                                                </div>
-                                            </div>
-                                        </div>
                                         <div class="col-auto">
-                                            <i class="fas fa-envelope fa-2x text-gray-300 stat-icon"></i>
+                                            <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800" id="messagesCount">12</div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                        
-                        <!-- Quote Requests Card -->
-                        <div class="col-xl-3 col-md-6 mb-4">
-                            <div class="card stat-card border-left-warning shadow h-100 py-2">
-                                <div class="card-body">
-                                    <div class="row no-gutters align-items-center">
-                                        <div class="col mr-2">
-                                            <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">
-                                                طلبات العروض</div>
-                                            <div class="h5 mb-0 font-weight-bold text-gray-800">18</div>
-                                        </div>
-                                        <div class="col-auto">
-                                            <i class="fas fa-file-invoice-dollar fa-2x text-gray-300 stat-icon"></i>
-                                        </div>
-                                    </div>
+                                <div class="col-auto">
+                                    <i class="fas fa-envelope fa-2x text-gray-300 stat-icon"></i>
                                 </div>
                             </div>
                         </div>
+                    </div>
+                </div>
+                
+                <!-- Quote Requests Card -->
+                <div class="col-xl-3 col-md-6 mb-4">
+                    <div class="card stat-card border-left-warning shadow h-100 py-2">
+                        <div class="card-body">
+                            <div class="row no-gutters align-items-center">
+                                <div class="col mr-2">
+                                    <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">
+                                        طلبات العروض</div>
+                                    <div class="h5 mb-0 font-weight-bold text-gray-800" id="quotesCount">18</div>
+                                </div>
+                                <div class="col-auto">
+                                    <i class="fas fa-file-invoice-dollar fa-2x text-gray-300 stat-icon"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                     </div>
                     
                     <!-- Content Row -->
@@ -1053,8 +1095,16 @@ table th, table td {
     <script src="https://cdn.datatables.net/1.13.4/js/dataTables.bootstrap5.min.js"></script>
     
     <script>
+
+        let lastMessageCount = 0;
+        let lastQuoteCount = 0;
+
+
         // Check authentication
         document.addEventListener('DOMContentLoaded', function() {
+
+            updateDashboardCounts();
+
             const token = localStorage.getItem('adminToken');
             if (!token && window.location.pathname !== '/login.html') {
                 window.location.href = 'login.html';
@@ -1217,6 +1267,52 @@ table th, table td {
                 },
             });
         }
+        function updateDashboardCounts() {
+    const token = localStorage.getItem('adminToken');
+    if (!token) return;
+
+    // Fetch and count products
+    fetch('https://localhost:7158/api/Products', {
+        headers: {
+            'Authorization': `Bearer ${token}`
+        }
+    })
+    .then(response => response.json())
+    .then(products => {
+        document.getElementById('productsCount').textContent = products.length;
+    })
+    .catch(error => {
+        console.error('Error fetching products:', error);
+    });
+
+    // Fetch and count messages
+    fetch('https://localhost:7158/api/contact', {
+        headers: {
+            'Authorization': `Bearer ${token}`
+        }
+    })
+    .then(response => response.json())
+    .then(messages => {
+        document.getElementById('messagesCount').textContent = messages.length;
+    })
+    .catch(error => {
+        console.error('Error fetching messages:', error);
+    });
+
+    // Fetch and count quotes
+    fetch('https://localhost:7158/api/Quotes', {
+        headers: {
+            'Authorization': `Bearer ${token}`
+        }
+    })
+    .then(response => response.json())
+    .then(quotes => {
+        document.getElementById('quotesCount').textContent = quotes.length;
+    })
+    .catch(error => {
+        console.error('Error fetching quotes:', error);
+    });
+}
         
         // Load products from API
         function loadProducts() {
@@ -1508,7 +1604,8 @@ function deleteProduct(productId) {
     })
     .then(response => {
         if (response.ok) {
-            loadProducts(); // Refresh the product list
+            loadProducts();
+            updateDashboardCounts(); // Update counts after deletion
             alert('تم حذف المنتج بنجاح');
         } else {
             alert('حدث خطأ أثناء حذف المنتج');
@@ -1718,20 +1815,20 @@ function deleteCategory(categoryId) {
         
         // Mark message as read
         document.getElementById('markAsReadBtn').addEventListener('click', function() {
-            const messageId = this.getAttribute('data-id');
-            
-            fetch(`https://localhost:7158/api/contact/${messageId}`, {
-                method: 'GET',
-                headers: {
-                    'Authorization': 'Bearer ' + localStorage.getItem('adminToken')
-                }
-            })
-            .then(response => {
-                if (response.ok) {
-                    // Close modal and refresh messages
-                    const modal = bootstrap.Modal.getInstance(document.getElementById('viewMessageModal'));
-                    modal.hide();
-                    loadMessages();
+    const messageId = this.getAttribute('data-id');
+    
+    fetch(`https://localhost:7158/api/contact/${messageId}`, {
+        method: 'GET', // Or PUT if your API supports marking as read
+        headers: {
+            'Authorization': 'Bearer ' + localStorage.getItem('adminToken')
+        }
+    })
+    .then(response => {
+        if (response.ok) {
+            const modal = bootstrap.Modal.getInstance(document.getElementById('viewMessageModal'));
+            modal.hide();
+            loadMessages();
+            checkForNewItems();
                     alert('تم تحديد الرسالة كمقروءة');
                 }
             })
@@ -2041,6 +2138,7 @@ function deleteCategory(categoryId) {
                 const modal = bootstrap.Modal.getInstance(document.getElementById('viewQuoteModal'));
                 modal.hide();
                 loadQuotes();
+                checkForNewItems();
                 alert('تم تحديد طلب العرض كمقروء');
             })
             .catch(error => {
@@ -2071,6 +2169,192 @@ function deleteCategory(categoryId) {
             });
         }
         
+
+function checkForNewItems() {
+    const token = localStorage.getItem('adminToken');
+    if (!token) return;
+
+    // Check messages
+    fetch('https://localhost:7158/api/contact', {
+        headers: {
+            'Authorization': `Bearer ${token}`
+        }
+    })
+    .then(response => response.json())
+    .then(messages => {
+        const unreadMessages = messages.filter(m => !m.isRead).length;
+        updateBadge('unreadMessagesBadge', unreadMessages);
+        
+        // Check if new messages arrived
+        if (messages.length > lastMessageCount) {
+            const newCount = messages.length - lastMessageCount;
+            showNotification('رسالة جديدة', `لديك ${newCount} رسالة جديدة`, 'messages');
+            lastMessageCount = messages.length;
+        }
+    });
+
+    // Check quotes
+    fetch('https://localhost:7158/api/Quotes', {
+        headers: {
+            'Authorization': `Bearer ${token}`
+        }
+    })
+    .then(response => response.json())
+    .then(quotes => {
+        const unreadQuotes = quotes.filter(q => !q.isRead).length;
+        updateBadge('unreadQuotesBadge', unreadQuotes);
+        
+        // Check if new quotes arrived
+        if (quotes.length > lastQuoteCount) {
+            const newCount = quotes.length - lastQuoteCount;
+            showNotification('طلب عرض جديد', `لديك ${newCount} طلب عرض جديد`, 'quotes');
+            lastQuoteCount = quotes.length;
+        }
+    });
+}
+
+// Update badge visibility and count
+function updateBadge(elementId, count) {
+    const badge = document.getElementById(elementId);
+    if (!badge) return; // Exit if badge doesn't exist
+    
+    if (count > 0) {
+        badge.textContent = count;
+        badge.classList.remove('d-none');
+    } else {
+        badge.classList.add('d-none');
+    }
+    
+    updateTotalNotifications();
+}
+
+// Update the total notifications badge
+function updateTotalNotifications() {
+    const messagesBadge = document.getElementById('unreadMessagesBadge');
+    const quotesBadge = document.getElementById('unreadQuotesBadge');
+    const totalBadge = document.getElementById('totalNotificationsBadge');
+    
+    // If any of the badges don't exist, exit the function
+    if (!messagesBadge || !quotesBadge || !totalBadge) return;
+    
+    const messagesCount = messagesBadge.classList.contains('d-none') ? 0 : parseInt(messagesBadge.textContent);
+    const quotesCount = quotesBadge.classList.contains('d-none') ? 0 : parseInt(quotesBadge.textContent);
+    
+    const total = messagesCount + quotesCount;
+    
+    if (total > 0) {
+        totalBadge.textContent = total;
+        totalBadge.classList.remove('d-none');
+    } else {
+        totalBadge.classList.add('d-none');
+    }
+}
+
+// Show a notification in the dropdown and as a toast
+function showNotification(title, message, targetSection) {
+    // Add to dropdown
+    const notificationsContainer = document.getElementById('notificationsContainer');
+    const notification = document.createElement('a');
+    notification.className = 'dropdown-item d-flex align-items-center';
+    notification.href = '#';
+    notification.innerHTML = `
+        <div class="me-3">
+            <div class="icon-circle bg-primary">
+                <i class="fas fa-${targetSection === 'messages' ? 'envelope' : 'file-invoice'} text-white"></i>
+            </div>
+        </div>
+        <div>
+            <div class="small text-gray-500">${new Date().toLocaleString('ar-EG')}</div>
+            <span class="font-weight-bold">${title}</span>
+            <div>${message}</div>
+        </div>
+    `;
+    notification.addEventListener('click', () => {
+        // Switch to the relevant section when clicked
+        document.querySelectorAll('.nav-link').forEach(el => el.classList.remove('active'));
+        document.querySelectorAll('.dashboard-section').forEach(el => el.classList.remove('active'));
+        
+        document.querySelector(`[data-section="${targetSection}"]`).classList.add('active');
+        document.getElementById(`${targetSection}-section`).classList.add('active');
+    });
+    
+  
+    
+    // Keep only the last 5 notifications
+    if (notificationsContainer.children.length > 5) {
+        notificationsContainer.removeChild(notificationsContainer.lastChild);
+    }
+    
+    // Show toast notification
+    showToastNotification(title, message);
+}
+
+// Show a toast notification
+function showToastNotification(title, message) {
+    const toastContainer = document.createElement('div');
+    toastContainer.className = 'position-fixed bottom-0 end-0 p-3';
+    toastContainer.style.zIndex = '11';
+    
+    const toast = document.createElement('div');
+    toast.className = 'toast show';
+    toast.role = 'alert';
+    toast.setAttribute('aria-live', 'assertive');
+    toast.setAttribute('aria-atomic', 'true');
+    
+    toast.innerHTML = `
+        <div class="toast-header">
+            <strong class="me-auto">${title}</strong>
+            <small>الآن</small>
+            <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+        </div>
+        <div class="toast-body">
+            ${message}
+        </div>
+    `;
+    
+    toastContainer.appendChild(toast);
+    document.body.appendChild(toastContainer);
+    
+    // Auto-remove after 5 seconds
+    setTimeout(() => {
+        toast.classList.remove('show');
+        setTimeout(() => {
+            document.body.removeChild(toastContainer);
+        }, 300);
+    }, 5000);
+}
+
+// Initialize and check every 30 seconds
+document.addEventListener('DOMContentLoaded', function() {
+    // First check
+    checkForNewItems();
+    
+    // Get initial counts
+    fetch('https://localhost:7158/api/contact', {
+        headers: {
+            'Authorization': 'Bearer ' + localStorage.getItem('adminToken')
+        }
+    })
+    .then(response => response.json())
+    .then(messages => {
+        lastMessageCount = messages.length;
+    });
+    
+    fetch('https://localhost:7158/api/Quotes', {
+        headers: {
+            'Authorization': 'Bearer ' + localStorage.getItem('adminToken')
+        }
+    })
+    .then(response => response.json())
+    .then(quotes => {
+        lastQuoteCount = quotes.length;
+    });
+    
+    // Set up periodic checking
+    setInterval(checkForNewItems, 30000); // Check every 30 seconds
+});
+
+
         // Save new product
         document.getElementById('saveProductBtn').addEventListener('click', function() {
             const formData = new FormData();

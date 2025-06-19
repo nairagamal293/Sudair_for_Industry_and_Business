@@ -3,18 +3,6 @@
   "WorkspaceRootPath": "D:\\Naira\\\u0645\u0635\u0646\u0639 \u0645\u0646\u062A\u062C\u0627\u062A \u0627\u0644\u062D\u0645\u0627\u064A\u0629\\Backend\\Factory\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Naira\\\u0645\u0635\u0646\u0639 \u0645\u0646\u062A\u062C\u0627\u062A \u0627\u0644\u062D\u0645\u0627\u064A\u0629\\Backend\\Factory\\Factory\\Migrations\\20250618105605_NewMigrationName.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Factory\\Migrations\\20250618105605_NewMigrationName.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2431DD9D-F475-4A40-9F24-C99D68EB523B}|Factory\\Factory.csproj|d:\\naira\\\u0645\u0635\u0646\u0639 \u0645\u0646\u062A\u062C\u0627\u062A \u0627\u0644\u062D\u0645\u0627\u064A\u0629\\backend\\factory\\factory\\models\\quoterequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2431DD9D-F475-4A40-9F24-C99D68EB523B}|Factory\\Factory.csproj|solutionrelative:factory\\models\\quoterequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2431DD9D-F475-4A40-9F24-C99D68EB523B}|Factory\\Factory.csproj|d:\\naira\\\u0645\u0635\u0646\u0639 \u0645\u0646\u062A\u062C\u0627\u062A \u0627\u0644\u062D\u0645\u0627\u064A\u0629\\backend\\factory\\factory\\controllers\\quotescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2431DD9D-F475-4A40-9F24-C99D68EB523B}|Factory\\Factory.csproj|solutionrelative:factory\\controllers\\quotescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{2431DD9D-F475-4A40-9F24-C99D68EB523B}|Factory\\Factory.csproj|d:\\naira\\\u0645\u0635\u0646\u0639 \u0645\u0646\u062A\u062C\u0627\u062A \u0627\u0644\u062D\u0645\u0627\u064A\u0629\\backend\\factory\\factory\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2431DD9D-F475-4A40-9F24-C99D68EB523B}|Factory\\Factory.csproj|solutionrelative:factory\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -25,6 +13,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{2431DD9D-F475-4A40-9F24-C99D68EB523B}|Factory\\Factory.csproj|d:\\naira\\\u0645\u0635\u0646\u0639 \u0645\u0646\u062A\u062C\u0627\u062A \u0627\u0644\u062D\u0645\u0627\u064A\u0629\\backend\\factory\\factory\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2431DD9D-F475-4A40-9F24-C99D68EB523B}|Factory\\Factory.csproj|solutionrelative:factory\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2431DD9D-F475-4A40-9F24-C99D68EB523B}|Factory\\Factory.csproj|d:\\naira\\\u0645\u0635\u0646\u0639 \u0645\u0646\u062A\u062C\u0627\u062A \u0627\u0644\u062D\u0645\u0627\u064A\u0629\\backend\\factory\\factory\\models\\quoterequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2431DD9D-F475-4A40-9F24-C99D68EB523B}|Factory\\Factory.csproj|solutionrelative:factory\\models\\quoterequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2431DD9D-F475-4A40-9F24-C99D68EB523B}|Factory\\Factory.csproj|d:\\naira\\\u0645\u0635\u0646\u0639 \u0645\u0646\u062A\u062C\u0627\u062A \u0627\u0644\u062D\u0645\u0627\u064A\u0629\\backend\\factory\\factory\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -55,6 +47,10 @@
       "RelativeMoniker": "D:0:0:{2431DD9D-F475-4A40-9F24-C99D68EB523B}|Factory\\Factory.csproj|solutionrelative:factory\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{2431DD9D-F475-4A40-9F24-C99D68EB523B}|Factory\\Factory.csproj|d:\\naira\\\u0645\u0635\u0646\u0639 \u0645\u0646\u062A\u062C\u0627\u062A \u0627\u0644\u062D\u0645\u0627\u064A\u0629\\backend\\factory\\factory\\controllers\\quotescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2431DD9D-F475-4A40-9F24-C99D68EB523B}|Factory\\Factory.csproj|solutionrelative:factory\\controllers\\quotescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{2431DD9D-F475-4A40-9F24-C99D68EB523B}|Factory\\Factory.csproj|d:\\naira\\\u0645\u0635\u0646\u0639 \u0645\u0646\u062A\u062C\u0627\u062A \u0627\u0644\u062D\u0645\u0627\u064A\u0629\\backend\\factory\\factory\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2431DD9D-F475-4A40-9F24-C99D68EB523B}|Factory\\Factory.csproj|solutionrelative:factory\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -71,8 +67,8 @@
       "RelativeMoniker": "D:0:0:{2431DD9D-F475-4A40-9F24-C99D68EB523B}|Factory\\Factory.csproj|solutionrelative:factory\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Naira\\\u0645\u0635\u0646\u0639 \u0645\u0646\u062A\u062C\u0627\u062A \u0627\u0644\u062D\u0645\u0627\u064A\u0629\\Backend\\Factory\\Factory\\Migrations\\20250618082149_UpdateQuoteRequestModel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Factory\\Migrations\\20250618082149_UpdateQuoteRequestModel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2431DD9D-F475-4A40-9F24-C99D68EB523B}|Factory\\Factory.csproj|d:\\naira\\\u0645\u0635\u0646\u0639 \u0645\u0646\u062A\u062C\u0627\u062A \u0627\u0644\u062D\u0645\u0627\u064A\u0629\\backend\\factory\\factory\\migrations\\20250618105605_newmigrationname.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2431DD9D-F475-4A40-9F24-C99D68EB523B}|Factory\\Factory.csproj|solutionrelative:factory\\migrations\\20250618105605_newmigrationname.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2431DD9D-F475-4A40-9F24-C99D68EB523B}|Factory\\Factory.csproj|d:\\naira\\\u0645\u0635\u0646\u0639 \u0645\u0646\u062A\u062C\u0627\u062A \u0627\u0644\u062D\u0645\u0627\u064A\u0629\\backend\\factory\\factory\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
@@ -113,6 +109,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{2431DD9D-F475-4A40-9F24-C99D68EB523B}|Factory\\Factory.csproj|d:\\naira\\\u0645\u0635\u0646\u0639 \u0645\u0646\u062A\u062C\u0627\u062A \u0627\u0644\u062D\u0645\u0627\u064A\u0629\\backend\\factory\\factory\\migrations\\20250617084101_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2431DD9D-F475-4A40-9F24-C99D68EB523B}|Factory\\Factory.csproj|solutionrelative:factory\\migrations\\20250617084101_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2431DD9D-F475-4A40-9F24-C99D68EB523B}|Factory\\Factory.csproj|d:\\naira\\\u0645\u0635\u0646\u0639 \u0645\u0646\u062A\u062C\u0627\u062A \u0627\u0644\u062D\u0645\u0627\u064A\u0629\\backend\\factory\\factory\\migrations\\20250618082149_updatequoterequestmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2431DD9D-F475-4A40-9F24-C99D68EB523B}|Factory\\Factory.csproj|solutionrelative:factory\\migrations\\20250618082149_updatequoterequestmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -122,128 +122,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "20250618105605_NewMigrationName.cs",
-              "DocumentMoniker": "D:\\Naira\\\u0645\u0635\u0646\u0639 \u0645\u0646\u062A\u062C\u0627\u062A \u0627\u0644\u062D\u0645\u0627\u064A\u0629\\Backend\\Factory\\Factory\\Migrations\\20250618105605_NewMigrationName.cs",
-              "RelativeDocumentMoniker": "Factory\\Migrations\\20250618105605_NewMigrationName.cs",
-              "ToolTip": "D:\\Naira\\\u0645\u0635\u0646\u0639 \u0645\u0646\u062A\u062C\u0627\u062A \u0627\u0644\u062D\u0645\u0627\u064A\u0629\\Backend\\Factory\\Factory\\Migrations\\20250618105605_NewMigrationName.cs",
-              "RelativeToolTip": "Factory\\Migrations\\20250618105605_NewMigrationName.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-18T10:56:05.246Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Category.cs",
-              "DocumentMoniker": "D:\\Naira\\\u0645\u0635\u0646\u0639 \u0645\u0646\u062A\u062C\u0627\u062A \u0627\u0644\u062D\u0645\u0627\u064A\u0629\\Backend\\Factory\\Factory\\Models\\Category.cs",
-              "RelativeDocumentMoniker": "Factory\\Models\\Category.cs",
-              "ToolTip": "D:\\Naira\\\u0645\u0635\u0646\u0639 \u0645\u0646\u062A\u062C\u0627\u062A \u0627\u0644\u062D\u0645\u0627\u064A\u0629\\Backend\\Factory\\Factory\\Models\\Category.cs",
-              "RelativeToolTip": "Factory\\Models\\Category.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-16T10:58:16.009Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "ContactMessage.cs",
-              "DocumentMoniker": "D:\\Naira\\\u0645\u0635\u0646\u0639 \u0645\u0646\u062A\u062C\u0627\u062A \u0627\u0644\u062D\u0645\u0627\u064A\u0629\\Backend\\Factory\\Factory\\Models\\ContactMessage.cs",
-              "RelativeDocumentMoniker": "Factory\\Models\\ContactMessage.cs",
-              "ToolTip": "D:\\Naira\\\u0645\u0635\u0646\u0639 \u0645\u0646\u062A\u062C\u0627\u062A \u0627\u0644\u062D\u0645\u0627\u064A\u0629\\Backend\\Factory\\Factory\\Models\\ContactMessage.cs",
-              "RelativeToolTip": "Factory\\Models\\ContactMessage.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAswBgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-16T10:58:43.628Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Product.cs",
-              "DocumentMoniker": "D:\\Naira\\\u0645\u0635\u0646\u0639 \u0645\u0646\u062A\u062C\u0627\u062A \u0627\u0644\u062D\u0645\u0627\u064A\u0629\\Backend\\Factory\\Factory\\Models\\Product.cs",
-              "RelativeDocumentMoniker": "Factory\\Models\\Product.cs",
-              "ToolTip": "D:\\Naira\\\u0645\u0635\u0646\u0639 \u0645\u0646\u062A\u062C\u0627\u062A \u0627\u0644\u062D\u0645\u0627\u064A\u0629\\Backend\\Factory\\Factory\\Models\\Product.cs",
-              "RelativeToolTip": "Factory\\Models\\Product.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAowBcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-16T10:58:02.534Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "QuoteRequest.cs",
-              "DocumentMoniker": "D:\\Naira\\\u0645\u0635\u0646\u0639 \u0645\u0646\u062A\u062C\u0627\u062A \u0627\u0644\u062D\u0645\u0627\u064A\u0629\\Backend\\Factory\\Factory\\Models\\QuoteRequest.cs",
-              "RelativeDocumentMoniker": "Factory\\Models\\QuoteRequest.cs",
-              "ToolTip": "D:\\Naira\\\u0645\u0635\u0646\u0639 \u0645\u0646\u062A\u062C\u0627\u062A \u0627\u0644\u062D\u0645\u0627\u064A\u0629\\Backend\\Factory\\Factory\\Models\\QuoteRequest.cs",
-              "RelativeToolTip": "Factory\\Models\\QuoteRequest.cs",
-              "ViewState": "AgIAACcAAAAAAAAAAAAkwEUAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-16T10:58:30.422Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "AuthService.cs",
-              "DocumentMoniker": "D:\\Naira\\\u0645\u0635\u0646\u0639 \u0645\u0646\u062A\u062C\u0627\u062A \u0627\u0644\u062D\u0645\u0627\u064A\u0629\\Backend\\Factory\\Factory\\Services\\AuthService.cs",
-              "RelativeDocumentMoniker": "Factory\\Services\\AuthService.cs",
-              "ToolTip": "D:\\Naira\\\u0645\u0635\u0646\u0639 \u0645\u0646\u062A\u062C\u0627\u062A \u0627\u0644\u062D\u0645\u0627\u064A\u0629\\Backend\\Factory\\Factory\\Services\\AuthService.cs",
-              "RelativeToolTip": "Factory\\Services\\AuthService.cs",
-              "ViewState": "AgIAAEQAAAAAAAAAAAAiwFwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-16T10:59:43.218Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "FileStorageService.cs",
-              "DocumentMoniker": "D:\\Naira\\\u0645\u0635\u0646\u0639 \u0645\u0646\u062A\u062C\u0627\u062A \u0627\u0644\u062D\u0645\u0627\u064A\u0629\\Backend\\Factory\\Factory\\Services\\FileStorageService.cs",
-              "RelativeDocumentMoniker": "Factory\\Services\\FileStorageService.cs",
-              "ToolTip": "D:\\Naira\\\u0645\u0635\u0646\u0639 \u0645\u0646\u062A\u062C\u0627\u062A \u0627\u0644\u062D\u0645\u0627\u064A\u0629\\Backend\\Factory\\Factory\\Services\\FileStorageService.cs",
-              "RelativeToolTip": "Factory\\Services\\FileStorageService.cs",
-              "ViewState": "AgIAABoAAAAAAAAAAAAiwDIAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-16T10:59:28.306Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\Naira\\\u0645\u0635\u0646\u0639 \u0645\u0646\u062A\u062C\u0627\u062A \u0627\u0644\u062D\u0645\u0627\u064A\u0629\\Backend\\Factory\\Factory\\Program.cs",
-              "RelativeDocumentMoniker": "Factory\\Program.cs",
-              "ToolTip": "D:\\Naira\\\u0645\u0635\u0646\u0639 \u0645\u0646\u062A\u062C\u0627\u062A \u0627\u0644\u062D\u0645\u0627\u064A\u0629\\Backend\\Factory\\Factory\\Program.cs",
-              "RelativeToolTip": "Factory\\Program.cs",
-              "ViewState": "AgIAAEwAAAAAAAAAAAAmwGUAAAAKAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-16T11:03:41.515Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "QuotesController.cs",
-              "DocumentMoniker": "D:\\Naira\\\u0645\u0635\u0646\u0639 \u0645\u0646\u062A\u062C\u0627\u062A \u0627\u0644\u062D\u0645\u0627\u064A\u0629\\Backend\\Factory\\Factory\\Controllers\\QuotesController.cs",
-              "RelativeDocumentMoniker": "Factory\\Controllers\\QuotesController.cs",
-              "ToolTip": "D:\\Naira\\\u0645\u0635\u0646\u0639 \u0645\u0646\u062A\u062C\u0627\u062A \u0627\u0644\u062D\u0645\u0627\u064A\u0629\\Backend\\Factory\\Factory\\Controllers\\QuotesController.cs",
-              "RelativeToolTip": "Factory\\Controllers\\QuotesController.cs",
-              "ViewState": "AgIAACUAAAAAAAAAAAAiwD0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-16T10:57:20.857Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
               "Title": "AdminUser.cs",
               "DocumentMoniker": "D:\\Naira\\\u0645\u0635\u0646\u0639 \u0645\u0646\u062A\u062C\u0627\u062A \u0627\u0644\u062D\u0645\u0627\u064A\u0629\\Backend\\Factory\\Factory\\Models\\AdminUser.cs",
               "RelativeDocumentMoniker": "Factory\\Models\\AdminUser.cs",
@@ -256,7 +139,98 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 6,
+              "Title": "Category.cs",
+              "DocumentMoniker": "D:\\Naira\\\u0645\u0635\u0646\u0639 \u0645\u0646\u062A\u062C\u0627\u062A \u0627\u0644\u062D\u0645\u0627\u064A\u0629\\Backend\\Factory\\Factory\\Models\\Category.cs",
+              "RelativeDocumentMoniker": "Factory\\Models\\Category.cs",
+              "ToolTip": "D:\\Naira\\\u0645\u0635\u0646\u0639 \u0645\u0646\u062A\u062C\u0627\u062A \u0627\u0644\u062D\u0645\u0627\u064A\u0629\\Backend\\Factory\\Factory\\Models\\Category.cs",
+              "RelativeToolTip": "Factory\\Models\\Category.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-16T10:58:16.009Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ContactMessage.cs",
+              "DocumentMoniker": "D:\\Naira\\\u0645\u0635\u0646\u0639 \u0645\u0646\u062A\u062C\u0627\u062A \u0627\u0644\u062D\u0645\u0627\u064A\u0629\\Backend\\Factory\\Factory\\Models\\ContactMessage.cs",
+              "RelativeDocumentMoniker": "Factory\\Models\\ContactMessage.cs",
+              "ToolTip": "D:\\Naira\\\u0645\u0635\u0646\u0639 \u0645\u0646\u062A\u062C\u0627\u062A \u0627\u0644\u062D\u0645\u0627\u064A\u0629\\Backend\\Factory\\Factory\\Models\\ContactMessage.cs",
+              "RelativeToolTip": "Factory\\Models\\ContactMessage.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAqwBgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-16T10:58:43.628Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Product.cs",
+              "DocumentMoniker": "D:\\Naira\\\u0645\u0635\u0646\u0639 \u0645\u0646\u062A\u062C\u0627\u062A \u0627\u0644\u062D\u0645\u0627\u064A\u0629\\Backend\\Factory\\Factory\\Models\\Product.cs",
+              "RelativeDocumentMoniker": "Factory\\Models\\Product.cs",
+              "ToolTip": "D:\\Naira\\\u0645\u0635\u0646\u0639 \u0645\u0646\u062A\u062C\u0627\u062A \u0627\u0644\u062D\u0645\u0627\u064A\u0629\\Backend\\Factory\\Factory\\Models\\Product.cs",
+              "RelativeToolTip": "Factory\\Models\\Product.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAmwBcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-16T10:58:02.534Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "QuoteRequest.cs",
+              "DocumentMoniker": "D:\\Naira\\\u0645\u0635\u0646\u0639 \u0645\u0646\u062A\u062C\u0627\u062A \u0627\u0644\u062D\u0645\u0627\u064A\u0629\\Backend\\Factory\\Factory\\Models\\QuoteRequest.cs",
+              "RelativeDocumentMoniker": "Factory\\Models\\QuoteRequest.cs",
+              "ToolTip": "D:\\Naira\\\u0645\u0635\u0646\u0639 \u0645\u0646\u062A\u062C\u0627\u062A \u0627\u0644\u062D\u0645\u0627\u064A\u0629\\Backend\\Factory\\Factory\\Models\\QuoteRequest.cs",
+              "RelativeToolTip": "Factory\\Models\\QuoteRequest.cs",
+              "ViewState": "AgIAADMAAAAAAAAAAAAmwEUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-16T10:58:30.422Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AuthService.cs",
+              "DocumentMoniker": "D:\\Naira\\\u0645\u0635\u0646\u0639 \u0645\u0646\u062A\u062C\u0627\u062A \u0627\u0644\u062D\u0645\u0627\u064A\u0629\\Backend\\Factory\\Factory\\Services\\AuthService.cs",
+              "RelativeDocumentMoniker": "Factory\\Services\\AuthService.cs",
+              "ToolTip": "D:\\Naira\\\u0645\u0635\u0646\u0639 \u0645\u0646\u062A\u062C\u0627\u062A \u0627\u0644\u062D\u0645\u0627\u064A\u0629\\Backend\\Factory\\Factory\\Services\\AuthService.cs",
+              "RelativeToolTip": "Factory\\Services\\AuthService.cs",
+              "ViewState": "AgIAAEQAAAAAAAAAAAAgwFwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-16T10:59:43.218Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FileStorageService.cs",
+              "DocumentMoniker": "D:\\Naira\\\u0645\u0635\u0646\u0639 \u0645\u0646\u062A\u062C\u0627\u062A \u0627\u0644\u062D\u0645\u0627\u064A\u0629\\Backend\\Factory\\Factory\\Services\\FileStorageService.cs",
+              "RelativeDocumentMoniker": "Factory\\Services\\FileStorageService.cs",
+              "ToolTip": "D:\\Naira\\\u0645\u0635\u0646\u0639 \u0645\u0646\u062A\u062C\u0627\u062A \u0627\u0644\u062D\u0645\u0627\u064A\u0629\\Backend\\Factory\\Factory\\Services\\FileStorageService.cs",
+              "RelativeToolTip": "Factory\\Services\\FileStorageService.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAgwDIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-16T10:59:28.306Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Naira\\\u0645\u0635\u0646\u0639 \u0645\u0646\u062A\u062C\u0627\u062A \u0627\u0644\u062D\u0645\u0627\u064A\u0629\\Backend\\Factory\\Factory\\Program.cs",
+              "RelativeDocumentMoniker": "Factory\\Program.cs",
+              "ToolTip": "D:\\Naira\\\u0645\u0635\u0646\u0639 \u0645\u0646\u062A\u062C\u0627\u062A \u0627\u0644\u062D\u0645\u0627\u064A\u0629\\Backend\\Factory\\Factory\\Program.cs",
+              "RelativeToolTip": "Factory\\Program.cs",
+              "ViewState": "AgIAAEwAAAAAAAAAAAAkwF0AAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-16T11:03:41.515Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "ProductDTO.cs",
               "DocumentMoniker": "D:\\Naira\\\u0645\u0635\u0646\u0639 \u0645\u0646\u062A\u062C\u0627\u062A \u0627\u0644\u062D\u0645\u0627\u064A\u0629\\Backend\\Factory\\Factory\\DTOs\\ProductDTO.cs",
               "RelativeDocumentMoniker": "Factory\\DTOs\\ProductDTO.cs",
@@ -269,85 +243,111 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 9,
               "Title": "CategoryDTO.cs",
               "DocumentMoniker": "D:\\Naira\\\u0645\u0635\u0646\u0639 \u0645\u0646\u062A\u062C\u0627\u062A \u0627\u0644\u062D\u0645\u0627\u064A\u0629\\Backend\\Factory\\Factory\\DTOs\\CategoryDTO.cs",
               "RelativeDocumentMoniker": "Factory\\DTOs\\CategoryDTO.cs",
               "ToolTip": "D:\\Naira\\\u0645\u0635\u0646\u0639 \u0645\u0646\u062A\u062C\u0627\u062A \u0627\u0644\u062D\u0645\u0627\u064A\u0629\\Backend\\Factory\\Factory\\DTOs\\CategoryDTO.cs",
               "RelativeToolTip": "Factory\\DTOs\\CategoryDTO.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAwwCEAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAuwCEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-16T12:37:34.128Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 10,
               "Title": "AppDbContext.cs",
               "DocumentMoniker": "D:\\Naira\\\u0645\u0635\u0646\u0639 \u0645\u0646\u062A\u062C\u0627\u062A \u0627\u0644\u062D\u0645\u0627\u064A\u0629\\Backend\\Factory\\Factory\\Data\\AppDbContext.cs",
               "RelativeDocumentMoniker": "Factory\\Data\\AppDbContext.cs",
               "ToolTip": "D:\\Naira\\\u0645\u0635\u0646\u0639 \u0645\u0646\u062A\u062C\u0627\u062A \u0627\u0644\u062D\u0645\u0627\u064A\u0629\\Backend\\Factory\\Factory\\Data\\AppDbContext.cs",
               "RelativeToolTip": "Factory\\Data\\AppDbContext.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAA4wCoAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAABIAAAAAAAAAAAA3wCoAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-16T11:06:59.011Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 11,
+              "Title": "QuotesController.cs",
+              "DocumentMoniker": "D:\\Naira\\\u0645\u0635\u0646\u0639 \u0645\u0646\u062A\u062C\u0627\u062A \u0627\u0644\u062D\u0645\u0627\u064A\u0629\\Backend\\Factory\\Factory\\Controllers\\QuotesController.cs",
+              "RelativeDocumentMoniker": "Factory\\Controllers\\QuotesController.cs",
+              "ToolTip": "D:\\Naira\\\u0645\u0635\u0646\u0639 \u0645\u0646\u062A\u062C\u0627\u062A \u0627\u0644\u062D\u0645\u0627\u064A\u0629\\Backend\\Factory\\Factory\\Controllers\\QuotesController.cs",
+              "RelativeToolTip": "Factory\\Controllers\\QuotesController.cs",
+              "ViewState": "AgIAACUAAAAAAAAAAAAgwD0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-16T10:57:20.857Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
               "Title": "ProductsController.cs",
               "DocumentMoniker": "D:\\Naira\\\u0645\u0635\u0646\u0639 \u0645\u0646\u062A\u062C\u0627\u062A \u0627\u0644\u062D\u0645\u0627\u064A\u0629\\Backend\\Factory\\Factory\\Controllers\\ProductsController.cs",
               "RelativeDocumentMoniker": "Factory\\Controllers\\ProductsController.cs",
               "ToolTip": "D:\\Naira\\\u0645\u0635\u0646\u0639 \u0645\u0646\u062A\u062C\u0627\u062A \u0627\u0644\u062D\u0645\u0627\u064A\u0629\\Backend\\Factory\\Factory\\Controllers\\ProductsController.cs",
               "RelativeToolTip": "Factory\\Controllers\\ProductsController.cs",
-              "ViewState": "AgIAALQAAAAAAAAAAAAswMcAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAALQAAAAAAAAAAAAqwMcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-16T10:57:03.948Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 13,
               "Title": "ContactController.cs",
               "DocumentMoniker": "D:\\Naira\\\u0645\u0635\u0646\u0639 \u0645\u0646\u062A\u062C\u0627\u062A \u0627\u0644\u062D\u0645\u0627\u064A\u0629\\Backend\\Factory\\Factory\\Controllers\\ContactController.cs",
               "RelativeDocumentMoniker": "Factory\\Controllers\\ContactController.cs",
               "ToolTip": "D:\\Naira\\\u0645\u0635\u0646\u0639 \u0645\u0646\u062A\u062C\u0627\u062A \u0627\u0644\u062D\u0645\u0627\u064A\u0629\\Backend\\Factory\\Factory\\Controllers\\ContactController.cs",
               "RelativeToolTip": "Factory\\Controllers\\ContactController.cs",
-              "ViewState": "AgIAADEAAAAAAAAAAAAiwEkAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAADEAAAAAAAAAAAAgwEkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-16T10:57:35.773Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 14,
               "Title": "CategoriesController.cs",
               "DocumentMoniker": "D:\\Naira\\\u0645\u0635\u0646\u0639 \u0645\u0646\u062A\u062C\u0627\u062A \u0627\u0644\u062D\u0645\u0627\u064A\u0629\\Backend\\Factory\\Factory\\Controllers\\CategoriesController.cs",
               "RelativeDocumentMoniker": "Factory\\Controllers\\CategoriesController.cs",
               "ToolTip": "D:\\Naira\\\u0645\u0635\u0646\u0639 \u0645\u0646\u062A\u062C\u0627\u062A \u0627\u0644\u062D\u0645\u0627\u064A\u0629\\Backend\\Factory\\Factory\\Controllers\\CategoriesController.cs",
               "RelativeToolTip": "Factory\\Controllers\\CategoriesController.cs",
-              "ViewState": "AgIAAKsAAAAAAAAAAAAmwMQAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAKsAAAAAAAAAAAAkwMQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-16T12:38:20.39Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 15,
               "Title": "AdminController.cs",
               "DocumentMoniker": "D:\\Naira\\\u0645\u0635\u0646\u0639 \u0645\u0646\u062A\u062C\u0627\u062A \u0627\u0644\u062D\u0645\u0627\u064A\u0629\\Backend\\Factory\\Factory\\Controllers\\AdminController.cs",
               "RelativeDocumentMoniker": "Factory\\Controllers\\AdminController.cs",
               "ToolTip": "D:\\Naira\\\u0645\u0635\u0646\u0639 \u0645\u0646\u062A\u062C\u0627\u062A \u0627\u0644\u062D\u0645\u0627\u064A\u0629\\Backend\\Factory\\Factory\\Controllers\\AdminController.cs",
               "RelativeToolTip": "Factory\\Controllers\\AdminController.cs",
-              "ViewState": "AgIAACcAAAAAAAAAAAAywDwAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAACcAAAAAAAAAAAAxwDwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-16T10:56:46.405Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 16,
+              "Title": "20250618105605_NewMigrationName.cs",
+              "DocumentMoniker": "D:\\Naira\\\u0645\u0635\u0646\u0639 \u0645\u0646\u062A\u062C\u0627\u062A \u0627\u0644\u062D\u0645\u0627\u064A\u0629\\Backend\\Factory\\Factory\\Migrations\\20250618105605_NewMigrationName.cs",
+              "RelativeDocumentMoniker": "Factory\\Migrations\\20250618105605_NewMigrationName.cs",
+              "ToolTip": "D:\\Naira\\\u0645\u0635\u0646\u0639 \u0645\u0646\u062A\u062C\u0627\u062A \u0627\u0644\u062D\u0645\u0627\u064A\u0629\\Backend\\Factory\\Factory\\Migrations\\20250618105605_NewMigrationName.cs",
+              "RelativeToolTip": "Factory\\Migrations\\20250618105605_NewMigrationName.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-18T10:56:05.246Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
               "Title": "appsettings.json",
               "DocumentMoniker": "D:\\Naira\\\u0645\u0635\u0646\u0639 \u0645\u0646\u062A\u062C\u0627\u062A \u0627\u0644\u062D\u0645\u0627\u064A\u0629\\Backend\\Factory\\Factory\\appsettings.json",
               "RelativeDocumentMoniker": "Factory\\appsettings.json",
@@ -355,12 +355,11 @@
               "RelativeToolTip": "Factory\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-06-16T11:03:37.579Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-16T11:03:37.579Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 27,
               "Title": "20250618082149_UpdateQuoteRequestModel.cs",
               "DocumentMoniker": "D:\\Naira\\\u0645\u0635\u0646\u0639 \u0645\u0646\u062A\u062C\u0627\u062A \u0627\u0644\u062D\u0645\u0627\u064A\u0629\\Backend\\Factory\\Factory\\Migrations\\20250618082149_UpdateQuoteRequestModel.cs",
               "RelativeDocumentMoniker": "Factory\\Migrations\\20250618082149_UpdateQuoteRequestModel.cs",
@@ -368,12 +367,11 @@
               "RelativeToolTip": "Factory\\Migrations\\20250618082149_UpdateQuoteRequestModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-18T08:21:50.097Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-18T08:21:50.097Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 26,
               "Title": "20250617084101_InitialCreate.cs",
               "DocumentMoniker": "D:\\Naira\\\u0645\u0635\u0646\u0639 \u0645\u0646\u062A\u062C\u0627\u062A \u0627\u0644\u062D\u0645\u0627\u064A\u0629\\Backend\\Factory\\Factory\\Migrations\\20250617084101_InitialCreate.cs",
               "RelativeDocumentMoniker": "Factory\\Migrations\\20250617084101_InitialCreate.cs",
@@ -385,7 +383,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 18,
               "Title": "20250617082605_InitialCreate.cs",
               "DocumentMoniker": "D:\\Naira\\\u0645\u0635\u0646\u0639 \u0645\u0646\u062A\u062C\u0627\u062A \u0627\u0644\u062D\u0645\u0627\u064A\u0629\\Backend\\Factory\\Factory\\Migrations\\20250617082605_InitialCreate.cs",
               "RelativeDocumentMoniker": "Factory\\Migrations\\20250617082605_InitialCreate.cs",
@@ -397,7 +395,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 19,
               "Title": "20250617081454_InitialCreate.cs",
               "DocumentMoniker": "D:\\Naira\\\u0645\u0635\u0646\u0639 \u0645\u0646\u062A\u062C\u0627\u062A \u0627\u0644\u062D\u0645\u0627\u064A\u0629\\Backend\\Factory\\Factory\\Migrations\\20250617081454_InitialCreate.cs",
               "RelativeDocumentMoniker": "Factory\\Migrations\\20250617081454_InitialCreate.cs",
@@ -409,7 +407,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 20,
               "Title": "20250617075129_InitialCreate.cs",
               "DocumentMoniker": "D:\\Naira\\\u0645\u0635\u0646\u0639 \u0645\u0646\u062A\u062C\u0627\u062A \u0627\u0644\u062D\u0645\u0627\u064A\u0629\\Backend\\Factory\\Factory\\Migrations\\20250617075129_InitialCreate.cs",
               "RelativeDocumentMoniker": "Factory\\Migrations\\20250617075129_InitialCreate.cs",
@@ -421,7 +419,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 21,
               "Title": "20250616115043_InitialCreate.cs",
               "DocumentMoniker": "D:\\Naira\\\u0645\u0635\u0646\u0639 \u0645\u0646\u062A\u062C\u0627\u062A \u0627\u0644\u062D\u0645\u0627\u064A\u0629\\Backend\\Factory\\Factory\\Migrations\\20250616115043_InitialCreate.cs",
               "RelativeDocumentMoniker": "Factory\\Migrations\\20250616115043_InitialCreate.cs",
@@ -433,7 +431,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 24,
               "Title": "Factory.http",
               "DocumentMoniker": "D:\\Naira\\\u0645\u0635\u0646\u0639 \u0645\u0646\u062A\u062C\u0627\u062A \u0627\u0644\u062D\u0645\u0627\u064A\u0629\\Backend\\Factory\\Factory\\Factory.http",
               "RelativeDocumentMoniker": "Factory\\Factory.http",
@@ -445,7 +443,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 22,
               "Title": "20250616113354_InitialCreate.cs",
               "DocumentMoniker": "D:\\Naira\\\u0645\u0635\u0646\u0639 \u0645\u0646\u062A\u062C\u0627\u062A \u0627\u0644\u062D\u0645\u0627\u064A\u0629\\Backend\\Factory\\Factory\\Migrations\\20250616113354_InitialCreate.cs",
               "RelativeDocumentMoniker": "Factory\\Migrations\\20250616113354_InitialCreate.cs",
@@ -457,7 +455,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 23,
               "Title": "20250616113021_InitialCreate.cs",
               "DocumentMoniker": "D:\\Naira\\\u0645\u0635\u0646\u0639 \u0645\u0646\u062A\u062C\u0627\u062A \u0627\u0644\u062D\u0645\u0627\u064A\u0629\\Backend\\Factory\\Factory\\Migrations\\20250616113021_InitialCreate.cs",
               "RelativeDocumentMoniker": "Factory\\Migrations\\20250616113021_InitialCreate.cs",
@@ -469,7 +467,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 25,
               "Title": "20250616111955_InitialCreate.cs",
               "DocumentMoniker": "D:\\Naira\\\u0645\u0635\u0646\u0639 \u0645\u0646\u062A\u062C\u0627\u062A \u0627\u0644\u062D\u0645\u0627\u064A\u0629\\Backend\\Factory\\Factory\\Migrations\\20250616111955_InitialCreate.cs",
               "RelativeDocumentMoniker": "Factory\\Migrations\\20250616111955_InitialCreate.cs",

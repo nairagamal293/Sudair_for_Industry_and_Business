@@ -308,45 +308,67 @@
             let currentPage = 1;
             let currentCategory = 'all';
             let isLoading = false;
+            let allFetchedProducts = [];
+
             
             // Initialize modal
             const productDetailModal = new bootstrap.Modal(document.getElementById('productDetailModal'));
             
             // Fetch products from API
             async function fetchProducts(page = 1, categoryId = 'all') {
-                isLoading = true;
-                loadingSpinner.style.display = 'block';
-                
-                try {
-                    let apiUrl = `https://localhost:7158/api/products?page=${page}`;
-                    if (categoryId !== 'all') {
-                        apiUrl += `&categoryId=${categoryId}`;
-                    }
-                    
-                    const response = await fetch(apiUrl);
-                    const products = await response.json();
-                    
-                    if (response.ok) {
-                        displayProducts(products);
-                        
-                        // Show/hide load more button based on response
-                        if (products.length >= 10) { // Assuming 10 products per page
-                            loadMoreBtn.style.display = 'block';
-                        } else {
-                            loadMoreBtn.style.display = 'none';
-                        }
-                    } else {
-                        console.error('Error fetching products:', products);
-                        showError('حدث خطأ أثناء جلب المنتجات. يرجى المحاولة مرة أخرى.');
-                    }
-                } catch (error) {
-                    console.error('Network error:', error);
-                    showError('تعذر الاتصال بالخادم. يرجى التحقق من اتصال الإنترنت.');
-                } finally {
-                    isLoading = false;
-                    loadingSpinner.style.display = 'none';
-                }
-            }
+    isLoading = true;
+    loadingSpinner.style.display = 'block';
+
+    try {
+        let apiUrl = `https://localhost:7158/api/products`;
+        if (categoryId !== 'all') {
+            apiUrl += `?categoryId=${categoryId}`;
+        }
+
+        const response = await fetch(apiUrl);
+        const products = await response.json();
+
+        if (response.ok) {
+            allFetchedProducts = products;
+            currentPage = 1;
+            renderProductBatch(); // show first batch
+        } else {
+            showError('حدث خطأ أثناء جلب المنتجات.');
+        }
+    } catch (error) {
+        showError('تعذر الاتصال بالخادم.');
+    } finally {
+        loadingSpinner.style.display = 'none';
+        isLoading = false;
+    }
+}
+
+
+function renderProductBatch() {
+    const start = (currentPage - 1) * 4;
+    const end = start + 4;
+    const batch = allFetchedProducts.slice(start, end);
+
+    if (currentPage === 1) {
+        productsContainer.innerHTML = ''; // reset only on first batch
+    }
+
+    if (batch.length === 0) {
+        loadMoreBtn.style.display = 'none';
+        return;
+    }
+
+    displayProducts(batch);
+
+    // Show or hide the "Load More" button
+    if (end >= allFetchedProducts.length) {
+        loadMoreBtn.style.display = 'none';
+    } else {
+        loadMoreBtn.style.display = 'block';
+    }
+}
+
+
             
             // Display products in the grid
             function displayProducts(products) {
@@ -456,12 +478,11 @@
             });
             
             // Load more products
-            loadMoreBtn.addEventListener('click', function() {
-                if (!isLoading) {
-                    currentPage++;
-                    fetchProducts(currentPage, currentCategory);
-                }
-            });
+           loadMoreBtn.addEventListener('click', function () {
+    currentPage++;
+    renderProductBatch();
+});
+
             
             // Initial load
             fetchProducts(currentPage, currentCategory);
