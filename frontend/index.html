@@ -11,7 +11,28 @@
     <!-- Animate.css -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
         <link rel="stylesheet" href="css/main.css">
+<style>
+    /* Index-specific hero section with background image */
+.index-hero::before {
+    background: 
+        linear-gradient(to bottom, rgba(30, 41, 59, 0.85), rgba(15, 23, 42, 0.9)),
+        url('../images/metallic-ovens-inside-big-factory-with-heavy-equipments.jpg') center/cover no-repeat;
+    background-blend-mode: overlay;
+}
 
+/* Adjust the gradient colors if needed to match your brand */
+.index-hero {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Adjust text contrast if needed */
+.index-hero h1,
+.index-hero p {
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+</style>
 </head>
 <body>
     <!-- Navigation -->
@@ -61,11 +82,12 @@
     </nav>
 
     <!-- Hero Section -->
-    <section class="hero-section">
+   <!-- In your index.html file, modify the hero section opening tag -->
+<section class="hero-section index-hero">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-8">
-                    <h1 class="display-3 fw-bold mb-4 animate__animated animate__fadeInDown">حماية متكاملة لبيئات العمل الخطرة</h1>
+                    <h1 class="display-3 fw-bold mb-4 animate__animated animate__fadeInDown" >حماية متكاملة لبيئات العمل الخطرة</h1>
                     <p class="lead mb-5 animate__animated animate__fadeIn animate__delay-1s">مصنع سدير للصناعة والأعمال يقدم حلول حماية شخصية مبتكرة وفق أعلى معايير الجودة العالمية</p>
                     <div class="d-flex justify-content-center gap-3 animate__animated animate__fadeIn animate__delay-2s">
                         <a href="#products" class="btn btn-primary btn-modern btn-lg px-4">استكشف المنتجات</a>

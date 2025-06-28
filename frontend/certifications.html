@@ -15,6 +15,55 @@
         <link rel="stylesheet" href="css/main.css">
     <style>
         /* Improved Certificates Section */
+        /* Services Hero Section with Background Image */
+.services-hero {
+    position: relative;
+    overflow: hidden;
+    padding: 300pxpx 0 120px;
+    color: white;
+    background: 
+        linear-gradient(135deg, rgb(255 255 255 / 50%), rgba(15, 23, 42, 0.9)), 
+        url('../images/2150957776.jpg') center/cover no-repeat;
+    background-blend-mode: overlay;
+}
+
+.services-hero::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 120' preserveAspectRatio='none'%3E%3Cpath d='M1200 120L0 16.48 0 0 1200 0 1200 120z' fill='%23f8fafc'%3E%3C/path%3E%3C/svg%3E");
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+
+.services-hero .container {
+    position: relative;
+    z-index: 2;
+}
+
+/* Button styling */
+.services-hero .btn-outline-light {
+    border-color: rgba(255,255,255,0.5);
+    color: white;
+}
+
+.services-hero .btn-outline-light:hover {
+    background-color: white;
+    color: var(--dark);
+}
+
+/* Animation delays */
+.animate__delay-1s {
+    animation-delay: 0.5s;
+}
+
+.animate__delay-2s {
+    animation-delay: 1s;
+}
         .certificates-section {
             background-color: #f9fafc;
             padding: 80px 0;
@@ -184,16 +233,21 @@
     </nav>
 
     <!-- Hero Section -->
-    <section class="hero-section">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-8 text-center">
-                    <h1 class="display-4 fw-bold mb-4">الجودة والشهادات</h1>
-                    <p class="lead mb-5">التزامنا بمعايير الجودة العالمية يضمن منتجات آمنة وفعالة لجميع عملائنا</p>
+    <!-- Replace the existing hero section in certifications.html with this -->
+<section class="hero-section services-hero">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8">
+                <h1 class="display-4 fw-bold mb-4 animate__animated animate__fadeInDown">الجودة والشهادات</h1>
+                <p class="lead mb-5 animate__animated animate__fadeIn animate__delay-1s">التزامنا بمعايير الجودة العالمية يضمن منتجات آمنة وفعالة لجميع عملائنا</p>
+                <div class="animate__animated animate__fadeIn animate__delay-2s">
+                    <a href="#our-certificates" class="btn btn-primary btn-lg me-2">استكشف شهاداتنا</a>
+                    <a href="contact.html" class="btn btn-outline-light btn-lg">تواصل معنا</a>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
     <!-- Certificates Section - Improved Design -->
     <section class="certificates-section">
